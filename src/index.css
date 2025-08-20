@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* Áp dụng font toàn trang */
+body {
+  font-family: var(--font-poppins);
+}
+
+/* Global style cho ảnh slider */
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .slider-img {
+    object-fit: contain;
+  }
+}
