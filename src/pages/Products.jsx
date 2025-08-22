@@ -1,10 +1,13 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import Breadcrumb from "../components/layout/Breadcrumb";
 
 export default function Products() {
   const categories = ["Tất cả", "Sedan", "SUV", "MPV", "Electric"];
-  const [active, setActive] = useState("Tất cả");
+  const { category } = useParams();
+  const navigate = useNavigate();
+
+  // Nếu không có category → mặc định "Tất cả"
+  const active = category ? category : "Tất cả";
 
   const products = [
     {
@@ -69,10 +72,13 @@ export default function Products() {
     },
   ];
 
+  // Lọc theo category (nếu có)
   const filtered =
     active === "Tất cả"
       ? products
-      : products.filter((p) => p.category === active);
+      : products.filter(
+          (p) => p.category.toLowerCase() === active.toLowerCase()
+        );
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6">
@@ -82,7 +88,7 @@ export default function Products() {
       <div className="text-center mb-12 mt-10">
         <h1 className="text-5xl font-bold text-gray-800 mb-4">Sản phẩm</h1>
         <p className="text-gray-600">
-          Tất cả sản phẩm của Hyundai Thành Công Việt Nam
+          Khám phá các dòng xe Hyundai mới nhất tại Việt Nam
         </p>
       </div>
 
@@ -92,10 +98,14 @@ export default function Products() {
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setActive(cat)}
+              onClick={() =>
+                cat === "Tất cả"
+                  ? navigate("/san-pham")
+                  : navigate(`/san-pham/${cat.toLowerCase()}`)
+              }
               className={`flex-1 text-center px-6 py-3 text-sm font-medium transition-all duration-300
                 ${
-                  active === cat
+                  active.toLowerCase() === cat.toLowerCase()
                     ? "bg-black text-white"
                     : "bg-white text-black hover:bg-gray-100"
                 }`}
@@ -108,13 +118,13 @@ export default function Products() {
 
       {/* Product list */}
       <div
-        key={active} // giúp re-render để chạy animation mỗi lần đổi tab
+        key={active} // re-render khi đổi category để chạy animation
         className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]"
       >
         {filtered.map((p) => (
           <Link
             key={p.slug}
-            to={`/san-pham/${p.category}/${p.slug}`}
+            to={`/san-pham/${p.category.toLowerCase()}/${p.slug}`}
             className="text-center group"
           >
             <div className="h-40 flex items-center justify-center">

@@ -34,7 +34,13 @@ export default function Header() {
           {menuItems.map((item, idx) => (
             <Link
               key={idx}
-              to={item === "Sản phẩm" ? "/san-pham" : "#"}
+              to={
+                item === "Trang chủ"
+                  ? "/"
+                  : item === "Sản phẩm"
+                  ? "/san-pham"
+                  : "#"
+              }
               className="hover:text-gray-900 transition-colors"
             >
               {item}
@@ -73,13 +79,20 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-gray-200">
           <nav className="flex flex-col p-4 space-y-3 text-gray-600 text-sm font-medium">
             {menuItems.map((item, idx) => (
-              <a
+              <Link
                 key={idx}
-                to={item === "Sản phẩm" ? "/Sản phẩm" : "#"}
+                to={
+                  item === "Trang chủ"
+                    ? "/"
+                    : item === "Sản phẩm"
+                    ? "/san-pham"
+                    : "#"
+                }
                 className="hover:text-gray-900 transition-colors"
+                onClick={() => setIsOpen(false)} // đóng menu sau khi bấm
               >
                 {item}
-              </a>
+              </Link>
             ))}
             <div className="flex gap-4 pt-3 border-t border-gray-200 mt-3">
               <button className="text-gray-700 hover:text-black">
