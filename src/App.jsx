@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Footer from "./components/layout/Footer"; // Assuming you have a Footer component
+import ContactForm from "./components/home/ContactForm";
 export default function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/san-pham/:category/:slug" element={<ProductDetail />} />
         </Routes>
       </main>
+      <ContactForm />
       <Footer />
     </Router>
   );

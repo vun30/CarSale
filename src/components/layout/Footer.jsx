@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
           <div className="mt-4">
             <p>Hyundai Gia Lai - Showroom Hyundai Tại Gia Lai.</p>
-            <p>Showroom: 278 Lê Duẩn, Phường An Phú, Pleiku, Gia Lai.</p>
+            <p>Showroom: 278 Lê Duẩn, Phường An Phú, Gia Lai.</p>
           </div>
         </div>
 
@@ -32,11 +32,11 @@ export default function Footer() {
             </p>
             <p>
               <span className="font-semibold">Email:</span>{" "}
-              hyundaitphcm.cskh@gmail.com
+              hyundaigialaiofficial@gmail.com
             </p>
             <p>
               <span className="font-semibold">Website:</span>{" "}
-              hyundaitphcm.com.vn
+              hyundaigialaiofficial.com.vn
             </p>
           </div>
         </div>
