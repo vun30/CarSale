@@ -1,24 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
-import HeroSlider from "./components/home/HeroSlider";
-import ProductList from "./components/home/ProductList";
-import SupportSection from "./components/home/SupportSection";
-import NewsSection from "./components/home/NewsSection";
-import LocationSection from "./components/home/LocationSection";
-import Footer from "./components/layout/Footer";
-import ContactForm  from "./components/home/ContactForm";   
-import SearchBar  from "./components/home/SearchBar"; 
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
+import Footer from "./components/layout/Footer"; // Assuming you have a Footer component
 export default function App() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <Router>
       <Header />
-      <SearchBar />
-      <HeroSlider />
-      <SupportSection />
-      <ProductList />
-      <NewsSection />
-      <LocationSection />
-      <ContactForm />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/san-pham" element={<Products />} />
+          <Route path="/san-pham/:category/:slug" element={<ProductDetail />} />
+        </Routes>
+      </main>
       <Footer />
-    </div>
+    </Router>
   );
 }

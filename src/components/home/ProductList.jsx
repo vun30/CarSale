@@ -1,6 +1,7 @@
 // src/components/ProductList.jsx
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom"; // thêm import Link
 
 export default function ProductList() {
   const products = [
@@ -8,36 +9,62 @@ export default function ProductList() {
       name: "Tucson",
       img: "images/product/tucson.png",
       price: "825 triệu",
+      slug: "tucson",
     },
     {
       name: "Santa Fe",
       img: "images/product/santafe.png",
       price: "1,055 tỷ",
+      slug: "santa-fe",
     },
-    { name: "IONIQ 5", img: "images/product/ioniq5.png", price: "1,3 tỷ" },
+    {
+      name: "IONIQ 5",
+      img: "images/product/ioniq5.png",
+      price: "1,3 tỷ",
+      slug: "ioniq-5",
+    },
     {
       name: "All new Accent",
       img: "images/product/accent.png",
       price: "455 triệu",
+      slug: "accent",
     },
     {
       name: "Stargazer X",
       img: "images/product/stargazer.png",
       price: "620 triệu",
+      slug: "stargazer-x",
     },
     {
       name: "Palisade",
       img: "images/product/palisade.png",
       price: "1,589 tỷ",
+      slug: "palisade",
     },
-    { name: "Custin", img: "images/product/custin.png", price: "1,19 tỷ" },
-    { name: "Creta", img: "images/product/creta.png", price: "650 triệu" },
+    {
+      name: "Custin",
+      img: "images/product/custin.png",
+      price: "1,19 tỷ",
+      slug: "custin",
+    },
+    {
+      name: "Creta",
+      img: "images/product/creta.png",
+      price: "650 triệu",
+      slug: "creta",
+    },
     {
       name: "Elentra",
       img: "images/product/elentra.png",
       price: "590 triệu",
+      slug: "elentra",
     },
-    { name: "i10", img: "images/product/i10.png", price: "360 triệu" },
+    {
+      name: "i10",
+      img: "images/product/i10.png",
+      price: "360 triệu",
+      slug: "i10",
+    },
   ];
 
   const [showAll, setShowAll] = useState(false);
@@ -50,17 +77,21 @@ export default function ProductList() {
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
         {visibleProducts.map((product, idx) => (
-          <div key={idx} className="text-center">
+          <Link
+            key={idx}
+            to={`/san-pham/${product.category}/${product.slug}`} // link qua detail
+            className="text-center group"
+          >
             <div className="w-full aspect-square flex items-center justify-center rounded-lg">
               <img
                 src={product.img}
                 alt={product.name}
-                className="max-h-[80%] max-w-[80%] object-contain transition-transform duration-300 hover:scale-105"
+                className="max-h-[80%] max-w-[80%] object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </div>
 
             {/* Tên xe */}
-            <p className="mt-[-50px] text-lg font-semibold text-[#3B241A] font-[Poppins]">
+            <p className="mt-[-50px] text-lg font-semibold text-[#3B241A] font-[Poppins] group-hover:text-blue-600 transition">
               {product.name}
             </p>
 
@@ -69,7 +100,7 @@ export default function ProductList() {
               <span className="font-bold text-black">Giá: </span>
               <span className="font-bold text-blue-900">{product.price}</span>
             </p>
-          </div>
+          </Link>
         ))}
       </div>
 

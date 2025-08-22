@@ -1,6 +1,6 @@
 import { Share2, Search, Menu, X } from "lucide-react";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,23 +20,25 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <img
-            src="images/logo/huyndai_logo.png"
-            alt="Hyundai Logo"
-            className="h-12 w-auto"
-          />
+          <Link to="/">
+            <img
+              src="images/logo/huyndai_logo.png"
+              alt="Hyundai Logo"
+              className="h-12 w-auto"
+            />
+          </Link>
         </div>
 
         {/* Menu desktop */}
         <nav className="hidden md:flex items-center gap-6 text-gray-600 text-sm font-medium">
           {menuItems.map((item, idx) => (
-            <a
+            <Link
               key={idx}
-              href="#"
+              to={item === "Sản phẩm" ? "/san-pham" : "#"}
               className="hover:text-gray-900 transition-colors"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -73,7 +75,7 @@ export default function Header() {
             {menuItems.map((item, idx) => (
               <a
                 key={idx}
-                href="#"
+                to={item === "Sản phẩm" ? "/Sản phẩm" : "#"}
                 className="hover:text-gray-900 transition-colors"
               >
                 {item}
