@@ -1,6 +1,6 @@
 import { Share2, Search, Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../../assets/huyndai_logo.png";
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Hyundai Logo" className="h-12 w-auto" />
+          <img
+            src="images/logo/huyndai_logo.png"
+            alt="Hyundai Logo"
+            className="h-12 w-auto"
+          />
         </div>
 
         {/* Menu desktop */}

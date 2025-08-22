@@ -3,13 +3,13 @@ import { useState, useEffect } from "react";
 
 export default function HeroSlider() {
   const slides = [
-    { id: 1, image: "src/assets/palisade-hero.jpg" },
-    { id: 2, image: "src/assets/santafe-hero.jpg" },
-    { id: 3, image: "src/assets/tucson-hero.jpg" },
-    { id: 4, image: "src/assets/creta-hero.jpg" },
-    { id: 5, image: "src/assets/i10-hero.jpg" },
-    { id: 6, image: "src/assets/venue-hero.jpg" },
-    { id: 7, image: "src/assets/accent-hero.jpg" },
+    { id: 1, image: "images/slides/palisade-hero.jpg" },
+    { id: 2, image: "images/slides/santafe-hero.jpg" },
+    { id: 3, image: "images/slides/tucson-hero.jpg" },
+    { id: 4, image: "images/slides/creta-hero.jpg" },
+    { id: 5, image: "images/slides/i10-hero.jpg" },
+    { id: 6, image: "images/slides/venue-hero.jpg" },
+    { id: 7, image: "images/slides/accent-hero.jpg" },
   ];
 
   const [current, setCurrent] = useState(0);

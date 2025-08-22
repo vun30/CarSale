@@ -6,38 +6,38 @@ export default function ProductList() {
   const products = [
     {
       name: "Tucson",
-      img: "src/assets/tucson-icon.webp",
+      img: "images/product/tucson.png",
       price: "825 triệu",
     },
     {
       name: "Santa Fe",
-      img: "src/assets/santafe-icon.png",
+      img: "images/product/santafe.png",
       price: "1,055 tỷ",
     },
-    { name: "IONIQ 5", img: "src/assets/ionig-icon.png", price: "1,3 tỷ" },
+    { name: "IONIQ 5", img: "images/product/ioniq5.png", price: "1,3 tỷ" },
     {
       name: "All new Accent",
-      img: "src/assets/accent-icon.webp",
+      img: "images/product/accent.png",
       price: "455 triệu",
     },
     {
       name: "Stargazer X",
-      img: "src/assets/stargazer-icon.png",
+      img: "images/product/stargazer.png",
       price: "620 triệu",
     },
     {
       name: "Palisade",
-      img: "src/assets/palisade-icon.png",
+      img: "images/product/palisade.png",
       price: "1,589 tỷ",
     },
-    { name: "Custin", img: "src/assets/custin-icon.png", price: "1,19 tỷ" },
-    { name: "Creta", img: "src/assets/creta-icon.png", price: "650 triệu" },
+    { name: "Custin", img: "images/product/custin.png", price: "1,19 tỷ" },
+    { name: "Creta", img: "images/product/creta.png", price: "650 triệu" },
     {
       name: "Elentra",
-      img: "src/assets/elentra-icon.png",
+      img: "images/product/elentra.png",
       price: "590 triệu",
     },
-    { name: "i10", img: "src/assets/i10-icon.png", price: "360 triệu" },
+    { name: "i10", img: "images/product/i10.png", price: "360 triệu" },
   ];
 
   const [showAll, setShowAll] = useState(false);
