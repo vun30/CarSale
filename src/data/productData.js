@@ -6,7 +6,7 @@ export const products = {
     cover: "/images/slides/tucson-hero.jpg",
     highlight: {
       hero: "/images/slides/tucson-hero.jpg",
-     
+
       videoId: "njbNCfPFbgU",
       cards: [
         {
@@ -45,44 +45,57 @@ export const products = {
       header: {
         eyebrow: "Ngoại thất",
         title: "Hyundai Tucson mới. Mạnh mẽ và khoẻ khoắn.",
-        body:
-          "Thiết kế ngoại thất Hyundai Tucson mới với bề mặt được thiết kế theo kiểu hình khối cùng đường gân cơ bắp góc cạnh..."
+        body: "Thiết kế ngoại thất Hyundai Tucson mới với bề mặt được thiết kế theo kiểu hình khối cùng đường gân cơ bắp góc cạnh...",
       },
 
       lead: {
         title: "Thiết kế tiên phong",
-        image: "/images/tucson/exterior/lead.jpg",
+        image: "/images/product/tucson.png",
         caption:
-          "Tiên phong với thiết kế đèn ban ngày dạng ẩn “Parametric jewel”."
+          "Tiên phong với thiết kế đèn ban ngày dạng ẩn “Parametric jewel”.",
       },
 
       // lưới 4 ảnh có caption (ảnh 2)
       grid4: [
-        { img: "/images/tucson/exterior/led-1.jpg", caption: "Đèn chiếu sáng LED" },
-        { img: "/images/tucson/exterior/led-2.jpg", caption: "Đèn chiếu sáng LED Projector (Phiên bản Turbo)" },
-        { img: "/images/tucson/exterior/grille-1.jpg", caption: "Lưới tản nhiệt sơn kim loại tối màu (Loại DRL trong suốt)" },
-        { img: "/images/tucson/exterior/grille-2.jpg", caption: "Lưới tản nhiệt Chrome màu tối" },
+        { img: "/images/product/tucson.png", caption: "Đèn chiếu sáng LED" },
+        {
+          img: "/images/product/tucson.png",
+          caption: "Đèn chiếu sáng LED Projector (Phiên bản Turbo)",
+        },
+        {
+          img: "/images/product/tucson.png",
+          caption: "Lưới tản nhiệt sơn kim loại tối màu (Loại DRL trong suốt)",
+        },
+        {
+          img: "/images/product/tucson.png",
+          caption: "Lưới tản nhiệt Chrome màu tối",
+        },
       ],
 
       // 2 thẻ nửa – nửa (ảnh 3 hàng trên)
       twoCards: [
-        { img: "/images/tucson/exterior/mirror.jpg", caption: "Gương chiếu hậu chỉnh điện, gập điện, có sấy (tích hợp đèn báo rẽ)" },
-        { img: "/images/tucson/exterior/panorama.jpg", caption: "Cửa sổ trời toàn cảnh" },
+        {
+          img: "/images/tucson/exterior/mirror.jpg",
+          caption:
+            "Gương chiếu hậu chỉnh điện, gập điện, có sấy (tích hợp đèn báo rẽ)",
+        },
+        {
+          img: "/images/tucson/exterior/panorama.jpg",
+          caption: "Cửa sổ trời toàn cảnh",
+        },
       ],
 
       // tiêu đề + mô tả + 1 ảnh lớn (ảnh 3 “bánh xe”)
       midBlock: {
         title: "Tối đa hoá sự năng động với thiết kế bánh xe mới",
-        body:
-          "Các đường nét dập nổi đặc trưng táo bạo kết hợp cùng thiết kế la-zăng sang trọng làm nổi bật phong cách thể thao.",
+        body: "Các đường nét dập nổi đặc trưng táo bạo kết hợp cùng thiết kế la-zăng sang trọng làm nổi bật phong cách thể thao.",
         image: "/images/tucson/exterior/wheel-hero.jpg",
       },
 
       // tiêu đề + mô tả + 1 ảnh lớn + 3 ảnh nhỏ (ảnh 4)
       tailBlock: {
         title: "Đường nét thiết kế táo bạo với bố cục rộng hơn",
-        body:
-          "Cụm đèn hậu LED kéo dài mang tính biểu tượng khẳng định hình ảnh công nghệ cao của Hyundai Tucson.",
+        body: "Cụm đèn hậu LED kéo dài mang tính biểu tượng khẳng định hình ảnh công nghệ cao của Hyundai Tucson.",
         hero: "/images/tucson/exterior/rear-hero.jpg",
         thumbs: [
           "/images/tucson/exterior/rear-1.jpg",

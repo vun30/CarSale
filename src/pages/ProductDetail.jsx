@@ -192,10 +192,10 @@ function Highlights({ highlight }) {
 
       {/* 3) Video */}
       {videoId && (
-        <section className="space-y-3">
-          <h3 className="text-xl font-semibold">
+        <section className="space-y-3 pb-6">
+          {/* <h3 className="text-xl font-semibold">
             [OFFICIAL] – TVC {title || ""}
-          </h3>
+          </h3> */}
           <div className="aspect-video rounded-xl overflow-hidden shadow">
             <iframe
               src={`https://www.youtube.com/embed/${videoId}`}

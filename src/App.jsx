@@ -5,6 +5,8 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Footer from "./components/layout/Footer"; // Assuming you have a Footer component
 import ContactForm from "./components/home/ContactForm";
+import FloatingContact from "./components/common/FloatingContact";
+
 export default function App() {
   return (
     <Router>
@@ -18,6 +20,7 @@ export default function App() {
         </Routes>
       </main>
       <ContactForm />
+      <FloatingContact />
       <Footer />
     </Router>
   );
