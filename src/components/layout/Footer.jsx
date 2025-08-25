@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center space-x-6">
             <img
-              src="images/logo/logo_footer.png"
+              src="/images/logo/logo_footer.png"
               alt="Hyundai TC Motor"
               className="mt-[-1px] h-8 mb-4"
             />

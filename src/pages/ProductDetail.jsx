@@ -35,7 +35,7 @@ function Exterior({ data }) {
   const { header, lead, grid4 = [], twoCards = [], midBlock, tailBlock } = data;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 space-y-10">
+    <div className="max-w-6xl mx-auto px-4 space-y-10 mb-5">
       {/* Header text */}
       <section>
         {header?.eyebrow && (
@@ -108,6 +108,20 @@ function Exterior({ data }) {
             alt={midBlock.title}
             className="w-full rounded-xl shadow"
           />
+
+          {/* Thumbs dưới ảnh chính */}
+          {midBlock.thumbs && midBlock.thumbs.length > 0 && (
+            <div className="grid md:grid-cols-3 gap-4 pt-4">
+              {midBlock.thumbs.map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt={`thumb-${i}`}
+                  className="w-full h-50 object-cover rounded-lg shadow"
+                />
+              ))}
+            </div>
+          )}
         </section>
       )}
 
@@ -127,7 +141,7 @@ function Exterior({ data }) {
                 key={i}
                 src={src}
                 alt={`thumb-${i}`}
-                className="w-full h-40 object-cover rounded-lg shadow"
+                className="w-full h-50 object-cover rounded-lg shadow"
               />
             ))}
           </div>
@@ -170,7 +184,29 @@ function Highlights({ highlight }) {
           </div>
         )}
       </section>
-
+      {highlight.intro && (
+        <section className="max-w-6xl mx-auto px-4 space-y-3">
+          <p className="text-blue-900 text-2xl md:text-3xl font-bold">
+            {highlight.intro.eyebrow}
+          </p>
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">
+            {highlight.intro.title}
+          </h2>
+          <div className="bg-gray-100 rounded-md p-4 text-gray-700 leading-relaxed">
+            {highlight.intro.body}
+            {highlight.intro.link && (
+              <div className="mt-2">
+                <a
+                  href={highlight.intro.link.href}
+                  className="text-blue-700 underline underline-offset-2"
+                >
+                  {highlight.intro.link.text}
+                </a>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
       {/* 2) Lưới 4 khối */}
       {cards.length > 0 && (
         <section className="grid md:grid-cols-2 gap-6">
@@ -240,43 +276,19 @@ export default function ProductDetail() {
         return <Exterior data={product.exterior} />;
 
       case "Nội thất":
-        return (
-          <div className="max-w-6xl mx-auto px-4">
-            <ImageBlock src={product.interiorImg} alt="Nội thất" />
-          </div>
-        );
+        return <Exterior data={product.interior} />;
 
       case "Vận hành":
-        return (
-          <div className="max-w-6xl mx-auto px-4 text-gray-700">
-            {product.performanceText || "Đang cập nhật."}
-          </div>
-        );
+        return <Exterior data={product.performance} />;
 
       case "An toàn":
-        return (
-          <ul className="max-w-6xl mx-auto px-4 list-disc list-inside space-y-2 text-gray-700">
-            {(product.safetyList || []).map((s) => (
-              <li key={s}>{s}</li>
-            ))}
-          </ul>
-        );
+        return <Exterior data={product.safety} />;
 
       case "Tiện nghi":
-        return (
-          <ul className="max-w-6xl mx-auto px-4 list-disc list-inside space-y-2 text-gray-700">
-            {(product.comfortList || []).map((s) => (
-              <li key={s}>{s}</li>
-            ))}
-          </ul>
-        );
+        return <Exterior data={product.comfort} />;
 
       case "Thông số xe":
-        return (
-          <div className="max-w-6xl mx-auto px-4">
-            <SpecTable specs={product.specs} />
-          </div>
-        );
+        return <Exterior data={product.specBlock} />;
 
       default:
         return null;

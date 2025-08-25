@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link to="/">
             <img
-              src="images/logo/huyndai_logo.png"
+              src="/images/logo/huyndai_logo.png"
               alt="Hyundai Logo"
               className="h-12 w-auto"
             />
