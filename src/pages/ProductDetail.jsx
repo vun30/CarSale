@@ -52,18 +52,36 @@ function Exterior({ data }) {
       </section>
 
       {/* Lead */}
-      {lead && (
-        <section className="space-y-3">
-          {lead.title && (
-            <h3 className="text-xl font-semibold">{lead.title}</h3>
-          )}
-          <img
-            src={lead.image}
-            alt={lead.title}
-            className="w-full rounded-xl shadow"
-          />
-          {lead.caption && <p className="text-gray-700">{lead.caption}</p>}
+      {Array.isArray(lead) ? (
+        <section className="grid md:grid-cols-2 gap-6">
+          {lead.map((it, i) => (
+            <div key={i} className="space-y-3">
+              {it.title && (
+                <h3 className="text-xl font-semibold">{it.title}</h3>
+              )}
+              <img
+                src={it.image}
+                alt={it.title || `lead-${i}`}
+                className="w-full rounded-xl shadow"
+              />
+              {it.caption && <p className="text-gray-700">{it.caption}</p>}
+            </div>
+          ))}
         </section>
+      ) : (
+        lead && (
+          <section className="space-y-3">
+            {lead.title && (
+              <h3 className="text-xl font-semibold">{lead.title}</h3>
+            )}
+            <img
+              src={lead.image}
+              alt={lead.title}
+              className="w-full rounded-xl shadow"
+            />
+            {lead.caption && <p className="text-gray-700">{lead.caption}</p>}
+          </section>
+        )
       )}
 
       {/* Grid 4 */}
@@ -151,17 +169,14 @@ function Exterior({ data }) {
   );
 }
 
-function ImageBlock({ src, alt }) {
-  if (!src) return null;
-  return <img src={src} alt={alt} className="rounded-lg shadow-md w-full" />;
-}
+// function ImageBlock({ src, alt }) {
+//   if (!src) return null;
+//   return <img src={src} alt={alt} className="rounded-lg shadow-md w-full" />;
+// }
 
 function Highlights({ highlight }) {
   if (!highlight) return null;
   const { hero, title, subtitle, cards = [], videoId } = highlight;
-
-
-  
   return (
     <div className="max-w-6xl mx-auto px-4 space-y-10">
       {/* 1) Hero */}
@@ -169,21 +184,25 @@ function Highlights({ highlight }) {
         <img
           src={hero}
           alt={title || "Highlights"}
-          className="w-full h-[420px] md:h-[520px] object-cover"
+          className="w-full h-[220px] sm:h-[280px] md:h-[420px] lg:h-[520px] object-cover"
         />
+
         {(title || subtitle) && (
-          <div className="absolute left-6 top-6 md:left-10 md:top-10">
+          <div className="absolute left-4 top-4 md:left-10 md:top-10">
             {title && (
-              <h2 className="text-white text-3xl md:text-5xl font-bold drop-shadow">
+              <h2 className="text-white text-xl sm:text-2xl md:text-5xl font-bold drop-shadow">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-white/90 text-lg md:text-xl">{subtitle}</p>
+              <p className="text-white/90 text-sm sm:text-base md:text-xl">
+                {subtitle}
+              </p>
             )}
           </div>
         )}
       </section>
+
       {highlight.intro && (
         <section className="max-w-6xl mx-auto px-4 space-y-3">
           <p className="text-blue-900 text-2xl md:text-3xl font-bold">
@@ -306,7 +325,12 @@ export default function ProductDetail() {
         <img
           src={product.cover}
           alt={product.name}
-          className="w-full h-[500px] object-cover"
+          className="w-full  
+      h-[220px]      /* mobile nhỏ gọn */
+      sm:h-[300px]   /* tablet nhỏ */
+      md:h-[400px]   /* desktop vừa */
+      lg:h-[500px]   /* màn to */
+      object-cover"
         />
       </div>
 

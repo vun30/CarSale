@@ -19,13 +19,13 @@ export default function Products() {
     {
       name: "SantaFe",
       category: "SUV",
-      slug: "santa-fe",
+      slug: "santafe",
       image: "/images/product/santafe.png",
     },
     {
       name: "IONIQ 5",
       category: "Electric",
-      slug: "ioniq-5",
+      slug: "ioniq5",
       image: "/images/product/ioniq5.png",
     },
     {
@@ -37,7 +37,7 @@ export default function Products() {
     {
       name: "Stargazer X",
       category: "MPV",
-      slug: "stargazer-x",
+      slug: "stargazer",
       image: "/images/product/stargazer.png",
     },
     {

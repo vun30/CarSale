@@ -246,40 +246,40 @@ export const products = {
       header: {
         eyebrow: "Tiện nghi",
         title: "Hyundai Tucson. Hành trình của bạn bắt đầu từ đây.",
-        body: "Khoang nội thất rộng, màn hình đôi 12.3 inch, vật liệu cao cấp và loạt tiện nghi thông minh giúp hành trình luôn thư thái.",
+        body: "Dù là hành trình nào, trải nghiệm của bạn sẽ đầy cảm xúc khi bạn có những người bạn đồng hành đáng tin cậy trong suốt chuyến đi như hệ thống thông tin giải trí 12,3 inch và dàn loa cao cấp Bose trên Hyundai Tucson. Màn hình cảm ứng dễ vận hành và đồng bộ kết nối dễ dàng với điện thoại thông minh của bạn",
       },
 
       // Ảnh lớn đầu mục (khoang lái)
       lead: {
         title: "Khoang lái tiện nghi cao cấp",
-        image: "/images/tucson/comfort/hero.jpg", // ảnh lớn bạn gửi
+        image: "/images/cardetail/tiennghi/tucson/tucson-tiennghi1.jpg", // ảnh lớn bạn gửi
         caption: null,
       },
 
       // Lưới 6 ô – đúng thứ tự như ảnh
       grid4: [
         {
-          img: "/images/tucson/comfort/smart-tailgate.jpg",
+          img: "/images/cardetail/tiennghi/tucson/tucson-tiennghi2.jpg",
           caption: "Cốp điện thông minh",
         },
         {
-          img: "/images/tucson/comfort/ambient-light.jpg",
+          img: "/images/cardetail/tiennghi/tucson/tucson-tiennghi3.jpg",
           caption: "Đèn nội thất",
         },
         {
-          img: "/images/tucson/comfort/panorama-roof.jpg",
+          img: "/images/cardetail/tiennghi/tucson/tucson-tiennghi4.jpg",
           caption: "Cửa sổ trời toàn cảnh panorama",
         },
         {
-          img: "/images/tucson/comfort/seat-memory.jpg",
+          img: "/images/cardetail/tiennghi/tucson/tucson-tiennghi5.jpg",
           caption: "Nhớ ghế lái 2 vị trí",
         },
         {
-          img: "/images/tucson/comfort/seat-vent-heat.jpg",
+          img: "/images/cardetail/tiennghi/tucson/tucson-tiennghi6.jpg",
           caption: "Sưởi và làm mát hàng ghế trước",
         },
         {
-          img: "/images/tucson/comfort/bose-audio.jpg",
+          img: "/images/cardetail/tiennghi/tucson/tucson-tiennghi7.jpg",
           caption: "Hệ thống loa Bose cao cấp",
         },
       ],
@@ -293,17 +293,16 @@ export const products = {
       },
 
       // Ảnh 1: bảng kỹ thuật tổng quát
-      lead: {
-        title: null,
-        image: "/images/tucson/specs/spec-main.jpg", // ảnh bảng thông số xe
-        caption: null,
-      },
-
-      // Lưới 2 ảnh (tiêu thụ nhiên liệu + màu sắc ngoại thất)
-      grid4: [
+      lead: [
         {
-          img: "/images/tucson/specs/spec-consumption.jpg",
-          caption: "Bảng tiêu thụ nhiên liệu & kích thước",
+          title: null,
+          image: "/images/cardetail/thongso/tucson/tucson-thongso1.jpg",
+          caption: null,
+        },
+        {
+          title: null,
+          image: "/images/cardetail/thongso/tucson/tucson-thongso2.jpg",
+          caption: null,
         },
       ],
     },
@@ -314,6 +313,8 @@ export const products = {
     name: "Santa Fe",
     price: "Giá từ 1.099 tỷ VNĐ",
     cover: "/images/slides/santafe-hero.jpg",
+
+    // ===== NỔI BẬT =====
     highlight: {
       hero: "/images/slides/santafe-hero.jpg",
       title: "New SANTA FE",
@@ -338,24 +339,8 @@ export const products = {
         },
       ],
     },
-    performanceText: "Tùy chọn động cơ xăng/Hybrid, tối ưu êm ái và tiết kiệm.",
-    safetyList: [
-      "SmartSense thế hệ mới",
-      "Hỗ trợ tránh va chạm",
-      "Cảnh báo phương tiện cắt ngang",
-    ],
-    comfortList: [
-      "Cửa sổ trời",
-      "Cổng sạc nhiều vị trí",
-      "Cốp điện thông minh",
-    ],
-    specs: {
-      "Kích thước": "4,830 x 1,900 x 1,780 (mm)",
-      "Chiều dài cơ sở": "2,815 mm",
-      "Động cơ": "Tùy chọn xăng/Hybrid",
-      "Hộp số": "AT/Hybrid",
-      "Dẫn động": "FWD/AWD",
-    },
+
+    // ===== NGOẠI THẤT =====
     exterior: {
       header: {
         eyebrow: "Ngoại thất",
@@ -411,11 +396,13 @@ export const products = {
         ],
       },
     },
+
+    // ===== NỘI THẤT =====
     interior: {
       header: {
         eyebrow: "Nội thất",
         title: "Không gian 3 hàng ghế rộng rãi.",
-        body: "Khoang nội thất tiện nghi, bảng điều khiển hiện đại, vật liệu cao cấp đáp ứng tốt nhu cầu gia đình.",
+        body: "Khoang nội thất tiện nghi, bảng điều khiển hiện đại, vật liệu cao cấp.",
       },
       lead: {
         title: "Khoang lái công nghệ",
@@ -439,6 +426,106 @@ export const products = {
           img: "/images/santafe/interior/grid-4.jpg",
           caption: "Cửa gió và cổng sạc sau",
         },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Santa Fe. Hiệu suất & tiết kiệm.",
+        body: "Tùy chọn động cơ xăng/Hybrid, cân bằng giữa mạnh mẽ và tiết kiệm.",
+      },
+      lead: {
+        title: "Mạnh mẽ trên mọi cung đường",
+        image: "/images/santafe/performance/lead.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: "Hệ dẫn động AWD",
+        body: "Tối ưu lực kéo, di chuyển an toàn trên nhiều loại địa hình.",
+        image: "/images/santafe/performance/awd.jpg",
+      },
+      tailBlock: {
+        title: "Động cơ tùy chọn",
+        body: "Các bản xăng và hybrid đáp ứng nhiều nhu cầu.",
+        hero: "/images/santafe/performance/engine-hero.jpg",
+        thumbs: [
+          "/images/santafe/performance/engine-1.jpg",
+          "/images/santafe/performance/engine-2.jpg",
+          "/images/santafe/performance/engine-3.jpg",
+        ],
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "SmartSense thế hệ mới",
+        body: "Santa Fe trang bị đầy đủ gói an toàn tiên tiến.",
+      },
+      lead: {
+        title: "Hệ thống an toàn chủ động",
+        image: "/images/santafe/safety/main.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/santafe/safety/grid-1.jpg",
+          caption: "Cảnh báo điểm mù",
+        },
+        { img: "/images/santafe/safety/grid-2.jpg", caption: "Hỗ trợ giữ làn" },
+        { img: "/images/santafe/safety/grid-3.jpg", caption: "Camera 360" },
+        {
+          img: "/images/santafe/safety/grid-4.jpg",
+          caption: "Phanh khẩn cấp tự động",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Tiện nghi hiện đại",
+        body: "Đem lại trải nghiệm thoải mái cho cả gia đình.",
+      },
+      lead: {
+        title: "Khoang lái tiện nghi",
+        image: "/images/santafe/comfort/main.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/santafe/comfort/grid-1.jpg",
+          caption: "Cốp điện thông minh",
+        },
+        {
+          img: "/images/santafe/comfort/grid-2.jpg",
+          caption: "Cửa sổ trời toàn cảnh",
+        },
+        {
+          img: "/images/santafe/comfort/grid-3.jpg",
+          caption: "Hệ thống loa cao cấp",
+        },
+        {
+          img: "/images/santafe/comfort/grid-4.jpg",
+          caption: "Ghế chỉnh điện",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Santa Fe.",
+        body: null,
+      },
+      lead: [
+        { image: "/images/santafe/specs/spec-1.jpg", caption: null },
+        { image: "/images/santafe/specs/spec-2.jpg", caption: null },
       ],
     },
   },
