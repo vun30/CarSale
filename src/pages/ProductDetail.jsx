@@ -333,6 +333,7 @@ export default function ProductDetail() {
       object-cover"
         />
       </div>
+      
 
       {/* Tên + Tabs */}
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">

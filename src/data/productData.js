@@ -317,9 +317,18 @@ export const products = {
     // ===== NỔI BẬT =====
     highlight: {
       hero: "/images/slides/santafe-hero.jpg",
-      title: "New SANTA FE",
-      subtitle: "Bứt phá mọi giới hạn.",
-      videoId: "PUT_SANTAFE_YOUTUBE_ID",
+      // title: "New SANTA FE",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "6mrKeGgS1eU",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "NEW SANTAFE",
+        body: "Hyundai Santa Fe hoàn toàn mới. Chiếc SUV đô thị cao cấp mang ngôn ngữ thiết kế hình hộp độc đáo hoàn toàn mới được tạo ra bởi sự hài hòa tinh tế giữa phong cách sống đa sắc màu và những trải nghiệm thú vị. Sự cân bằng này được thể hiện qua thiết kế hình chữ H trên các chi tiết của chiếc xe. Ngoài ra, All New Santa Fe với những tính năng ưu việt sẽ khiến bạn hài lòng trên mọi hành trình.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
       cards: [
         {
           img: "/images/santafe/card-1.jpg",
@@ -344,8 +353,9 @@ export const products = {
     exterior: {
       header: {
         eyebrow: "Ngoại thất",
-        title: "Santa Fe mới. Mạnh mẽ và vuông vức.",
-        body: "Ngôn ngữ thiết kế H–light, thân xe vuông vức, hiện đại và đa dụng.",
+        title:
+          "Hyundai Santa Fe. Thiết kế ngoại thất dạng hình hộp Boxy đặc trưng.",
+        body: "Hyundai Santa Fe hoàn toàn mới. Mang phong cách thiết kế ngoại thất boxy khối hộp đậm chất SUV cổ điển, với cụm đèn chiếu sáng và nắp capo đẩy lên cao, tạo nên tổng thể khoẻ khoắn và thể thao. Điểm nhấn ở phần đầu xe là cụm đèn chiếu sáng Adaptive LED thích ứng tự động (AHB-LED), cùng cụm đèn chiếu sáng ban ngày tạo hình chữ H. Bên cạnh đó, mặt ca-lăng lấy cảm hứng từ logo Hyundai dạng phẳng 2D, làm nên tổng thể thiết kế táo bạo cá tính. Mặt ca-lăng của xe được trang bị tính năng AAF (Active Air Flap) mở/ đóng tự động thông minh tùy theo các chế độ vận hành nhằm tối ưu hệ số cản gió nhưng vẫn đảm bảo làm mát động cơ và hệ thống phanh. Cụ thể chỉ số cản gió thế hệ thứ 5 này là 0,298Cd (ngang với một chiếc sedan) còn thế hệ trước đó là 0,33Cd.",
       },
       lead: {
         title: "Thiết kế mới đậm chất SUV",
