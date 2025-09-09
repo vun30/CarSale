@@ -316,7 +316,7 @@ export const products = {
 
     // ===== NỔI BẬT =====
     highlight: {
-      hero: "/images/slides/santafe-hero.jpg",
+      hero: "/images/cardetail/highlights/santafe/santafe-hightlight1.jpg",
       // title: "New SANTA FE",
       // subtitle: "Bứt phá mọi giới hạn.",
       videoId: "6mrKeGgS1eU",
@@ -330,22 +330,22 @@ export const products = {
         }, // đổi href nếu có
       },
       cards: [
-        {
-          img: "/images/santafe/card-1.jpg",
-          caption: "Thiết kế mạnh mẽ, vuông vức",
-        },
-        {
-          img: "/images/santafe/card-2.jpg",
-          caption: "Công nghệ SmartSense thế hệ mới",
-        },
-        {
-          img: "/images/santafe/card-3.jpg",
-          caption: "Không gian 3 hàng ghế rộng rãi",
-        },
-        {
-          img: "/images/santafe/card-4.jpg",
-          caption: "Động cơ xăng/Hybrid tiết kiệm",
-        },
+        // {
+        //   img: "/images/cardetail/highlights/santafe/santafe-hightlight2.jpg",
+        //   caption: "Thiết kế mạnh mẽ, vuông vức",
+        // },
+        // {
+        //   img: "/images/cardetail/highlights/santafe/santafe-hightlight3.jpg",
+        //   caption: "Công nghệ SmartSense thế hệ mới",
+        // },
+        // {
+        //   img: "/images/cardetail/highlights/santafe/santafe-hightlight4.jpg",
+        //   caption: "Không gian 3 hàng ghế rộng rãi",
+        // },
+        // {
+        //   img: "/images/santafe/card-4.jpg",
+        //   caption: "Động cơ xăng/Hybrid tiết kiệm",
+        // },
       ],
     },
 
@@ -359,50 +359,51 @@ export const products = {
       },
       lead: {
         title: "Thiết kế mới đậm chất SUV",
-        image: "/images/santafe/exterior/lead.jpg",
-        caption: "Đèn định vị hình chữ H đặc trưng.",
+        image: "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat4.jpg",
+        caption:
+          "Hyundai Santa Fe Mới tiếp tục sử dụng hệ thống khung gầm toàn cầu N-Platform, mang tới một vóc dáng to lớn, mạnh mẽ và sang trọng hơn. Cụ thể, xe có kích thước Dài x Rộng x Cao lần lượt là 4.830 x 1.900 x 1.780 (mm), kích thước này dài hơn 45mm, cao hơn 50mm so với thế hệ trước. Chiều dài cơ sở của xe cũng được tăng lên 50mm đạt con số 2.815mm, đem đến một không gian rộng rãi hơn cho 2 hàng ghế phía sau.All New Santa Fe cũng trở nên cứng cáp, góc cạnh hơn nhờ phần vòm bánh xe lồi ra, vuông vức. Thân xe thiết kế dạng phẳng tối giản, phù hợp với một chiếc SUV kích thước lớp cũng như giúp tối ưu hoá không gian bên trong. Phần đuôi xe tiếp tục sử dụng công nghệ LED với tạo hình đèn hậu hình chữ H đồng bộ với cụm đèn trước, gia tăng khả năng nhận diện khi di chuyển. Phần đuôi xe có thiết kế phẳng hài hoà trong tổng thể thiết kế khối hộp của xe cũng như gia tăng tiện ích với cốp điện tự động.",
       },
       grid4: [
         {
-          img: "/images/santafe/exterior/grid-1.jpg",
-          caption: "Đèn LED chữ H",
+          img: "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat2.jpg",
+          caption: "Lưới tản nhiệt mạ crôm + Cánh gió chủ động",
         },
         {
-          img: "/images/santafe/exterior/grid-2.jpg",
-          caption: "Mâm 20 inch thể thao",
+          img: "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat3.jpg",
+          caption: "Hệ thống đèn chiếu sáng full LED",
         },
         {
-          img: "/images/santafe/exterior/grid-3.jpg",
-          caption: "Cản trước khỏe khoắn",
+          img: "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat5.jpg",
+          caption: "Điểm bám tay ẩn trên trụ C",
         },
         {
-          img: "/images/santafe/exterior/grid-4.jpg",
-          caption: "Đuôi xe vuông vức",
+          img: "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat6.jpg",
+          caption: "Cửa sổ trời đôi",
         },
       ],
       twoCards: [
-        {
-          img: "/images/santafe/exterior/card-1.jpg",
-          caption: "Gương gập điện, sấy kính",
-        },
-        {
-          img: "/images/santafe/exterior/card-2.jpg",
-          caption: "Giá nóc & cửa sổ trời",
-        },
+        // {
+        //   img: "/images/santafe/exterior/card-1.jpg",
+        //   caption: "Gương gập điện, sấy kính",
+        // },
+        // {
+        //   img: "/images/santafe/exterior/card-2.jpg",
+        //   caption: "Giá nóc & cửa sổ trời",
+        // },
       ],
       midBlock: {
         title: "Bánh xe thiết kế mới",
-        body: "Tối ưu tính khí động học và thẩm mỹ.",
-        image: "/images/santafe/exterior/wheel.jpg",
+        body: "All New Santa Fe có 3 tuỳ chọn lazang với kích thước 18, 20 và 21 inch với các thông số lốp tương ứng lần lượt 235/60 R18, 255/45 R20, 245/45 R21. Phiên bản Caligraphy được trang bị lazang đa chấu 21 inches tạo hình đẹp mắt, các phiên bản phiên bản còn lại sử dụng mâm 18 và 20 inch thiết kế khoẻ khắn với những nan lớn. Xe được trang bị giá nóc có khả năng tải đồ tối đa 100kg, cũng như tạo thêm vẻ việt dã khoẻ khoắn cho Santa Fe. Bên cạnh đó xe có móc tay ẩn ở cột chữ C giúp người sử dụng dễ dàng leo lên tháo dỡ, lắp đặt đồ trên nóc xe.",
+        image: "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat8.jpg",
       },
       tailBlock: {
         title: "Đuôi xe chữ H",
-        body: "Cụm đèn hậu chữ H đồng nhất với đầu xe.",
-        hero: "/images/santafe/exterior/rear-hero.jpg",
+        body: "Cụm đèn hậu chữ H đồng nhất với đầu xe với cốp điện thông minh và cần gạt mưa dạng ẩn.",
+        hero: "/images/cardetail/ngoaithat/santafe/santafe.jpg",
         thumbs: [
-          "/images/santafe/exterior/rear-1.jpg",
-          "/images/santafe/exterior/rear-2.jpg",
-          "/images/santafe/exterior/rear-3.jpg",
+          "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat9.jpg",
+          "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat10.jpg",
+          "/images/cardetail/ngoaithat/santafe/santafe-ngoaithat11.jpg",
         ],
       },
     },
@@ -411,30 +412,39 @@ export const products = {
     interior: {
       header: {
         eyebrow: "Nội thất",
-        title: "Không gian 3 hàng ghế rộng rãi.",
-        body: "Khoang nội thất tiện nghi, bảng điều khiển hiện đại, vật liệu cao cấp.",
+        title: "Hyundai Santa Fe. Nâng tầm sang trọng và đẳng cấp.",
+        body: "Hyundai Santa Fe với thiết kế nội thất nâng tầm sang trọng và đẳng cấp. Tận hưởng không gian nội thất sang trọng, tinh tế qua thiết kế chữ H được thể hiện qua đèn trang trí nội thất ẩn. Tầm nhìn đa chiều thoáng đãng, màn hình cảm ứng mở rộng cùng các tiện nghi cao cấp sẽ giúp bạn có trải nghiệm thoải mái nhất trên mọi cung đường. Điểm nhấn của không gian hàng ghế trước là cụm màn hình thông tin và màn hình giải trí cảm ứng nối liền kích thước đều 12,3 inches. Cụm màn hình này hướng về phía người lái, giúp lái xe dễ dàng quan sát và sử dụng hơn khi đang lái xe. Màn hình giải trí hỗ trợ Android Auto/Apple Carplay không dây, bản đồ định vị dẫn đường vệ tinh tích hợp công nghệ W3W (What 3 Word) với độ chính xác tuyệt đối dành riêng cho thị trường Việt Nam. Tương tự phiên bản trước, màn hình hỗ trợ hiển thị Camera 360 SVM, hỗ trợ lái xe tốt hơn trong các tình huống đỗ xe hay di chuyển những con đường hẹp, đông đúc. Bên cạnh đó, hệ thống 12 loa Bose cùng ampli rời hỗ trợ giải mã âm thanh chất lượng cao đem đến trải nghiệm Hi-end ngay trên xe.",
       },
       lead: {
         title: "Khoang lái công nghệ",
-        image: "/images/santafe/interior/main.jpg",
-        caption: "Màn hình cong cỡ lớn, cần số điện tử.",
+        image: "/images/cardetail/noithat/santafe/san-noithat1.jpg",
+        caption: "Nội thất Hyundai Santa Fe",
       },
       grid4: [
         {
-          img: "/images/santafe/interior/grid-1.jpg",
-          caption: "Màn hình cảm ứng cỡ lớn",
+          img: "/images/cardetail/noithat/santafe/san-noithat2.jpg",
+          caption:
+            "Màn hình thông tin 12.3 inch nối liền với màn hình giải trí 12.3 inch",
         },
         {
-          img: "/images/santafe/interior/grid-2.jpg",
+          img: "/images/cardetail/noithat/santafe/san-noithat3.jpg",
+          caption: "Cần số điện tử sau vô lăng",
+        },
+        {
+          img: "/images/cardetail/noithat/santafe/san-noithat4.jpg",
+          caption: "Điều hòa tự động 2 vùng độc lập",
+        },
+        {
+          img: "/images/cardetail/noithat/santafe/san-noithat5.jpg",
+          caption: "Hệ thống 12 loa BOSE cao cấp",
+        },
+        {
+          img: "/images/cardetail/noithat/santafe/san-noithat6.jpg",
           caption: "Sạc không dây kép",
         },
         {
-          img: "/images/santafe/interior/grid-3.jpg",
-          caption: "Hàng ghế 2 & 3 rộng rãi",
-        },
-        {
-          img: "/images/santafe/interior/grid-4.jpg",
-          caption: "Cửa gió và cổng sạc sau",
+          img: "/images/cardetail/noithat/santafe/san-noithat7.jpg",
+          caption: "Sưởi & làm mát hàng ghế trước",
         },
       ],
     },
@@ -443,27 +453,27 @@ export const products = {
     performance: {
       header: {
         eyebrow: "Vận hành",
-        title: "Santa Fe. Hiệu suất & tiết kiệm.",
-        body: "Tùy chọn động cơ xăng/Hybrid, cân bằng giữa mạnh mẽ và tiết kiệm.",
+        title: "Hyundai Santa Fe. Mạnh mẽ, bứt tốc đầy phấn khích.",
+        body: "Mỗi lần cầm lái Hyundai Santa Fe hoàn toàn mới sẽ là 1 trải nghiệm đầy cảm xúc bởi chiếc xe được trang bị khối động cơ mạnh mẽ cùng với hộp số tự động/hộp số ly hợp kép 8 cấp. Người lái có thể tùy chọn đa dạng các chế độ lái ECO/NORMAL/SPORT/SMART thích hợp cho việc di chuyển đa địa hình.",
       },
       lead: {
         title: "Mạnh mẽ trên mọi cung đường",
-        image: "/images/santafe/performance/lead.jpg",
+        image: "/images/cardetail/vanhanh/santafe/san-vanhanh1.jpg",
         caption: null,
       },
-      midBlock: {
-        title: "Hệ dẫn động AWD",
-        body: "Tối ưu lực kéo, di chuyển an toàn trên nhiều loại địa hình.",
-        image: "/images/santafe/performance/awd.jpg",
-      },
+      // midBlock: {
+      //   title: "Hệ dẫn động AWD",
+      //   body: "Tối ưu lực kéo, di chuyển an toàn trên nhiều loại địa hình.",
+      //   image: "/images/santafe/performance/awd.jpg",
+      // },
       tailBlock: {
-        title: "Động cơ tùy chọn",
-        body: "Các bản xăng và hybrid đáp ứng nhiều nhu cầu.",
-        hero: "/images/santafe/performance/engine-hero.jpg",
+        title: "",
+        body: "Động cơ Động cơ xăng SmartStream G2.5 Turbo (Calligraphy 2.5T) kèm 4 chế độ địa hình và Hệ dẫn động HTRAC mang lại khả năng vận hành mạnh mẽ, bứt tốc đầy phấn khích.",
+        hero: "",
         thumbs: [
-          "/images/santafe/performance/engine-1.jpg",
-          "/images/santafe/performance/engine-2.jpg",
-          "/images/santafe/performance/engine-3.jpg",
+          "/images/cardetail/vanhanh/santafe/san-vanhanh2.jpg",
+          "/images/cardetail/vanhanh/santafe/san-vanhanh3.jpg",
+          "/images/cardetail/vanhanh/santafe/san-vanhanh4.jpg",
         ],
       },
     },
@@ -472,24 +482,39 @@ export const products = {
     safety: {
       header: {
         eyebrow: "An toàn",
-        title: "SmartSense thế hệ mới",
-        body: "Santa Fe trang bị đầy đủ gói an toàn tiên tiến.",
+        title: "Hyundai Santa Fe. An toàn chủ động thông minh.",
+        body: "Hyundai Sante Fe hoàn toàn mới được trang bị gói công nghệ an toàn chủ động Hyundai SMARTSENSE với nhiều cải tiến vượt trội hơn. Với 5 radar xung quanh xe, người lái có thể an tâm quan sát, chủ động xử lí mọi tình huống và vững vàng bứt phá trong mọi hành trình.",
       },
       lead: {
         title: "Hệ thống an toàn chủ động",
-        image: "/images/santafe/safety/main.jpg",
+        image: "/images/cardetail/antoan/santafe/san-antoan1.jpg",
         caption: null,
       },
       grid4: [
         {
-          img: "/images/santafe/safety/grid-1.jpg",
-          caption: "Cảnh báo điểm mù",
+          img: "/images/cardetail/antoan/santafe/san-antoan2.jpg",
+          caption:
+            "Hệ thống hỗ trợ phòng tránh va chạm phía trước FCA (hỗ trợ cả khi chuyển làn, rẽ)",
         },
-        { img: "/images/santafe/safety/grid-2.jpg", caption: "Hỗ trợ giữ làn" },
-        { img: "/images/santafe/safety/grid-3.jpg", caption: "Camera 360" },
         {
-          img: "/images/santafe/safety/grid-4.jpg",
+          img: "/images/cardetail/antoan/santafe/san-antoan3.jpg",
+          caption: "Hỗ trợ duy trì làn đường LFA",
+        },
+        {
+          img: "/images/cardetail/antoan/santafe/san-antoan4.jpg",
+          caption: "Kiểm soát hành trình thích ứng",
+        },
+        {
+          img: "/images/cardetail/antoan/santafe/san-antoan5.jpg",
+          caption: "Hỗ trợ hiển thị điểm mù trên màn hình BVM",
+        },
+        {
+          img: "/images/cardetail/antoan/santafe/san-antoan6.jpg",
           caption: "Phanh khẩn cấp tự động",
+        },
+        {
+          img: "/images/cardetail/antoan/santafe/san-antoan7.jpg",
+          caption: "Hỗ trợ phòng tránh va chạm khi lùi xe",
         },
       ],
     },
@@ -498,30 +523,38 @@ export const products = {
     comfort: {
       header: {
         eyebrow: "Tiện nghi",
-        title: "Tiện nghi hiện đại",
-        body: "Đem lại trải nghiệm thoải mái cho cả gia đình.",
+        title: "Hyundai Santa Fe. Tiện nghi thông minh và hiện đại.",
+        body: "Cảm nhận sự tiện nghi đẳng cấp trên Hyundai Santa Fe hoàn toàn mới với các tính năng thông minh hỗ trợ tối đa cho người ngồi trên xe. Điểm nhấn là màn hình thông tin cảm ứng liền mạch 12.3 inch cung cấp đầy đủ thông tin một cách tiện ích nhất cùng cần số điện tử sau vô lăng giúp người lái dễ dàng thao tác hơn. Hành trình cũng trở nên thoải mái, đầy cảm xúc hơn với trang bị sạc không dây kép, cụm điều khiển cảm ứng kết hợp nút vật lí, thông gió và sưởi ghế, cùng ghế ngồi có thể điều chỉnh đa hướng thông minh.",
       },
       lead: {
         title: "Khoang lái tiện nghi",
-        image: "/images/santafe/comfort/main.jpg",
+        image: "/images/cardetail/tiennghi/santafe/san-tiennghi1.jpg",
         caption: null,
       },
       grid4: [
         {
-          img: "/images/santafe/comfort/grid-1.jpg",
-          caption: "Cốp điện thông minh",
+          img: "/images/cardetail/tiennghi/santafe/san-tiennghi2.jpg",
+          caption: "Hiển thị thông tin trên kính lái – HUD",
         },
         {
-          img: "/images/santafe/comfort/grid-2.jpg",
-          caption: "Cửa sổ trời toàn cảnh",
+          img: "/images/cardetail/tiennghi/santafe/san-tiennghi3.jpg",
+          caption: "Ghế chỉnh điện hàng 1 và hàng 2",
         },
         {
-          img: "/images/santafe/comfort/grid-3.jpg",
-          caption: "Hệ thống loa cao cấp",
+          img: "/images/cardetail/tiennghi/santafe/san-tiennghi4.jpg",
+          caption: "Rèm cửa hàng ghế 2",
         },
         {
-          img: "/images/santafe/comfort/grid-4.jpg",
-          caption: "Ghế chỉnh điện",
+          img: "/images/cardetail/tiennghi/santafe/san-tiennghi5.jpg",
+          caption: "Ngăn khử khuẩn UV-C",
+        },
+        {
+          img: "/images/cardetail/tiennghi/santafe/san-tiennghi6.jpg",
+          caption: "Kết nối Apple Carplay & Android Auto không dây",
+        },
+        {
+          img: "/images/cardetail/tiennghi/santafe/san-tiennghi7.jpg",
+          caption: "Chức năng sưởi hàng ghế 2",
         },
       ],
     },
@@ -534,8 +567,11 @@ export const products = {
         body: null,
       },
       lead: [
-        { image: "/images/santafe/specs/spec-1.jpg", caption: null },
-        { image: "/images/santafe/specs/spec-2.jpg", caption: null },
+        {
+          image: "/images/cardetail/thongso/santafe/san-thongso1.jpg",
+          caption: null,
+        },
+        { image: "/images/cardetail/thongso/santafe/san-thongso2.jpg", caption: null },
       ],
     },
   },

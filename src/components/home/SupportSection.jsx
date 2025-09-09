@@ -17,7 +17,7 @@ export default function SupportSection() {
 
         {/* Phone Button */}
         <a
-          href="tel:0902200700"
+          href="tel:0981543342"
           className="flex items-center gap-2 bg-white text-[#002c5f] px-4 py-2 rounded-md shadow hover:bg-gray-100 transition"
         >
           <Phone size={18} />

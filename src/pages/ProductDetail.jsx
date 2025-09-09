@@ -315,53 +315,67 @@ export default function ProductDetail() {
   };
 
   return (
-    <div className="space-y-10">
-      <div className="max-w-7xl mx-auto px-4 py-6">
-        <Breadcrumb />
-      </div>
+    <>
+      <div className="space-y-10">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <Breadcrumb />
+        </div>
 
-      {/* Hero banner trang chi tiết (cover chung) */}
-      <div className="w-full mt-[-50px]">
-        <img
-          src={product.cover}
-          alt={product.name}
-          className="w-full  
+        {/* Hero banner trang chi tiết (cover chung) */}
+        <div className="w-full mt-[-50px]">
+          <img
+            src={product.cover}
+            alt={product.name}
+            className="w-full  
       h-[220px]      /* mobile nhỏ gọn */
       sm:h-[300px]   /* tablet nhỏ */
       md:h-[400px]   /* desktop vừa */
       lg:h-[500px]   /* màn to */
       object-cover"
-        />
-      </div>
-      
-
-      {/* Tên + Tabs */}
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <div className="text-center md:text-left">
-          <h1 className="text-3xl font-bold">{product.name}</h1>
-          <p className="text-xl text-blue-700 font-semibold">{product.price}</p>
+          />
         </div>
 
-        <div className="w-full md:w-auto border-b md:border-b-0 border-gray-200 flex overflow-x-auto">
-          {TAB_ORDER.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`flex-1 md:flex-none px-6 py-3 text-sm font-medium border-b-2 transition-colors
+        {/* Tên + Tabs */}
+        <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="text-center md:text-left">
+            <h1 className="text-3xl font-bold">{product.name}</h1>
+            <p className="text-xl text-blue-900 font-semibold">
+              {product.price}
+            </p>
+          </div>
+
+          <div className="w-full md:w-auto border-b md:border-b-0 border-gray-200 flex items-center overflow-x-auto">
+            {TAB_ORDER.map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`flex-1 md:flex-none px-6 py-3 text-sm font-medium border-b-2 transition-colors
                 ${
                   activeTab === tab
                     ? "border-black text-black font-semibold"
                     : "border-transparent text-gray-500 hover:text-black"
                 }`}
-            >
-              {tab}
+              >
+                {tab}
+              </button>
+            ))}
+            {/* Order button: show inline on desktop, fixed at bottom on mobile */}
+            <button className="hidden md:inline-flex flex-none px-6 py-3 text-sm font-semibold bg-blue-900 text-white rounded whitespace-nowrap ml-4 md:ml-auto hover:bg-blue-700">
+              Đặt hàng
             </button>
-          ))}
+          </div>
+        </div>
+
+        {/* Nội dung tab */}
+        <div className="mt-8 transition-opacity duration-300 pb-16 md:pb-0">
+          {renderTab()}
         </div>
       </div>
 
-      {/* Nội dung tab */}
-      <div className="mt-8 transition-opacity duration-300">{renderTab()}</div>
-    </div>
+      {/* Fixed order button for mobile */}
+      <button className="md:hidden fixed bottom-0 left-0 w-full px-6 py-4 text-base font-semibold bg-blue-900 text-white hover:bg-blue-700">
+        Đặt hàng
+      </button>
+    </>
   );
 }
