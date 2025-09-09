@@ -10,60 +10,70 @@ export default function ProductList() {
       img: "images/product/tucson.png",
       price: "825 triệu",
       slug: "tucson",
+      category: "SUV",
     },
     {
       name: "Santa Fe",
       img: "images/product/santafe.png",
       price: "1,055 tỷ",
-      slug: "santa-fe",
+      slug: "santafe",
+      category: "SUV",
     },
     {
       name: "IONIQ 5",
       img: "images/product/ioniq5.png",
       price: "1,3 tỷ",
-      slug: "ioniq-5",
+      slug: "ioniq5",
+      category: "Electric",
     },
     {
       name: "All new Accent",
       img: "images/product/accent.png",
       price: "455 triệu",
       slug: "accent",
+      category: "Sedan",
     },
     {
       name: "Stargazer X",
       img: "images/product/stargazer.png",
       price: "620 triệu",
-      slug: "stargazer-x",
+      slug: "stargazer",
+      category: "MPV",
     },
     {
       name: "Palisade",
       img: "images/product/palisade.png",
       price: "1,589 tỷ",
       slug: "palisade",
+      category: "SUV",
     },
     {
       name: "Custin",
       img: "images/product/custin.png",
       price: "1,19 tỷ",
       slug: "custin",
+      category: "MPV",
     },
     {
       name: "Creta",
       img: "images/product/creta.png",
       price: "650 triệu",
       slug: "creta",
+      category: "SUV",
     },
     {
       name: "Elentra",
       img: "images/product/elentra.png",
       price: "590 triệu",
       slug: "elentra",
+      category: "Sedan",
     },
     {
       name: "i10",
       img: "images/product/i10.png",
       price: "360 triệu",
       slug: "i10",
+      category: "Sedan",
     },
   ];
 
@@ -73,13 +83,13 @@ export default function ProductList() {
   return (
     <section className="py-10 bg-white mt-3">
       <h2 className="text-4xl text-center font-bold text-gray-600 mb-10">
-        CÁC DÒNG XE Ô TÔ HUYNDAI 
+        CÁC DÒNG XE Ô TÔ HUYNDAI
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
         {visibleProducts.map((product, idx) => (
           <Link
             key={idx}
-            to={`/san-pham/${product.category}/${product.slug}`} // link qua detail
+            to={`/san-pham/${product.category.toLowerCase()}/${product.slug}`} // link qua detail
             className="text-center group"
           >
             <div className="w-full aspect-square flex items-center justify-center rounded-lg">
