@@ -654,21 +654,6 @@ export const products = {
           caption: "Cụm đèn hậu LED thiết kế “Parametric Pixel”",
         },
       ],
-      // midBlock: {
-      //   title: "Bánh xe thiết kế mới",
-      //   body: "Tối ưu tính khí động học và thẩm mỹ.",
-      //   image: "/images/ioniq/exterior/wheel.jpg",
-      // },
-      // tailBlock: {
-      //   title: "Đuôi xe chữ H",
-      //   body: "Cụm đèn hậu chữ H đồng nhất với đầu xe.",
-      //   hero: "/images/ioniq/exterior/rear-hero.jpg",
-      //   thumbs: [
-      //     "/images/ioniq/exterior/rear-1.jpg",
-      //     "/images/ioniq/exterior/rear-2.jpg",
-      //     "/images/ioniq/exterior/rear-3.jpg",
-      //   ],
-      // },
     },
 
     // ===== NỘI THẤT =====
@@ -827,7 +812,252 @@ export const products = {
         title: "Bảng thông số kỹ thuật IONIQ 5.",
         body: null,
       },
-      lead: [{ image: "/images/cardetail/thongso/ioniq/thong-so.jpg", caption: null }],
+      lead: [
+        {
+          image: "/images/cardetail/thongso/ioniq/thong-so.jpg",
+          caption: null,
+        },
+      ],
+    },
+  },
+  accent: {
+    name: "ACCENT",
+    price: "Giá từ 439 triệu VNĐ",
+    cover: "/images/slides/accent-hero.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/accent/accent-highlight1.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "jcwcQlpDph4",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "ALL NEW ACCENT",
+        body: "Hyundai Accent hoàn toàn mới với ngôn ngữ thiết kế thể thao gợi cảm – Sensuous sportiness đầy táo bạo, mạnh mẽ cùng nhiều trang bị hiện đại giúp cho việc trải nghiệm chiếc xe vươn lên tầm cao mới.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Accent Mới. Mạnh mẽ vươn tầm.",
+        body: "Hyundai Accent hoàn toàn mới với ngôn ngữ thiết kế thể thao gợi cảm – Sensuous sportiness, mạnh mẽ 16’’ thể thao cùng nhiều trang bị hiện đại giúp cho việc trải nghiệm chiếc xe vươn lên tầm cao mới.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/accent/accent-ngoaithat1.jpg",
+        caption: "Ngoại Thất Hyundai Accent.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat2.jpg",
+          caption: "Dải đèn định vị tối giản thời thượng",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat3.jpg",
+          caption: "Đèn chiếu sáng LED hiện đại",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat4.jpg",
+          caption: "Mặt Calang cách điệu khác biệt",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat5.jpg",
+          caption: "Tay nắm cửa mạ Crom cùng keyless entry",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat6.jpg",
+          caption:
+            "Gương chiếu hậu chỉnh điện, gập điện, có sấy tích hợp đèn báo rẽ",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat7.jpg",
+          caption: "Vành hợp kim thể thao kích thước 16 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat8.jpg",
+          caption: "Cụm đèn hậu LED hiện đại",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat9.jpg",
+          caption: "Cản sau tạo hình hoa văn kim cương",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/accent/accent-ngoaithat10.jpg",
+          caption: "Ăng ten vây cá sơn đen",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Accent Mới. Trẻ trung & hiện đại.",
+        body: "Bước vào Accent hoàn toàn mới và trải nghiệm sự hiện đại, tiện nghi. Đường nét, kết cấu kết hợp màu sắc mang đến cảm giác đầy hứng thú.",
+      },
+      lead: {
+        title: "Khoang lái công nghệ",
+        image: "/images/cardetail/noithat/accent/accent-noithat1.jpg",
+        caption: "Nội Thất Hyundai Accent Mới",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/accent/accent-noithat2.jpg",
+          caption: "Điều hòa tự động 1 vùng",
+        },
+        {
+          img: "/images/cardetail/noithat/accent/accent-noithat3.jpg",
+          caption: "Làm mát hàng ghế trước",
+        },
+        {
+          img: "/images/cardetail/noithat/accent/accent-noithat4.jpg",
+          caption: "Màn hình thông tin kỹ thuật số 10.25 inch",
+        },
+        {
+          img: "/images/cardetail/noithat/accent/accent-noithat5.jpg",
+          caption: "Cửa gió hàng ghế sau tích hợp cổng sạc Type C",
+        },
+        {
+          img: "/images/cardetail/noithat/accent/accent-noithat6.jpg",
+          caption: "Sạc không dây",
+        },
+        {
+          img: "/images/cardetail/noithat/accent/accent-noithat7.jpg",
+          caption: "Lẫy chuyển số sau vô lăng",
+        },
+        // {
+        //   img: "/images/ioniq/interior/grid-4.jpg",
+        //   caption: "Cửa gió và cổng sạc sau",
+        // },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai Accent. Vận hành mạnh mẽ đáng tin cậy.",
+        body: "Hyundai All new Accent được trang bị động cơ Smartstream 1.5L cung cấp công suất cực đại lên tới 115/6,300 (PS/rpm) và mô-men xoắn cực đại 144/4,500 (Nm/rpm) giúp xe tăng tốc tốt, mang lại sự tự tin khi di chuyển tích hợp các chế độ lái cho phép bạn chọn phong cách lái xe phù hợp nhất cho mình.",
+      },
+      lead: {
+        title: "Mạnh mẽ trên mọi cung đường",
+        image: "/images/cardetail/vanhanh/accent/accent-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: "Động cơ SmartStream G1.5",
+        body: "Công suất cực đại đạt 115ps tại 6,300 vòng/phút Momen xoắn cực đại đat 144Nm tại 4,500 vòng/phút. Hộp số tự động 6 cấp (IVT) giúp vận hành êm ái, tiết kiệm nhiên liệu.",
+        image: "/images/cardetail/vanhanh/accent/accent-vanhanh2.jpg",
+      },
+      tailBlock: {
+        title: "3 Chế độ vận hành khác biệt",
+        body: "Hyundai All new Accent có ba chế độ lái. Normal cho việc lái xe hàng ngày, Eco tiết kiệm nhiên liệu và Sport để thực hiện những cú tăng tốc thể thao",
+        hero: "/images/cardetail/vanhanh/accent/accent-vanhanh3.jpg",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai SmartSense",
+        body: "An toàn và vui vẻ hơn với tính năng ga tự động thích ứng Smart Cruise Control",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan1.jpg",
+          caption: "Hệ thống hỗ trợ phòng tránh va chạm phía trước FCA",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan2.jpg",
+          caption: "Hệ thống hỗ trợ giữ và duy trì làn đường LKA/LFA",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan3.jpg",
+          caption: "Hệ thống hỗ trợ phòng tránh va chạm điểm mù BCA",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan4.jpg",
+          caption: "Hệ thống hỗ trợ phòng tránh va chạm khi lùi RCCA",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan5.jpg",
+          caption: "Đèn pha tự động thích ứng HBA",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan6.jpg",
+          caption: "Hệ thống phòng tránh mở cửa an toàn SEW.",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan7.jpg",
+          caption: "Camera hỗ trợ đỗ xe",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan8.jpg",
+          caption: "Cảm biến áp suất lốp",
+        },
+        {
+          img: "/images/cardetail/antoan/accent/accent-antoan9.jpg",
+          caption: "Hệ thống an toàn 6 túi khí",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai Accent Mới. Tiện nghi cao cấp hàng đầu phân khúc.",
+        body: null,
+      },
+      lead: {
+        title: null,
+        image: "/images/cardetail/tiennghi/accent/accent-tiennghi1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/accent/accent-tiennghi2.jpg",
+          caption: "Tựa để tay tích hợp giá để cốc",
+        },
+        {
+          img: "/images/cardetail/tiennghi/accent/accent-tiennghi3.jpg",
+          caption:
+            "Màn hình giải trí 8 inch tích hợp Apple Carplay/Android Auto không dây",
+        },
+        {
+          img: "/images/cardetail/tiennghi/accent/accent-tiennghi4.jpg",
+          caption: "Gập ghế 6:4 hàng ghế sau",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Accent.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/accent/accent-thongso1.jpg",
+          caption: null,
+        },
+        {
+          image: "/images/cardetail/thongso/accent/accent-thongso2.jpg",
+          caption: null,
+        },
+      ],
     },
   },
 };
