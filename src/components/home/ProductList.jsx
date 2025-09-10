@@ -101,7 +101,7 @@ export default function ProductList() {
             </div>
 
             {/* Tên xe */}
-            <p className="mt-[-50px] text-lg font-semibold text-[#3B241A] font-[Poppins] group-hover:text-blue-600 transition">
+            <p className="mt-[-50px] text-lg font-semibold text-[#3B241A] font-['Be_Vietnam_Pro'] group-hover:text-blue-600 transition">
               {product.name}
             </p>
 

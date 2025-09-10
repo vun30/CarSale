@@ -571,8 +571,263 @@ export const products = {
           image: "/images/cardetail/thongso/santafe/san-thongso1.jpg",
           caption: null,
         },
-        { image: "/images/cardetail/thongso/santafe/san-thongso2.jpg", caption: null },
+        {
+          image: "/images/cardetail/thongso/santafe/san-thongso2.jpg",
+          caption: null,
+        },
       ],
+    },
+  },
+
+  ioniq5: {
+    name: "IONIQ 5",
+    price: "Giá từ 1.3 tỷ VNĐ",
+    cover: "/images/cardetail/highlights/ioniq/ioniq-highlight1.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/ioniq/ioniq-highlight2.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "na_H4u0J4nc",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "IONIQ 5 - Xe thế giới của năm và nhiều hơn thế nữa",
+        body: "IONIQ 5 được đón nhận trên toàn cầu với thiết kế độc đáo, công nghệ và trải nghiệm khác biệt của thế hệ xe EV mới",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [
+        {
+          img: "/images/cardetail/highlights/ioniq/ioniq-highlight3.jpg",
+          caption:
+            "Công nghệ V2L cho phép IONIQ 5 hoạt động như một nguồn cấp điện lên đến 3,6 kW cho các thiết bị điện tử, tăng đáng kể sự tiện lợi và thoải mái cho bạn khi di chuyển và trải nghiệm.",
+        },
+        {
+          img: "/images/cardetail/highlights/ioniq/ioniq-highlight4.jpg",
+          caption:
+            "Các nhà thiết kế đã giải quyết những lo ngại liên quan đến tác động xấu môi trường thông qua việc IONIQ 5 sử dụng các vật liệu có nguồn gốc bền vững và thân thiện với môi trường.",
+        },
+      ],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title:
+          "Hyundai IONIQ 5. Vẻ đẹp của ngôn ngữ thiết kế “Parametric Pixel”.",
+        body: "Huyndai IONIQ 5 với phong cách thiết kế “Parametric Pixel” trên IONIQ 5 kết hợp các sắc thái pixel và kỹ thuật số để tạo ra tính thẩm mỹ độc đáo và vượt thời gian.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/ioniq/ioniq-ngoaithe1.jpg",
+        caption: "Ngoại Thất Hyundai IONIQ 5.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/ioniq/ioniq-ngoaithe2.jpg",
+          caption: "Đèn chiếu sáng thiết kế “Parametric Pixel”",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/ioniq/ioniq-ngoaithe3.jpg",
+          caption: "Mui xe dạng vỏ sò",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/ioniq/ioniq-ngoaithe4.jpg",
+          caption: "Cổng sạc ẩn",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/ioniq/ioniq-ngoaithe5.jpg",
+          caption: "Tay nắm cửa dạng ẩn",
+        },
+      ],
+      twoCards: [
+        {
+          img: "/images/cardetail/ngoaithat/ioniq/ioniq-ngoaithe6.jpg",
+          caption: "Vành xe 20 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/ioniq/ioniq-ngoaithe7.jpg",
+          caption: "Cụm đèn hậu LED thiết kế “Parametric Pixel”",
+        },
+      ],
+      // midBlock: {
+      //   title: "Bánh xe thiết kế mới",
+      //   body: "Tối ưu tính khí động học và thẩm mỹ.",
+      //   image: "/images/ioniq/exterior/wheel.jpg",
+      // },
+      // tailBlock: {
+      //   title: "Đuôi xe chữ H",
+      //   body: "Cụm đèn hậu chữ H đồng nhất với đầu xe.",
+      //   hero: "/images/ioniq/exterior/rear-hero.jpg",
+      //   thumbs: [
+      //     "/images/ioniq/exterior/rear-1.jpg",
+      //     "/images/ioniq/exterior/rear-2.jpg",
+      //     "/images/ioniq/exterior/rear-3.jpg",
+      //   ],
+      // },
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Nội thất rộng rãi và có thể tùy chỉnh",
+        body: "Nền tảng khung gầm mới E-GMP (Electric-Global Modular Platform) giúp tối đa hóa không gian nội thất. Nó không chỉ là một phương tiện giao thông, mà nó còn thay đổi lối sống của bạn. Thân thiện với thiên nhiên cho cuộc sống bền vững. Cabin được xây dựng hoàn toàn bằng vật liệu thân thiện với môi trường để thúc đẩy cuộc sống bền vững. Đây là những bộ phận độc đáo chỉ có trên IONIQ 5.",
+      },
+      lead: {
+        title: "Khoang lái công nghệ",
+        image: "/images/cardetail/noithat/ioniq/ioniq-noithat1.jpg",
+        caption: "Màn hình cong cỡ lớn, cần số điện tử.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/ioniq/ioniq-noithat2.jpg",
+          caption:
+            "Các vật liệu từ lớp lót và vải thảm được tạo nên từ các thành phần sinh học chiết xuất từ mía và ngô. Ghế ngồi và tay vịn cửa cũng sử dụng vải làm từ chai PET tái chế.",
+        },
+        {
+          img: "/images/cardetail/noithat/ioniq/ioniq-noithat3.jpg",
+          caption:
+            "Các thành phần da ghế được nhuộm bằng dầu hạt lanh, được xử lý hoàn toàn thân thiện với môi trường.",
+        },
+        {
+          img: "/images/cardetail/noithat/ioniq/ioniq-noithat4.jpg",
+          caption:
+            "Tận hưởng tiện nghi cao cấp vơi ghế thư giãn cho người lái có thể ngả hoàn toàn ở phía trước. Ghế ngả theo góc tối ưu, mang lại cảm giác không trọng lượng cho người ngồi.",
+        },
+        // {
+        //   img: "/images/ioniq/interior/grid-4.jpg",
+        //   caption: "Cửa gió và cổng sạc sau",
+        // },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "IONIQ 5 – Hiệu suất mạnh mẽ",
+        body: "Tận hưởng trải nghiệm lái xe tuyệt vời với IONIQ 5 được trang bị đầy đủ công nghệ thông minh tiên tiến.",
+      },
+      lead: {
+        title: "Mạnh mẽ trên mọi cung đường",
+        image: "/images/cardetail/vanhanh/ioniq/ioniq-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: "Nền tảng E-GMP",
+        body: "Nền tảng khung gầm độc quyền cho thế hệ EV hoàn toàn mới. E-GMP mang đến thiết kế sáng tạo, cho phép sạc nhanh hơn, tăng phạm vi lái xe và nhiều không gian nội thất hơn.",
+        image: "/images/cardetail/vanhanh/ioniq/ioniq-vanhanh4.jpg",
+      },
+      tailBlock: {
+        title: "Điều khiển linh hoạt",
+        body: "Nút bấm chế độ lái và cần số điện tử giúp tối ưu không gian bảng điều khiển trung tâm, mang lại cảm giác rộng rãi và thoải mái hơn cho người lái.",
+        hero: "/images/cardetail/vanhanh/ioniq/ioniq-vanhanh5.jpg",
+        thumbs: [
+          "/images/cardetail/vanhanh/ioniq/ioniq-vanhanh2.jpg",
+          "/images/cardetail/vanhanh/ioniq/ioniq-vanhanh3.jpg",
+          "/images/cardetail/vanhanh/ioniq/ioniq-vanhanh6.jpg",
+        ],
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai SmartSense",
+        body: "An toàn và vui vẻ hơn với tính năng ga tự động thích ứng Smart Cruise Control",
+      },
+      lead: {
+        title: "Hệ thống an toàn chủ động",
+        image: "/images/cardetail/antoan/ioniq/ioniq-antoan1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/ioniq/ioniq-antoan2.jpg",
+          caption:
+            "Hỗ trợ phòng tránh tai nạn khi rời khỏi xe SEA: Cảm biến sẽ tự động khóa cửa sau nếu phát hiện có vật thể di chuyển tiếp cận từ phía sau khi cửa sắp mở.",
+        },
+        {
+          img: "/images/cardetail/antoan/ioniq/ioniq-antoan3.jpg",
+          caption:
+            "Hỗ trợ giữ và duy trì làn đương (LKA & LFA): Sử dụng camera phía trước để theo dõi vạch kẻ đường. Trong trường hợp chệch làn đường ngoài ý muốn, hệ thống sẽ cảnh báo bạn và có thể hỗ trợ đánh lái để đưa xe đi lại đúng làn đường",
+        },
+        {
+          img: "/images/cardetail/antoan/ioniq/ioniq-antoan4.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm phía trước FCA: Phân tích dữ liệu từ camera và radar phía trước. Nếu dự đoán được sắp có va chạm với xe, người đi bộ, xe đạp, hệ thống cánh bảo và phanh tự động sẽ giúp người lái phòng tránh va chạm và tai nạn",
+        },
+        {
+          img: "/images/cardetail/antoan/ioniq/ioniq-antoan6.jpg",
+          caption: "Camera 360",
+        },
+        {
+          img: "/images/cardetail/antoan/ioniq/ioniq-antoan7.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm khi lùi xe: Khi lùi xe, nếu tiềm ẩn nguy hiểm va chạm phía hông xe từ bên trái hoặc bên phải, hệ thống sẽ đưa ra cảnh báo. Nếu sau tín hiệu cảnh báo, nguy hiểm gia tăng, hệ thống sẽ hỗ trợ phanh.",
+        },
+        {
+          img: "/images/cardetail/antoan/ioniq/ioniq-antoan5.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm điểm mù BCA: Khi có tín hiệu chuyển làn, nếu tiềm ẩn nguy hiểm va chạm phía hông xe, hệ thống sẽ đưa ra cảnh báo. Nếu sau tín hiệu cảnh báo, nguy hiểm gia tăng, hệ thống sẽ kiểm soát để phòng tránh va chạm.",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Tính năng & công nghệ tiên tiến.",
+        body: "Tận hưởng nhiều tính năng cao cấp của IONIQ 5 với công nghệ cao mới nhất mang đến sự thoải mái giúp nâng niu hành khách từng điểm chạm.",
+      },
+      lead: {
+        title: "Khoang lái tiện nghi",
+        image: "/images/cardetail/tiennghi/ioniq/ioniq-tiennghi1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/ioniq/ioniq-tiennghi2.jpg",
+          caption: "Cụm Console có thể trượt",
+        },
+        {
+          img: "/images/cardetail/tiennghi/ioniq/ioniq-tiennghi3.jpg",
+          caption: "Hệ thống Loa Bose Cao cấp",
+        },
+        {
+          img: "/images/cardetail/tiennghi/ioniq/ioniq-tiennghi4.jpg",
+          caption: "Cửa sổ trời toàn cảnh",
+        },
+        {
+          img: "/images/cardetail/tiennghi/ioniq/ioniq-tiennghi5.jpg",
+          caption: "Điều hòa tự động 2 vùng độc lập",
+        },
+        {
+          img: "/images/cardetail/tiennghi/ioniq/ioniq-tiennghi6.jpg",
+          caption: "Điều hòa tự động 2 vùng độc lập",
+        },
+        {
+          img: "/images/cardetail/tiennghi/ioniq/ioniq-tiennghi7.jpg",
+          caption: "Cụm màn hình đôi kích thước 12.3″",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật IONIQ 5.",
+        body: null,
+      },
+      lead: [{ image: "/images/cardetail/thongso/ioniq/thong-so.jpg", caption: null }],
     },
   },
 };
