@@ -3,7 +3,7 @@ export default function ContactForm() {
   return (
     <div
       className="relative bg-cover bg-center py-12"
-      style={{ backgroundImage: "url('src/assets/pali.jpg')" }} // đổi link ảnh nền
+      style={{ backgroundImage: "url('/pic/pali.jpg')" }} // đổi link ảnh nền
     >
       {/* Overlay tối nhẹ */}
       <div className="absolute inset-0 bg-black/40" />
