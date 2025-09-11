@@ -7,6 +7,9 @@ import Footer from "./components/layout/Footer"; // Assuming you have a Footer c
 import ContactForm from "./components/home/ContactForm";
 import FloatingContact from "./components/common/FloatingContact";
 import ContactModal from "./components/common/ContactModal";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+
 
 export default function App() {
   return (
@@ -18,6 +21,8 @@ export default function App() {
           <Route path="/san-pham" element={<Products />} />
           <Route path="/san-pham/:category" element={<Products />} />
           <Route path="/san-pham/:category/:slug" element={<ProductDetail />} />
+          <Route path="/gioi-thieu" element={<About />} />
+          <Route path="/lien-he" element={<Contact />} />
         </Routes>
       </main>
       <ContactModal />

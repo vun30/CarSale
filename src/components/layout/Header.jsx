@@ -37,8 +37,12 @@ export default function Header() {
               to={
                 item === "Trang chủ"
                   ? "/"
+                  : item === "Giới thiệu"
+                  ? "/gioi-thieu"
                   : item === "Sản phẩm"
                   ? "/san-pham"
+                  : item === "Liên hệ"
+                  ? "/lien-he"
                   : "#"
               }
               className="hover:text-gray-900 transition-colors"
@@ -84,8 +88,12 @@ export default function Header() {
                 to={
                   item === "Trang chủ"
                     ? "/"
+                    : item === "Giới thiệu"
+                    ? "/gioi-thieu"
                     : item === "Sản phẩm"
                     ? "/san-pham"
+                    : item === "Liên hệ"
+                    ? "/lien-he"
                     : "#"
                 }
                 className="hover:text-gray-900 transition-colors"
