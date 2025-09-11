@@ -26,20 +26,17 @@ export default function FloatingContact() {
         </a>
 
         {/* Đăng ký tư vấn */}
-        <a
-          href="/dang-ky-tu-van"
-          className="
-            bg-red-600 text-white font-semibold 
-            px-4 py-2.5
-            rounded-r-full shadow-md 
-            flex items-center justify-center gap-2 
+        <button
+          onClick={() => window.dispatchEvent(new Event("open-contact-modal"))}
+          className="bg-red-600 text-white font-semibold px-4 py-2.5 rounded-r-full shadow-md
+            flex items-center justify-center gap-2
             hover:bg-red-700 transition
             whitespace-nowrap text-base
           "
         >
           <ClipboardEdit size={20} strokeWidth={2.2} />
           ĐĂNG KÍ TƯ VẤN
-        </a>
+        </button>
       </div>
 
       {/* Bên phải: Zalo */}

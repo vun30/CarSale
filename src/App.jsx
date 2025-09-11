@@ -6,6 +6,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Footer from "./components/layout/Footer"; // Assuming you have a Footer component
 import ContactForm from "./components/home/ContactForm";
 import FloatingContact from "./components/common/FloatingContact";
+import ContactModal from "./components/common/ContactModal";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/san-pham/:category/:slug" element={<ProductDetail />} />
         </Routes>
       </main>
+      <ContactModal />
       <ContactForm />
       <FloatingContact />
       <Footer />
