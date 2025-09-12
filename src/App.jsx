@@ -9,7 +9,8 @@ import FloatingContact from "./components/common/FloatingContact";
 import ContactModal from "./components/common/ContactModal";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-
+import News from "./pages/News";
+import NewsDetail from "./pages/NewsDetail";
 
 export default function App() {
   return (
@@ -23,6 +24,8 @@ export default function App() {
           <Route path="/san-pham/:category/:slug" element={<ProductDetail />} />
           <Route path="/gioi-thieu" element={<About />} />
           <Route path="/lien-he" element={<Contact />} />
+          <Route path="/tin-tuc" element={<News />} />
+          <Route path="/tin-tuc/:slug" element={<NewsDetail />} />
         </Routes>
       </main>
       <ContactModal />

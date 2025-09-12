@@ -4,45 +4,12 @@ import { Navigation } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
+import newsData from "../../data/newsData";
 import "../../styles/NewsSection.css"; // Ensure you have this CSS file for custom styles
 
 export default function NewsSection() {
-  const newsList = [
-    {
-      title:
-        "Hyundai Grand i10 2024 chốt lịch ra mắt thị trường Việt Nam vào ngày 15/6",
-      desc: "Một số nguồn tin cho biết, Hyundai Grand i10 2024 được nâng cấp về mặt trang bị nhưng giá bán...",
-      img: "src/assets/accent-hero.jpg",
-    },
-    {
-      title:
-        'Hyundai bán được 4.914 xe trong tháng 5/2024: Hyundai Accent vẫn "cân team"',
-      desc: "Tập đoàn Thành Công (TC GROUP) thông báo kết quả bán hàng tháng xe ô tô Hyundai tháng 5/2024...",
-      img: "/images/news2.jpg",
-    },
-    {
-      title:
-        "Hyundai Kona Electric 2024 mở bán tại Đông Nam Á, giá dự kiến khoảng 780 triệu VNĐ",
-      desc: "Sau một thời gian được giới thiệu tại Triển lãm Ô tô Quốc tế Indonesia (IIMS) 2024, mới đây, Hyundai...",
-      img: "/images/news3.jpg",
-    },
-    {
-      title: "Hyundai Grandeur 2025 trình làng: Bổ sung nhiều tiện ích đắt giá",
-      desc: "Mới đây, Hyundai đã chính thức giới thiệu phiên bản nâng cấp giữa vòng đời của mẫu sedan đầu bảng...",
-      img: "/images/news4.jpg",
-    },
-    {
-      title: "Hyundai Grandeur 2025 trình làng: Bổ sung nhiều tiện ích đắt giá",
-      desc: "Mới đây, Hyundai đã chính thức giới thiệu phiên bản nâng cấp giữa vòng đời của mẫu sedan đầu bảng...",
-      img: "/images/news4.jpg",
-    },
-    {
-      title: "Hyundai Grandeur 2025 trình làng: Bổ sung nhiều tiện ích đắt giá",
-      desc: "Mới đây, Hyundai đã chính thức giới thiệu phiên bản nâng cấp giữa vòng đời của mẫu sedan đầu bảng...",
-      img: "/images/news4.jpg",
-    },
-  ];
-
+  const newsList = newsData.slice(0, 6);
   return (
     <section className="bg-[#f0faff] py-10 relative">
       <div className="max-w-7xl mx-auto px-4">
@@ -67,9 +34,12 @@ export default function NewsSection() {
           >
             {newsList.map((news, index) => (
               <SwiperSlide key={index}>
-                <div className="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-64">
+                <Link
+                  to={`/tin-tuc/${news.slug}`}
+                  className="block relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-64"
+                >
                   <img
-                    src={news.img}
+                    src={news.image}
                     alt={news.title}
                     className="w-full h-full object-cover"
                   />
@@ -80,9 +50,9 @@ export default function NewsSection() {
                     <h3 className="text-lg font-semibold leading-snug">
                       {news.title}
                     </h3>
-                    <p className="text-sm mt-1">{news.desc}</p>
+                    <p className="text-sm mt-1">{news.excerpt}</p>
                   </div>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
