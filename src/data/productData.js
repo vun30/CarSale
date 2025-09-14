@@ -1060,4 +1060,259 @@ export const products = {
       ],
     },
   },
+  stargazer: {
+    name: "Stargazer",
+    price: "Giá từ 489 triệu VNĐ",
+    cover: "/images/slides/star-hero.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/star/star-highlight1.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "D3l-ggcW3NI",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "Stargazer X",
+        body: "Hyundai STARGAZER X với thiết kế mới táo bạo, mới mẻ, trang bị tiện nghi cùng sức mạnh động cơ và sự an toàn tối đa mang đến sự thoải mái , tiện lợi và an toàn cho mỗi chuyến đi.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Stargazer X. Thiết kế năng động và thể thao.",
+        body: "Hyundai Stargazer X mới được thiết kế thể thao, nam tính và sắc sảo hơn, phù hợp hơn với xu thế hiện nay.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/star/star-ngoaithat1.jpg",
+        caption: "Ngoại Thất Hyundai Stargazer X.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat2.jpg",
+          caption: "Lưới tản nhiệt 3D mạ crôm",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat3.jpg",
+          caption: "Đèn chiếu sáng dạng LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat4.jpg",
+          caption: "Thiết kế thể thao mạnh mẽ",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat5.jpg",
+          caption: "Vành hợp kim 17 inch thể thao",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat6.jpg",
+          caption: "Xi nhan tích hợp trên gương chiếu hậu",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat7.jpg",
+          caption: "Keyless Entry",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat8.jpg",
+          caption: "Đèn phanh trên cao",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/star/star-ngoaithat9.jpg",
+          caption: "Cụm đèn hậu LED hình chữ H",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Stargazer X.",
+        body: "Nội thất Hyundai Stargazer X rộng rãi thoải mái hàng đầu trong phân khúc cùng với vô số tiện nghi được trang bị.",
+      },
+      lead: {
+        title: "Khoang lái công nghệ",
+        image: "/images/cardetail/noithat/star/star-noithat1.jpg",
+        caption: "Nội Thất Hyundai Stargazer X",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/star/star-noithat2.jpg",
+          caption:
+            "Màn hình kích thước 10.25 inch: Màn hình giải trí với tính năng Apple Carplay/ Android Auto không dây duy nhất trong phân khúc hiện tại",
+        },
+        {
+          img: "/images/cardetail/noithat/star/star-noithat3.jpg",
+          caption: "Màn hình thông tin Full LCD",
+        },
+        {
+          img: "/images/cardetail/noithat/star/star-noithat4.jpg",
+          caption: "Sạc không dây",
+        },
+        {
+          img: "/images/cardetail/noithat/star/star-noithat5.jpg",
+          caption: "Phanh tay điện tử",
+        },
+        {
+          img: "/images/cardetail/noithat/star/star-noithat6.jpg",
+          caption: "Ghế da cao cấp với chỉ đỏ thể thao",
+        },
+        {
+          img: "/images/cardetail/noithat/star/star-noithat7.jpg",
+          caption: "Cửa gió điều hòa cho hàng ghế 2 và 3",
+        },
+        {
+          img: "/images/cardetail/noithat/star/star-noithat8.jpg",
+          caption: "Hệ thống 8 loa bose cao cấp",
+        },
+        // {
+        //   img: "/images/ioniq/interior/grid-4.jpg",
+        //   caption: "Cửa gió và cổng sạc sau",
+        // },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai Stargazer X. Hiệu suất vận hành tối ưu.",
+        body: "Hyundai STARGAZER X được trang bị động cơ Smartstream 1.5L và hệ thống truyền động hộp số biến thiên vô cấp thông minh (CVT), mang đến khả năng vận hành bền bỉ, nhạy bén và hiệu quả. Tính năng Chế độ lái cho phép bạn chọn phong cách lái xe phù hợp nhất cho mình.",
+      },
+      lead: {
+        title: "Mạnh mẽ trên mọi cung đường",
+        image: "/images/cardetail/vanhanh/star/star-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: "Động cơ SmartStream G1.5",
+        body: "Công suất cực đại đạt 115ps tại 6,300 vòng/phút Momen xoắn cực đại đat 144Nm tại 4,500 vòng/phút.",
+        image: "/images/cardetail/vanhanh/star/star-vanhanh2.jpg",
+      },
+      tailBlock: {
+        title: "4 chế độ lái",
+        body: "Hyundai STARGAZER X có bốn chế độ lái. Normal cho việc lái xe hàng ngày, Eco tiết kiệm nhiên liệu, Sport để vận hành xe tối đa và Smart để điều chỉnh khoảng thời gian chuyển số tự động dựa trên kiểu lái xe.",
+        hero: "/images/cardetail/vanhanh/star/star-vanhanh3.jpg",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai SmartSense",
+        body: "Hyundai Stargazer X được trang bị gói an toàn Hyundai Smartsense giúp người lái an tâm trên mọi hành trình.",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/star/star-antoan.jpg",
+          caption:
+            "Phòng tránh va chạm điểm mù BCA : Khi có tín hiệu chuyển làn tiềm ẩn nguy cơ va chạm phía hông xe, hệ thống sẽ đưa ra cảnh báo bằng hình ảnh và âm thanh. Nếu sau khi đưa ra tín hiệu cảnh báo , nguy hiểm gia tăng, hệ thống sẽ kiểm soát và phanh lại để phòng tránh va chạm",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan2.jpg",
+          caption:
+            "Phòng tránh va chạm phía trước FCA: Khi tiềm ẩn nguy cơ va chạm với xe phía trước, hệ thống sẽ đưa ra cảnh báo bằng hình ảnh và âm thanh. Nếu sau khi đưa ra tín hiệu cảnh báo , nguy hiểm gia tăng, hệ thống sẽ kiểm soát và phanh lại để phòng tránh va chạm.",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan3.jpg",
+          caption:
+            "Hỗ trợ giữ làn đường LFA : Hệ thống sẽ hỗ trợ tác động vào vô lăng để xe luôn đi chính giữa 2 vạch kẻ đường.",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan4.jpg",
+          caption:
+            "Hỗ trợ phòng tránh lệch làn đường: Hệ thống sử dụng camera để theo dõi việc di chuyển của xe. Khi xe có hiện tượng đi lệch làn đường, hệ thống sẽ đưa ra cảnh báo bằng âm thanh và trong một vài trường hợp hệ thống sẽ can thiệp vào hệ thống vô lăng để tránh xe đi lệch khỏi làn đường",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan5.jpg",
+          caption:
+            "Hệ thống đèn thích ứng AHB: Hệ thống sử dụng camera để nhận biết các nguồn sáng của các xe cùng chiều và đối diện từ đó sẽ tự động điều chính chế độ chiếu sáng (xa/gần) để phòng tránh chói mắt cho người tham gia giao thông.",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan6.jpg",
+          caption:
+            "Hệ thống phòng tránh va chạm phía sau RCCA: Khi có tín hiệu chuyển làn tiềm ẩn nguy cơ va chạm phía sau xe, hệ thống sẽ đưa ra cảnh báo bằng hình ảnh và âm thanh. Nếu sau khi đưa ra tín hiệu cảnh báo , nguy hiểm gia tăng, hệ thống sẽ kiểm soát và phanh lại để phòng tránh va chạm.",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan7.jpg",
+          caption:
+            "Hệ thống cảnh báo va chạm khi rời khỏi xe SEW: Khi rời khỏi xe hệ thống sẽ quét các phương tiện từ phía sau nhờ radar. Nếu tiềm ẩn nguy cơ va chạm, hệ thống sẽ cảnh báo bàng hình ảnh và âm thanh.",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan8.jpg",
+          caption: "Camera hỗ trợ đỗ xe",
+        },
+        {
+          img: "/images/cardetail/antoan/star/star-antoan9.jpg",
+          caption: "Hệ thống an toàn 6 túi khí",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai Stargazer X. Tiện nghi cao cấp.",
+        body: null,
+      },
+      lead: {
+        title: null,
+        image: "/images/cardetail/tiennghi/star/star-tiennghi1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/star/star-tiennghi2.jpg",
+          caption: "Cảm biến áp suất lốp TPMS",
+        },
+        {
+          img: "/images/cardetail/tiennghi/star/star-tiennghi3.jpg",
+          caption: "Sạc không dây",
+        },
+        {
+          img: "/images/cardetail/tiennghi/star/star-tiennghi4.jpg",
+          caption: "Bệ tì tay kích thước lớn",
+        },
+        {
+          img: "/images/cardetail/tiennghi/star/star-tiennghi5.jpg",
+          caption: "Màn hình 10.25 inch cùng Apple Carplay/Android Auto",
+        },
+        {
+          img: "/images/cardetail/tiennghi/star/star-tiennghi6.jpg",
+          caption: "Hệ thống loa bose cao cấp",
+        },
+        {
+          img: "/images/cardetail/tiennghi/star/star-tiennghi7.jpg",
+          caption: "Khởi động bằng nút bấm",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Stargazer X.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/star/star-thongso.jpg",
+          caption: null,
+        },
+        
+      ],
+    },
+  },
 };
