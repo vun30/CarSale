@@ -271,11 +271,24 @@ export default function ProductDetail() {
   const { slug } = useParams();
   const product = products[slug];
   const [activeTab, setActiveTab] = useState("Nổi bật");
+   const [zoomSrc, setZoomSrc] = useState(null);
 
+   const handleImageClick = (e) => {
+     const img = e.target.closest("img");
+     if (img) setZoomSrc(img.src);
+   };
+
+   useEffect(() => {
+     const onKey = (e) => {
+       if (e.key === "Escape") setZoomSrc(null);
+     };
+     if (zoomSrc) document.addEventListener("keydown", onKey);
+     return () => document.removeEventListener("keydown", onKey);
+   }, [zoomSrc]);
   // Auto scroll top khi đổi tab
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [activeTab]);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, [activeTab]);
 
   if (!product) {
     return (
@@ -316,7 +329,7 @@ export default function ProductDetail() {
 
   return (
     <>
-      <div className="space-y-10">
+      <div className="space-y-10" onClick={handleImageClick}>
         <div className="max-w-7xl mx-auto px-4 py-6">
           <Breadcrumb />
         </div>
@@ -376,6 +389,19 @@ export default function ProductDetail() {
       <button className="md:hidden fixed bottom-0 left-0 w-full px-6 py-4 text-base font-semibold bg-blue-900 text-white hover:bg-blue-700">
         Đặt hàng
       </button>
+      {zoomSrc && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+          onClick={() => setZoomSrc(null)}
+        >
+          <img
+            src={zoomSrc}
+            alt="preview"
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </>
   );
 }

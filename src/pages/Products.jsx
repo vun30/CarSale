@@ -65,10 +65,16 @@ export default function Products() {
       image: "/images/product/elentra.png",
     },
     {
-      name: "i10",
+      name: "i10 - Sedan",
       category: "Sedan",
-      slug: "i10",
+      slug: "i10sedan",
       image: "/images/product/i10.png",
+    },
+    {
+      name: "i10 - Hatchback",
+      category: "Sedan",
+      slug: "i10hatback",
+      image: "/images/product/i10-hatchback.png",
     },
   ];
 

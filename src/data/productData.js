@@ -1311,7 +1311,1369 @@ export const products = {
           image: "/images/cardetail/thongso/star/star-thongso.jpg",
           caption: null,
         },
-        
+      ],
+    },
+  },
+  palisade: {
+    name: "Palisade",
+    price: "Giá từ 489 triệu VNĐ",
+    cover: "/images/slides/palisade-hero.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/pali/pali-highlight1.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "w9oanii6XzM",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "PALISADE – Diện mạo mới táo bạo",
+        body: "Hyundai Palisade mới thu hút sự chú ý ngay lập tức ở bất cứ nơi nào bạn đi du lịch. Đó là một diện mạo độc đáo truyền cảm hứng cho việc lái xe tự tin. Sự tự tin của bạn được đặt đúng chỗ: công nghệ tiên tiến cùng các tính năng an toàn giúp bạn và những người thân yêu của bạn an tâm trên mọi cung đường Cabin PALISADE rộng rãi, chỗ ngồi linh hoạt, và các tính năng kết nối tiên tiến khiến nó trở thành một chiếc SUV đầu bảng.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "HYUNDAI PALISADE. VẺ NGOÀI CAO CẤP VÀ SANG TRỌNG.",
+        body: "Hyundai Palisade mới có vẻ ngoài nổi bật. Với đặc điểm thiết kế thanh lịch và sang trọng phản ánh khí chất và sự thành công của bạn. Hyundai Palisade sinh ra với vai trò là chiếc SUV hàng đầu của Hyundai, PALISADE thể hiện tất cả những đặc điểm của một người dẫn đầu. Vừa cơ bắp vừa thanh lịch, nó thể hiện sự hiện diện mạnh mẽ với những phẩm chất cao cấp gây được sự chú ý. Dù bạn đi đâu, PALISADE sẽ đưa bạn đến đó thật phong cách.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/pali/pali-ngoaithat1.jpg",
+        caption: "Ngoại Thất Hyundai Palisade.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight2.jpg",
+          caption: "Lưới tản nhiệt sơn đen bóng",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight3.jpg",
+          caption: "Hệ thống đèn chiều sáng Full LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight4.jpg",
+          caption: "Đèn xi nhan LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight5.jpg",
+          caption: "Vành xe kích thước 20 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight6.jpg",
+          caption: "Đèn chào mừng",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight7.jpg",
+          caption: "Cửa sổ trời đôi cùng giá nóc",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight8.jpg",
+          caption: "Cụm đèn hậu dạng LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/pali/papali-highlight9.jpg",
+          caption: "Cốp điện thông minh",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "HYUNDAI PALISADE. THIẾT KẾ NỘI THẤT CAO CẤP & TRỰC QUAN.",
+        body: "Hyundai Palisade được sở hữu không gian nội thất hiện đại, tinh tế với nhiều vật liệu cao cấp, nhằm mang đến cho chủ nhân không gian thực sự thỏa mái tiện nghi với khả năng điều khiển trực quan. Xe được trang bị vật liệu da kết hợp các chi tiết vật liệu thân thiện môi trường và nhôm định hình, tạo nên sự cao cấp sang trọng, tinh tế",
+      },
+      lead: {
+        title: "Nội Thất Hyundai Palisade",
+        image: "/images/cardetail/noithat/pali/pali-noithat1.jpg",
+        caption: "Nội Thất Hyundai Stargazer X",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/pali/pali-noithat2.jpg",
+          caption: "Hệ thống loa Infinity Cao cấp",
+        },
+        {
+          img: "/images/cardetail/noithat/pali/pali-noithat3.jpg",
+          caption: "Hệ thống loa Infinity Cao cấp",
+        },
+        {
+          img: "/images/cardetail/noithat/pali/pali-noithat4.jpg",
+          caption: "Màn hình giải trí 12.3 inch",
+        },
+
+        // {
+        //   img: "/images/ioniq/interior/grid-4.jpg",
+        //   caption: "Cửa gió và cổng sạc sau",
+        // },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai Palisade. Khả năng vận hành bền bỉ tiết kiệm",
+        body: "Khi bạn đặt chân nhấn ga di chuyển, bạn có thể tin cậy vào PALISADE để cung cấp tất cả sức mạnh bạn cần. Động cơ diesel của PALISADE được kết hợp với hộp số tự động 8 cấp đã được cải tiến có công nghệ giảm ma sát mới giúp chuyển số mượt mà hơn, êm ái hơn và tiết kiệm nhiên liệu tốt hơn cùng hệ thống HTRAC, dẫn động bốn bánh của Hyundai được trang bị các chế độ lái địa hình giúp cải thiện khả năng “off road” trên các địa hình phức tạp",
+      },
+      lead: {
+        title: "Mạnh mẽ trên mọi cung đường",
+        image: "/images/cardetail/vanhanh/pali/pali-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: "Núm xoay điều chỉnh chế độ lái & độ địa hình",
+        body: null,
+        image: "/images/cardetail/vanhanh/pali/pali1.png",
+      },
+      tailBlock: {
+        title: "Hệ dẫn động toàn thời gian HTRAC và hộp số tự dộng 8 cấp",
+        body: null,
+        hero: "/images/cardetail/vanhanh/pali/pali2.png",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai SmartSense",
+        body: "Với việc trang bị Hyundai SmartSense, Palisade trở thành chiếc xe an toàn bậc nhất với những công nghệ hỗ trợ hiện đại nhất",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/pali/pali-antoan1.jpg",
+          caption:
+            "Hỗ trợ giữ làn đường:Hệ thống sử dụng camera để theo dõi vạch kẻ đường. Từ đó tính năng hỗ trợ điều chỉnh tay lái để đảm báo xe luôn đi trong làn",
+        },
+        {
+          img: "/images/cardetail/antoan/pali/pali-antoan2.jpg",
+          caption:
+            "Hỗ trợ giữ làn đường: Hệ thống sử dụng camera để theo dõi vạch kẻ đường. Từ đó tính năng hỗ trợ điều chỉnh tay lái để đảm báo xe luôn đi trong làn",
+        },
+        {
+          img: "/images/cardetail/antoan/pali/pali-antoan3.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm điểm mù: Khi có tín hiệu chuyển làn, nếu tiềm ẩn nguy hiểm va chạm, hệ thống sẽ đưa ra tín hiệu cảnh báo. Nếu sau tín hiệu cảnh báo, nguy hiểm gia tăng, hệ thông sẽ kiểm soát để phòng tránh va chạm",
+        },
+        {
+          img: "/images/cardetail/antoan/pali/pali-antoan4.jpg",
+          caption:
+            "Phòng tránh va chạm khi rời khỏi xe: Hệ thống sẽ can thiệp để khóa cửa phòng tránh va chạm có thể xảy ra khi mở cửa xe",
+        },
+        {
+          img: "/images/cardetail/antoan/pali/pali-antoan5.jpg",
+          caption: "Hệ thống cảm biến lùi trước và sau",
+        },
+        {
+          img: "/images/cardetail/antoan/pali/pali-antoan6.jpg",
+          caption: "Đèn lùi dẫn hướng",
+        },
+        {
+          img: "/images/cardetail/antoan/pali/pali-antoan7.jpg",
+          caption: "Hệ thống 7 túi khí",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai Palisade. Tiện nghi đẳng cấp thương gia.",
+        body: "Trung tâm của sự chú ý là cụm màn hình thông tin kỹ thuật số 12,3 inch hiển thị đồ họa và văn bản một cách chi tiết, đầy màu sắc. Màn hình giải trí 12,3 inch hỗ trợ hiển thị chia đôi màn hình để bạn có thể dễ dàng kiểm tra lộ trình và hướng đi của mình, xem thông tin nhạc/radio, v.v. cùng một lúc.",
+      },
+      lead: {
+        title: null,
+        image: "/images/cardetail/tiennghi/pali/pali-tiennghi1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi2.jpg",
+          caption: "Màn hình hiển thị thông tin trên kính lái",
+        },
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi3.jpg",
+          caption: "Hiển thị điểm mù trên màn hình",
+        },
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi4.jpg",
+          caption: "Sưởi và làm mát ghế hàng ghế 2",
+        },
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi5.jpg",
+          caption: "Điều hòa tự động 3 vùng độc lập",
+        },
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi6.jpg",
+          caption: "Nhớ 2 vị trí ghế lái",
+        },
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi9.jpg",
+          caption: "Cổng sạc tích hợp trên ghế hành khách",
+        },
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi10.jpg",
+          caption: "Sạc không dây",
+        },
+        {
+          img: "/images/cardetail/tiennghi/pali/pali-tiennghi11.jpg",
+          caption: "Nút chỉnh điện hàng ghế 2",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Stargazer X.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/pali/pali-thongso.jpg",
+          caption: null,
+        },
+      ],
+    },
+  },
+  creta: {
+    name: "Creta",
+    price: "Giá từ 599 triệu VNĐ",
+    cover: "/images/slides/creta-hero.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/creta/creta-highlight1.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "oBPRWCOPpV8",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "New Creta 2025",
+        body: "Hyundai Creta 2025 khoác lên mình diện mạo ngoại thất vừa táo bạo vừa hiện đại, nổi bật với lưới tản nhiệt Black Chrome Parametric đầy cá tính, cụm đèn chiếu sáng LED sắc sảo và dải đèn định vị ban ngày (DRL) ấn tượng. Tất cả hòa quyện tạo nên một phong cách mạnh mẽ, cuốn hút khiến Hyundai Creta luôn là tâm điểm trên mọi cung đường. Hyundai Creta 2025 có 4 phiên bản: Tiêu chuẩn, Đặc biệt và Cao cấp, cùng phiên bản thể thao N Line. Xe có 6 tùy chọn màu sắc: Trắng, Đỏ, Đen, Bạc, Xám Kim loại, Xanh Dương. Xe được bảo hành 5 năm hoặc 100.000 km (tùy điều kiện nào đến trước).",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Creta 2025 – Hiện đại, táo bạo.",
+        body: "Hòa quyện những đường nét táo bạo, đậm chất tương lai là sự tinh tế, cổ điển. Hyundai Creta 2025 sở hữu dáng vẻ tự tin, khỏe khoắn, lập tức thu hút mọi ánh nhìn. Vành hợp kim độc đáo là điểm sáng nổi bật, giúp Hyundai Creta khẳng định vị thế riêng biệt trong phân khúc SUV phổ thông.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/creta/creta-ngoaithat1.jpg",
+        caption: "Ngoại Thất Hyundai Creta 2025.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat2.jpg",
+          caption: "Cụm lưới tản nhiệt “Parametric Jewel Pattern”",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat3.jpg",
+          caption: "Đèn chiếu sáng LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat4.jpg",
+          caption: "Đường nét đặc trưng táo bạo",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat5.jpg",
+          caption:
+            "Vành hợp kim kích thước 17 inch thiết kế 2 tông màu thể thao",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat6.jpg",
+          caption: "Hệ thống phanh phong cách N-Line",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat7.jpg",
+          caption: "Thiết kế tinh tế",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat8.jpg",
+          caption: "Cụm đèn hậu dạng LED với dải đèn nối liền",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/creta/creta-ngoaithat9.jpg",
+          caption: "Đèn báo rẽ với hiệu ứng dòng chảy",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Creta 2025 – Không gian nội thất tinh tế.",
+        body: "Nội thất của Hyundai Creta 2025 toát lên vẻ tinh tế đậm chất đô thị hiện đại thể hiện qua cụm màn hình đôi công nghệ cao và những tiện ích hàng đầu. Không gian được thiết kế tối ưu rộng rãi đem tới những trải nghiệm thoải mái nhất trên từng hành trình.",
+      },
+      lead: {
+        title: "Nội Thất Hyundai Creta 2025",
+        image: "/images/cardetail/noithat/creta/creta-noithat1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/creta/creta-noithat2.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/noithat/creta/creta-noithat3.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/noithat/creta/creta-noithat4.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/noithat/creta/creta-noithat5.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/noithat/creta/creta-noithat6.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/noithat/creta/creta-noithat7.jpg",
+          caption: null,
+        },
+
+        // {
+        //   img: "/images/ioniq/interior/grid-4.jpg",
+        //   caption: "Cửa gió và cổng sạc sau",
+        // },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai Creta 2025 – Vận hành linh hoạt.",
+        body: "Hyundai Creta 2025 mang đến khả năng vận hành linh hoạt trong đô thị. Với loại động cơ cân bằng hoàn hảo giữa tiết kiệm nhiên liệu và sức mạnh tối ưu, hứa hẹn một trải nghiệm lái xe phấn khích đến từng khoảnh khắc.",
+      },
+      lead: {
+        title: "Mạnh mẽ trên mọi cung đường",
+        image: "/images/cardetail/vanhanh/creta/creta-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: null,
+        body: null,
+        image: "/images/cardetail/vanhanh/creta/creta-vanhanh2.jpg",
+      },
+      tailBlock: {
+        title: null,
+        body: null,
+        hero: "/images/cardetail/vanhanh/creta/vanhanh.png",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai Creta 2025 – Hệ thống an toàn Hyundai SmartSense.",
+        body: "Hyundai Creta 2025 mang đến một loạt các cải tiến của hệ thống SmartSense",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/creta/creta-antoan1.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm phía trước (FCA): Phân tích dữ liệu từ camera phía trước. Nếu dự đoán được sắp có va chạm với xe, người đi bộ, xe đạp, hệ thống cánh bảo và phanh tự động sẽ giúp người lái phòng tránh va chạm và tai nạn",
+        },
+        {
+          img: "/images/cardetail/antoan/creta/creta-vanhanh2.jpg",
+          caption:
+            "Hỗ trợ giữ và duy trì làn đường (LKA-LFA): Nếu như bạn di chuyển ra khỏi làn đường mà không có đèn tín hiệu, hệ thống sẽ sử dụng âm thanh và hình ảnh để cảnh báo về sự thay đổi. Camera của xe sẽ liên tục quét các vạch sơn trên làn đường để đảm bảo rằng xe được điều khiển chính xác và giữa làn đường. Khi cần thiết, tính năng sẽ điều chỉnh tay lái để đảm bảo xe luôn đi trong làn",
+        },
+        {
+          img: "/images/cardetail/antoan/creta/creta-vanhanh3.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm điểm mù (BCA): Khi có tín hiệu chuyển làn, nếu tiềm ẩn nguy hiểm va chạm, hệ thống sẽ đưa ra tín hiệu cảnh báo. Nếu sau tín hiệu cảnh báo, nguy hiểm gia tăng, hệ thông sẽ kiểm soát để phòng tránh va chạm",
+        },
+        {
+          img: "/images/cardetail/antoan/creta/creta-antoan4.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm khi lùi xe (RCCA): Khi lùi xe, nếu tiềm ẩn nguy hiểm va chạm phía hông xe từ bên trái hoặc bên phải, hệ thống sẽ đưa ra cảnh báo. Nếu sau tín hiệu cảnh báo, nguy hiểm gia tăng, hệ thống sẽ hỗ trợ phanh.",
+        },
+        {
+          img: "/images/cardetail/antoan/creta/creta-antoan6.jpg",
+          caption:
+            "Điều khiển hành trình thích ứng SCC: Hệ thống giúp duy trì khoảng cách với xe phía trước một khoảng an toàn khi xe chạy chế độ hành trình.",
+        },
+        {
+          img: "/images/cardetail/antoan/creta/creta-antoan7.jpg",
+          caption:
+            "Camera 360 và Hệ thống cảnh báo điểm mù trên màn hình thông tin",
+        },
+        {
+          img: "/images/cardetail/antoan/creta/creta-antoan8.jpg",
+          caption: "Hệ thống 6 túi khí",
+        },
+        {
+          img: "/images/cardetail/antoan/creta/creta-antoan9.jpg",
+          caption: "Cảm biến áp suất lốp TPMS",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai creta 2025 – Tiên nghi thiết thực.",
+        body: "Hyundai Creta cung cấp các tính năng cao cấp như Hệ thống âm thanh BOSE, làm mát ghế, ghế lái chỉnh điện nâng tầm trải nghiệm lái xe.",
+      },
+      lead: {
+        title: null,
+        image: null,
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/creta/creta-tiennghi1.jpg",
+          caption: "Làm mát hàng ghế trước",
+        },
+        {
+          img: "/images/cardetail/tiennghi/creta/creta-tiennghi2.jpg",
+          caption: "Ghế lái chỉnh điện",
+        },
+        {
+          img: "/images/cardetail/tiennghi/creta/creta-tiennghi3.jpg",
+          caption: "Sạc không dây và Cổng sạc Type C",
+        },
+        {
+          img: "/images/cardetail/tiennghi/creta/creta-tiennghi4.jpg",
+          caption: "Điều hòa tự động",
+        },
+        {
+          img: "/images/cardetail/tiennghi/creta/creta-tiennghi5.jpg",
+          caption: "Hệ thống 8 loa Bose",
+        },
+        {
+          img: "/images/cardetail/tiennghi/creta/creta-tiennghi6.jpg",
+          caption: "Cửa gió hàng ghế sau, cổng sạc Type C",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Creta.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/creta/creta-thongso1.jpg",
+          caption: null,
+        },
+        {
+          image: "/images/cardetail/thongso/creta/creta-thongso2.jpg",
+          caption: null,
+        },
+      ],
+    },
+  },
+  elentra: {
+    name: "Elentra",
+    price: "Giá từ 599 triệu VNĐ",
+    cover: "/images/slides/elentra-hero.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/elentra/elentra-highlight1.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "DR5QzKrZ4x4",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "All New Elentra 2025",
+        body: "Huyndai Elantra Mới với thiết kế ‘Parametric Dynamics’ làm nổi bật tính thẩm mỹ hình học của phần mui kéo dài và các đường nét kiểu dáng đẹp, hoàn thiện phong cách sáng tạo và có tầm nhìn xa.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight2.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight3.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight4.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight5.jpg",
+          caption: null,
+        },
+      ],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Elentra 2025 – Hiện đại, táo bạo.",
+        body: "Hòa quyện những đường nét táo bạo, đậm chất tương lai là sự tinh tế, cổ điển. Hyundai Elentra 2025 sở hữu dáng vẻ tự tin, khỏe khoắn, lập tức thu hút mọi ánh nhìn. Vành hợp kim độc đáo là điểm sáng nổi bật, giúp Hyundai Elentra khẳng định vị thế riêng biệt trong phân khúc SUV phổ thông.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat1.jpg",
+        caption: 'Lưới tản nhiệt "Parametric Jewel Pattern"',
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat2.jpg",
+          caption: "Đèn chiếu sáng Halogen Projector",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat3.jpg",
+          caption: "Đèn chiếu sáng Led Projector",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat4.jpg",
+          caption: 'Bề mặt "Parametric Jewel"',
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat5.jpg",
+          caption: "Vành 16 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat6.jpg",
+          caption: "Vành 17 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat7.jpg",
+          caption: "Vành 18 inch (N Line)",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat8.jpg",
+          caption: "Cụm đèn hậu dạng LED (1.6 AT)",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat9.jpg",
+          caption: "Cụm đèn hậu dạng LED (2.0 AT/ N Line)",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Elentra 2025 – Khoang lái gợi cảm.",
+        body: "Khoang lái của All New Elantra giống như buồng lái của phi công. Giúp người lái kiểm soát tốt hơn và dễ dàng hơn.",
+      },
+      lead: {
+        title: "Nội Thất Hyundai Elentra 2025",
+        image: "/images/cardetail/noithat/elentra/elentra-noithat3.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/elentra/elentra-noithat2.jpg",
+          caption:
+            "Màn hình thông tin và màn hình giải trí có cùng kích thước 10,25",
+        },
+        {
+          img: "/images/cardetail/noithat/elentra/elentra-noithat1.jpg",
+          caption:
+            "Thiết kế màn hình giải trí nghiêng 10 độ về phía người lái để việc điều khiển dễ dàng hơn và trải nghiệm công nghệ được trọn vẹn hơn",
+        },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title:
+          "Hyundai Elentra 2025 – Dành cho những người tham vọng, táo bạo cùng sự phi thường",
+        body: "Nền tảng thế hệ thứ 3 mới được phát triển của Elantra mang lại khả năng xử lý nhanh nhẹn và ổn định được hỗ trợ bởi động cơ tiết kiệm nhiên liệu, mang đến cho bạn hiệu suất lái xe tối ưu mọi lúc mọi nơi.",
+      },
+      lead: {
+        title: "Động cơ Gamma 1.6",
+        image: "/images/cardetail/vanhanh/elentra/elentra-vanhanh1.png",
+        caption: null,
+      },
+      midBlock: {
+        title: "Động cơ Nu 2.0 MPI",
+        body: null,
+        image: "/images/cardetail/vanhanh/elentra/elentra-vanhanh2.png",
+      },
+      tailBlock: {
+        title: "Động cơ Smartstream G1.6 Turbo T-GDi",
+        body: null,
+        hero: "/images/cardetail/vanhanh/elentra/elentra-vanhanh3.png",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai Elentra 2025 – Hệ thống an toàn Hyundai SmartSense.",
+        body: "Hyundai Elentra 2025 mang đến một loạt các cải tiến của hệ thống SmartSense",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan1.jpg",
+          caption:
+            "Hệ thống cân bằng điện tử ESC: Hệ thống cân bằng điện tử ESC sẽ phát hiện tình trạng mất kiểm soát của xe khi phanh hay chuyển hướng, đồng thời sẽ có những tác động kịp thời lên hệ thống phanh và truyền động giúp chiếc xe nhanh chóng có lại được tình trạng cân bằng và an toàn.",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan2.jpg",
+          caption:
+            "Hệ thống hỗ trợ khởi hành ngang dốc HAC: Hệ thống HAC sẽ giúp chiếc xe giữ nguyên vị trí đang dừng khi xe đỗ ở ngang dốc, xe sẽ di chuyển khi tài xế chuyển sang bàn đạp ga giúp bạn dễ dàng tiếp tục cuộc hành trình mà không lo xe bị tụt dốc.",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan3.jpg",
+          caption:
+            "Hệ thống chống bó cứng phanh ABS: Hệ thống chống bó cứng phanh ABS bao gồm các cảm biến điều tiết lực phanh của bạn tác động lên đĩa phanh, giúp giảm tốc nhanh chóng nhưng vẫn đảm bảo hướng đánh lái của vô lăng giúp xe đi đúng hướng tránh va chạm.",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan4.jpg",
+          caption: "Khung thép cường lực (AHSS)",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan5.jpg",
+          caption: "Phanh tay điện tử",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan6.jpg",
+          caption: "Cảm biến lùi",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai Elentra 2025 – Tiện nghi thiết thực.",
+        body: null,
+      },
+      lead: {
+        title: null,
+        image: null,
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi1.jpg",
+          caption: "Làm mát hàng ghế trước",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tienngh2.jpg",
+          caption: "Ghế lái chỉnh điện",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi3.jpg",
+          caption: "Sạc không dây và Cổng sạc Type C",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi4.jpg",
+          caption: "Điều hòa tự động",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi5.jpg",
+          caption: "Hệ thống 8 loa Bose",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi6.jpg",
+          caption: "Cửa gió hàng ghế sau, cổng sạc Type C",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Elentra.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/elentra/elentra-thongso1.jpg",
+          caption: null,
+        },
+      ],
+    },
+  },
+  elentra: {
+    name: "Elentra",
+    price: "Giá từ 599 triệu VNĐ",
+    cover: "/images/slides/elentra-hero.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/elentra/elentra-highlight1.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "DR5QzKrZ4x4",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "All New Elentra 2025",
+        body: "Huyndai Elantra Mới với thiết kế ‘Parametric Dynamics’ làm nổi bật tính thẩm mỹ hình học của phần mui kéo dài và các đường nét kiểu dáng đẹp, hoàn thiện phong cách sáng tạo và có tầm nhìn xa.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight2.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight3.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight4.jpg",
+          caption: null,
+        },
+        {
+          img: "/images/cardetail/highlights/elentra/elentra-highlight5.jpg",
+          caption: null,
+        },
+      ],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Elentra 2025 – Hiện đại, táo bạo.",
+        body: "Hòa quyện những đường nét táo bạo, đậm chất tương lai là sự tinh tế, cổ điển. Hyundai Elentra 2025 sở hữu dáng vẻ tự tin, khỏe khoắn, lập tức thu hút mọi ánh nhìn. Vành hợp kim độc đáo là điểm sáng nổi bật, giúp Hyundai Elentra khẳng định vị thế riêng biệt trong phân khúc SUV phổ thông.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat1.jpg",
+        caption: 'Lưới tản nhiệt "Parametric Jewel Pattern"',
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat2.jpg",
+          caption: "Đèn chiếu sáng Halogen Projector",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat3.jpg",
+          caption: "Đèn chiếu sáng Led Projector",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat4.jpg",
+          caption: 'Bề mặt "Parametric Jewel"',
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat5.jpg",
+          caption: "Vành 16 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat6.jpg",
+          caption: "Vành 17 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat7.jpg",
+          caption: "Vành 18 inch (N Line)",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat8.jpg",
+          caption: "Cụm đèn hậu dạng LED (1.6 AT)",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/elentra/elentra-ngoaithat9.jpg",
+          caption: "Cụm đèn hậu dạng LED (2.0 AT/ N Line)",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Elentra 2025 – Khoang lái gợi cảm.",
+        body: "Khoang lái của All New Elantra giống như buồng lái của phi công. Giúp người lái kiểm soát tốt hơn và dễ dàng hơn.",
+      },
+      lead: {
+        title: "Nội Thất Hyundai Elentra 2025",
+        image: "/images/cardetail/noithat/elentra/elentra-noithat3.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/elentra/elentra-noithat2.jpg",
+          caption:
+            "Màn hình thông tin và màn hình giải trí có cùng kích thước 10,25",
+        },
+        {
+          img: "/images/cardetail/noithat/elentra/elentra-noithat1.jpg",
+          caption:
+            "Thiết kế màn hình giải trí nghiêng 10 độ về phía người lái để việc điều khiển dễ dàng hơn và trải nghiệm công nghệ được trọn vẹn hơn",
+        },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title:
+          "Hyundai Elentra 2025 – Dành cho những người tham vọng, táo bạo cùng sự phi thường",
+        body: "Nền tảng thế hệ thứ 3 mới được phát triển của Elantra mang lại khả năng xử lý nhanh nhẹn và ổn định được hỗ trợ bởi động cơ tiết kiệm nhiên liệu, mang đến cho bạn hiệu suất lái xe tối ưu mọi lúc mọi nơi.",
+      },
+      lead: {
+        title: "Động cơ Gamma 1.6",
+        image: "/images/cardetail/vanhanh/elentra/elentra-vanhanh1.png",
+        caption: null,
+      },
+      midBlock: {
+        title: "Động cơ Nu 2.0 MPI",
+        body: null,
+        image: "/images/cardetail/vanhanh/elentra/elentra-vanhanh2.png",
+      },
+      tailBlock: {
+        title: "Động cơ Smartstream G1.6 Turbo T-GDi",
+        body: null,
+        hero: "/images/cardetail/vanhanh/elentra/elentra-vanhanh3.png",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai Elentra 2025 – Hệ thống an toàn Hyundai SmartSense.",
+        body: "Hyundai Elentra 2025 mang đến một loạt các cải tiến của hệ thống SmartSense",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan1.jpg",
+          caption:
+            "Hệ thống cân bằng điện tử ESC: Hệ thống cân bằng điện tử ESC sẽ phát hiện tình trạng mất kiểm soát của xe khi phanh hay chuyển hướng, đồng thời sẽ có những tác động kịp thời lên hệ thống phanh và truyền động giúp chiếc xe nhanh chóng có lại được tình trạng cân bằng và an toàn.",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan2.jpg",
+          caption:
+            "Hệ thống hỗ trợ khởi hành ngang dốc HAC: Hệ thống HAC sẽ giúp chiếc xe giữ nguyên vị trí đang dừng khi xe đỗ ở ngang dốc, xe sẽ di chuyển khi tài xế chuyển sang bàn đạp ga giúp bạn dễ dàng tiếp tục cuộc hành trình mà không lo xe bị tụt dốc.",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan3.jpg",
+          caption:
+            "Hệ thống chống bó cứng phanh ABS: Hệ thống chống bó cứng phanh ABS bao gồm các cảm biến điều tiết lực phanh của bạn tác động lên đĩa phanh, giúp giảm tốc nhanh chóng nhưng vẫn đảm bảo hướng đánh lái của vô lăng giúp xe đi đúng hướng tránh va chạm.",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan4.jpg",
+          caption: "Khung thép cường lực (AHSS)",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan5.jpg",
+          caption: "Phanh tay điện tử",
+        },
+        {
+          img: "/images/cardetail/antoan/elentra/elentra-antoan6.jpg",
+          caption: "Cảm biến lùi",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai Elentra 2025 – Tiện nghi thiết thực.",
+        body: null,
+      },
+      lead: {
+        title: null,
+        image: null,
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi1.jpg",
+          caption: "Làm mát hàng ghế trước",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tienngh2.jpg",
+          caption: "Ghế lái chỉnh điện",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi3.jpg",
+          caption: "Sạc không dây và Cổng sạc Type C",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi4.jpg",
+          caption: "Điều hòa tự động",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi5.jpg",
+          caption: "Hệ thống 8 loa Bose",
+        },
+        {
+          img: "/images/cardetail/tiennghi/elentra/elentra-tiennghi6.jpg",
+          caption: "Cửa gió hàng ghế sau, cổng sạc Type C",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Elentra.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/elentra/elentra-thongso1.jpg",
+          caption: null,
+        },
+      ],
+    },
+  },
+  i10sedan: {
+    name: "i10 Sedan",
+    price: "Giá từ 380 triệu VNĐ",
+    cover: "/images/slides/i10sedan.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/i10-sedan/i10-highlight1.png",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "VyQLxZhMdKE",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "New Grand i10 Sedan",
+        body: "New Grand i10 sở hữu kích thước lớn hàng đầu phân khúc, đem đến một không gian thoải mái tối đa. Bên cạnh đó là sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Grand i10 Sedan Mới. Ấn tượng về sự cá tính.",
+        body: "Hyundai Grand i10 Sedan mới là sự kết hợp hoàn hảo của công nghệ tiên tiến, hiệu suất mượt mà và sự an toàn mang lại niềm vui hứng khởi cho mỗi chuyến. Thiết kế mới mẻ, kích thước nhỏ gọn tạo nên vẻ ngoài tươi mới, trẻ trung, tự tin và cá tính.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat1.jpg",
+        caption: "Ngoại Thất Hyundai i10 2025.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat2.jpg",
+          caption: "Lưới tản nhiệt thiết kế mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat3.jpg",
+          caption: "Đèn định vị ban ngày LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat4.jpg",
+          caption: "Đèn chiếu sáng Halogen Projector",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat5.jpg",
+          caption: "Mặt Trước Hyundai Grand i10 Sedan Mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat6.jpg",
+          caption: "Mặt Bên Hyundai Grand i10 Sedan Mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat7.jpg",
+          caption: "Gương chiếu hậu chỉnh điện, gập điện, có sấy",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat8.jpg",
+          caption: "Vành xe thể thao kích thước 15 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat9.jpg",
+          caption: "Mặt Sau Hyundai Grand i10 Sedan Mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-sedan/i10-ngoaithat10.jpg",
+          caption: "Cụm đèn hậu dạng LED",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Grand i10 Sedan Mới. Tiện nghi trên từng cây số.",
+        body: "Khoang nội thất của Hyundai Grand i10 Sedan mới là tất cả những gì bạn cần. Đó là sự rộng rãi của không gian kết hợp cùng sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích vượt tầm phân khúc.",
+      },
+      lead: {
+        title: "Nội Thất Hyundai i10 2025",
+        image: "/images/cardetail/noithat/i10-sedan/i10-noithat1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/i10-sedan/i10-noithat2.jpg",
+          caption: "Điều hòa chỉnh cơ",
+        },
+        {
+          img: "/images/cardetail/noithat/i10-sedan/i10-noithat3.jpg",
+          caption: "Màn hình thông tin kích thước 3.5 inch",
+        },
+        {
+          img: "/images/cardetail/noithat/i10-sedan/i10-noithat4.jpg",
+          caption:
+            "Màn hình giải trí 8 inch (Apple Carplay/Android Auto có dây)",
+        },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai New Grand i10 Sedan. Khả năng vận hành xuất sắc.",
+        body: "Hyundai New Grand i10 Sedan được tối ưu với hệ thống khung gầm, động cơ, hộp số đem đến khả năng vận hành xuất sắc, cân bằng giữa những yếu tố bền bỉ và tiết kiệm.",
+      },
+      lead: {
+        title: null,
+        image: "/images/cardetail/vanhanh/i10-sedan/i10-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: "Động cơ Kappa 1.2L",
+        body: "Động cơ 4 xylanh Kappa dung tích 1.2L, đi cùng công nghệ van biến thiên CVVT, cho công suất cực đại 83 mã lực tại 6.000 vòng/phút và moment xoắn 114 Nm tại 4.000 vòng/phút.",
+        image: "/images/cardetail/vanhanh/i10-sedan/i10-vanhanh2.jpg",
+      },
+      tailBlock: {
+        title: null,
+        body: null,
+        hero: "/images/cardetail/vanhanh/i10-sedan/i10-vanhanh3.png",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai New Grand i10 Sedan. An toàn vượt trội.",
+        body: "Hyunda New Grand i10 Sedan với hệ thống khung gầm tối ưu cùng các trang bị an toàn mang đến sự thoải mái & an tâm trên mọi hành trình",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/i10-sedan/i10-antoan1.jpg",
+          caption: "Cảm biến lùi khi đỗ xe",
+        },
+        {
+          img: "/images/cardetail/antoan/i10-sedan/i10-antoan2.jpg",
+          caption: "Cảm biến áp suất lốp",
+        },
+        {
+          img: "/images/cardetail/antoan/i10-sedan/i10-antoan3.jpg",
+          caption: "Camera lùi",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title:
+          "Hyundai Grand i10 Sedan Mới. Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn.",
+        body: "Những chuyến hành trình của bạn sẽ trở nên thú vị với những công nghệ tiện ích được trang bị bên trong Grand i10 Sedan Mới.",
+      },
+      lead: {
+        title: null,
+        image: null,
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/i10-sedan/i10-tiennghi1.jpg",
+          caption: "Vô lăng bọc da tích hợp nút bấm điều khiển âm thanh",
+        },
+        {
+          img: "/images/cardetail/tiennghi/i10-sedan/i10-tiennghi2.jpg",
+          caption: "Nút bấm khởi động Start/Stop",
+        },
+        {
+          img: "/images/cardetail/tiennghi/i10-sedan/i10-tiennghi3.jpg",
+          caption: "Đèn nội thất",
+        },
+        {
+          img: "/images/cardetail/tiennghi/i10-sedan/i10-tiennghi4.jpg",
+          caption: "Cụm phím điều khiển media",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật i10.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/i10-sedan/i10-thongso1.jpg",
+          caption: null,
+        },
+        {
+          image: "/images/cardetail/thongso/i10-sedan/i10-thongso2.jpg",
+          caption: null,
+        },
+      ],
+    },
+  },
+  i10hatback: {
+    name: "i10 Hatchback",
+    price: "Giá từ 360 triệu VNĐ",
+    cover: "/images/slides/i10-hero.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/i10-hatback/i10-highlight1.jpg",
+      // title: "New IONIQ 5",
+      // subtitle: "Bứt phá mọi giới hạn.",
+      videoId: "VyQLxZhMdKE",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "New Grand i10 Hatchback",
+        body: "New Grand i10 Hatchback sở hữu kích thước lớn hàng đầu phân khúc, đem đến một không gian thoải mái tối đa. Bên cạnh đó là sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Grand i10 Hatchback Mới. Ấn tượng về sự cá tính.",
+        body: "Hyundai Grand i10 Hatchback mới là sự kết hợp hoàn hảo của công nghệ tiên tiến, hiệu suất mượt mà và sự an toàn mang lại niềm vui hứng khởi cho mỗi chuyến. Thiết kế mới mẻ, kích thước nhỏ gọn tạo nên vẻ ngoài tươi mới, trẻ trung, tự tin và cá tính.",
+      },
+      lead: {
+        // title: "Thiết kế mới đậm chất SUV",
+        image: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat1.jpg",
+        caption: "Ngoại Thất Hyundai i10 Hatchback 2025.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat2.jpg",
+          caption: "Mặt Trước Hyundai Grand i10 Hatchback Mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat3.jpg",
+          caption: "Đèn chiếu sáng Halogen Projector",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat4.jpg",
+          caption: "Lưới tản nhiệt thiết kế mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat5.jpg",
+          caption: "Đèn định vị ban ngày LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat6.jpg",
+          caption: "Mặt Bên Hyundai Grand i10 Hatchback Mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat7.jpg",
+          caption: "Vành xe thể thao kích thước 15 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat8.jpg",
+          caption: "Gương chiếu hậu chỉnh điện, gập điện, có sấy",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat9.jpg",
+          caption: "Mặt Sau Hyundai Grand i10 Hatchback Mới",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat10.jpg",
+          caption: "Cụm đèn hậu dạng LED",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/i10-hatback/i10-ngoaithat11.jpg",
+          caption: "Đèn phanh trên cao",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Grand i10 Hatchback Mới. Tiện nghi trên từng cây số.",
+        body: "Khoang nội thất của Hyundai Grand i10 Hatchback mới là tất cả những gì bạn cần. Đó là sự rộng rãi của không gian kết hợp cùng sự tỉ mỉ, tinh tế trên các chi tiết cùng các tiện ích vượt tầm phân khúc.",
+      },
+      lead: {
+        title: "Nội Thất Hyundai i10 Hatchback 2025",
+        image: "/images/cardetail/noithat/i10-sedan/i10-noithat1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/i10-sedan/i10-noithat2.jpg",
+          caption: "Điều hòa chỉnh cơ",
+        },
+        {
+          img: "/images/cardetail/noithat/i10-sedan/i10-noithat3.jpg",
+          caption: "Màn hình thông tin kích thước 3.5 inch",
+        },
+        {
+          img: "/images/cardetail/noithat/i10-sedan/i10-noithat4.jpg",
+          caption:
+            "Màn hình giải trí 8 inch (Apple Carplay/Android Auto có dây)",
+        },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai New Grand i10 Hatchback. Khả năng vận hành xuất sắc.",
+        body: "Hyundai New Grand i10 Hatchback được tối ưu với hệ thống khung gầm, động cơ, hộp số đem đến khả năng vận hành xuất sắc, cân bằng giữa những yếu tố bền bỉ và tiết kiệm.",
+      },
+      lead: {
+        title: null,
+        image: "/images/cardetail/vanhanh/i10-hatback/i10-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: "Động cơ Kappa 1.2L",
+        body: "Động cơ 4 xylanh Kappa dung tích 1.2L, đi cùng công nghệ van biến thiên CVVT, cho công suất cực đại 83 mã lực tại 6.000 vòng/phút và moment xoắn 114 Nm tại 4.000 vòng/phút.",
+        image: "/images/cardetail/vanhanh/i10-sedan/i10-vanhanh2.jpg",
+      },
+      tailBlock: {
+        title: null,
+        body: null,
+        hero: "/images/cardetail/vanhanh/i10-sedan/i10-vanhanh3.png",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai New Grand i10 Sedan. An toàn vượt trội.",
+        body: "Hyunda New Grand i10 Sedan với hệ thống khung gầm tối ưu cùng các trang bị an toàn mang đến sự thoải mái & an tâm trên mọi hành trình",
+      },
+
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/i10-sedan/i10-antoan1.jpg",
+          caption: "Cảm biến lùi khi đỗ xe",
+        },
+        {
+          img: "/images/cardetail/antoan/i10-sedan/i10-antoan2.jpg",
+          caption: "Cảm biến áp suất lốp",
+        },
+        {
+          img: "/images/cardetail/antoan/i10-sedan/i10-antoan3.jpg",
+          caption: "Camera lùi",
+        },
+        {
+          img: "/images/cardetail/antoan/i10-hatback/i10-antoan1.jpg",
+          caption: "4 túi khí an toàn",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title:
+          "Hyundai Grand i10 Hatchback Mới. Công nghệ đỉnh cao tích hợp trong một chiếc xe nhỏ gọn.",
+        body: "Những chuyến hành trình của bạn sẽ trở nên thú vị với những công nghệ tiện ích được trang bị bên trong Grand i10 Hatchback Mới.",
+      },
+      lead: {
+        title: null,
+        image: "/images/cardetail/tiennghi/i10-hatback/i10-tiennghi1.jpg",
+        caption: "Khởi động bằng nút bấm khởi động Start/Stop",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/i10-hatback/i10-tiennghi2.jpg",
+          caption: "Gập ghế 6:4 hàng ghế sau",
+        },
+        {
+          img: "/images/cardetail/tiennghi/i10-hatback/i10-tiennghi3.jpg",
+          caption: "Cửa gió điều hòa phía sau",
+        },
+        {
+          img: "/images/cardetail/tiennghi/i10-hatback/i10-tiennghi4.jpg",
+          caption: "Màn hình giải trí 8 inch có kết nối Apple Carplay & Android Auto có dây",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật i10 Hatchback.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/i10-hatback/i10-thongso1.jpg",
+          caption: null,
+        },
+        {
+          image: "/images/cardetail/thongso/i10-hatback/i10-thongso2.jpg",
+          caption: null,
+        },
       ],
     },
   },
