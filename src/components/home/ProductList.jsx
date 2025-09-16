@@ -90,7 +90,7 @@ export default function ProductList() {
   return (
     <section className="py-10 bg-white mt-3">
       <h2 className="text-4xl text-center font-bold text-gray-600 mb-10">
-        CÁC DÒNG XE Ô TÔ HUYNDAI
+        CÁC DÒNG XE Ô TÔ HYUNDAI
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
         {visibleProducts.map((product, idx) => (

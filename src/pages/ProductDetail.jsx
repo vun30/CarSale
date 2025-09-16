@@ -278,6 +278,10 @@ export default function ProductDetail() {
      if (img) setZoomSrc(img.src);
    };
 
+   const openContactModal = () => {
+     window.dispatchEvent(new Event("open-contact-modal"));
+   };
+
    useEffect(() => {
      const onKey = (e) => {
        if (e.key === "Escape") setZoomSrc(null);
@@ -349,7 +353,7 @@ export default function ProductDetail() {
         </div>
 
         {/* Tên + Tabs */}
-        <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="text-center md:text-left">
             <h1 className="text-3xl font-bold">{product.name}</h1>
             <p className="text-xl text-blue-900 font-semibold">
@@ -373,7 +377,11 @@ export default function ProductDetail() {
               </button>
             ))}
             {/* Order button: show inline on desktop, fixed at bottom on mobile */}
-            <button className="hidden md:inline-flex flex-none px-6 py-3 text-sm font-semibold bg-blue-900 text-white rounded whitespace-nowrap ml-4 md:ml-auto hover:bg-blue-700">
+            <button
+              type="button"
+              onClick={openContactModal}
+              className="hidden md:inline-flex flex-none px-6 py-3 text-sm font-semibold bg-blue-900 text-white rounded whitespace-nowrap ml-4 md:ml-auto hover:bg-blue-800"
+            >
               Đặt hàng
             </button>
           </div>
@@ -386,7 +394,11 @@ export default function ProductDetail() {
       </div>
 
       {/* Fixed order button for mobile */}
-      <button className="md:hidden fixed bottom-0 left-0 w-full px-6 py-4 text-base font-semibold bg-blue-900 text-white hover:bg-blue-700">
+      <button
+        type="button"
+        onClick={openContactModal}
+        className="md:hidden fixed bottom-0 left-0 w-full px-6 py-4 text-base font-semibold bg-blue-900 text-white hover:bg-blue-800"
+      >
         Đặt hàng
       </button>
       {zoomSrc && (

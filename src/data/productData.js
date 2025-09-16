@@ -2653,7 +2653,8 @@ export const products = {
         },
         {
           img: "/images/cardetail/tiennghi/i10-hatback/i10-tiennghi4.jpg",
-          caption: "Màn hình giải trí 8 inch có kết nối Apple Carplay & Android Auto có dây",
+          caption:
+            "Màn hình giải trí 8 inch có kết nối Apple Carplay & Android Auto có dây",
         },
       ],
     },
@@ -2674,6 +2675,220 @@ export const products = {
           image: "/images/cardetail/thongso/i10-hatback/i10-thongso2.jpg",
           caption: null,
         },
+      ],
+    },
+  },
+  custin: {
+    name: "Custin",
+    price: "Giá từ 1,2 tỷ VNĐ",
+    cover: "/images/slides/custin.jpg",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/custin/custin1.png",
+      // title: "Hyundai Custin",
+      // subtitle: "MPV 7 chỗ thời thượng.",
+      videoId: "oBPRWCOPpV8",
+      intro: {
+        eyebrow: "Hyundai",
+        title: "New Custin 2025",
+        body: "Hyundai Custin 2025 là mẫu MPV 7 chỗ mang phong cách hiện đại với thiết kế năng động, không gian rộng rãi và tiện nghi cao cấp. Ngoại hình ấn tượng với lưới tản nhiệt nổi khối, hệ thống đèn LED sắc sảo và dải đèn định vị độc đáo. Nội thất bố trí 3 hàng ghế linh hoạt cho gia đình, công nghệ kết nối thông minh, an toàn chủ động tiên tiến, đáp ứng hoàn hảo nhu cầu di chuyển đô thị và đường dài.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        }, // đổi href nếu có
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Custin 2025 – MPV hiện đại, thanh lịch.",
+        body: "Thiết kế đậm chất đô thị với các đường nét mạnh mẽ, khí động học tối ưu. Cửa trượt tiện dụng, mâm hợp kim thể thao và dải LED đặc trưng giúp Custin nổi bật trong phân khúc MPV.",
+      },
+      lead: {
+        image: "/images/cardetail/ngoaithat/custin/custin-ngoaithat1.jpg",
+        caption: "Ngoại thất Hyundai Custin 2025.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/custin/custin-ngoaithat2.jpg",
+          caption: "Lưới tản nhiệt tạo hình tham số mạnh mẽ",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/custin/custin-ngoaithat3.jpg",
+          caption: "Cửa trượt điện thông minh",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/custin/custin-ngoaithat4.jpg",
+          caption: "Vành xe kích thước 18 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/custin/custin-ngoaithat5.jpg",
+          caption: "Cụm đèn hậu dạng LED",
+        },
+      ],
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Custin 2025 – Không gian 7 chỗ tiện nghi.",
+        body: "Khoang nội thất rộng rãi với bố cục 3 hàng ghế linh hoạt, chất liệu hoàn thiện tinh tế. Cụm màn hình đôi hiện đại, kết nối thông minh, mang đến trải nghiệm tiện nghi cho cả gia đình.",
+      },
+      lead: {
+        title: "Nội thất Hyundai Custin 2025",
+        image: "/images/cardetail/noithat/custin/custin-noithat1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/custin/custin-noithat2.jpg",
+          caption: "Hàng ghế “Captain”",
+        },
+        {
+          img: "/images/cardetail/noithat/custin/custin-noithat3.jpg",
+          caption: "Chế độ thư giãn (Relax Mode) tiện lợi",
+        },
+        {
+          img: "/images/cardetail/noithat/custin/custin-noithat4.jpg",
+          caption: "Chế độ sưởi",
+        },
+        {
+          img: "/images/cardetail/noithat/custin/custin-noithat5.jpg",
+          caption: "Chế độ làm mát ",
+        },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai Custin 2025 – Êm ái, tiết kiệm, linh hoạt.",
+        body: "Hệ truyền động tối ưu cho đô thị và đường trường, thân xe cân bằng tốt, cách âm ấn tượng. Các chế độ lái trực quan mang lại cảm giác điều khiển tự tin.",
+      },
+      lead: {
+        title: "Mạnh mẽ trên mọi hành trình",
+        image: "/images/cardetail/vanhanh/custin/custin-vanhanh1.jpg",
+        caption: null,
+      },
+      midBlock: {
+        title: null,
+        body: null,
+        image: null,
+      },
+      tailBlock: {
+        title: "4 chế độ lái: Eco, Comfort, Sport, Smart",
+        body: null,
+        hero: "/images/cardetail/vanhanh/custin/custin-vanhanh2.jpg",
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai Custin 2025 – SmartSense an tâm mọi nẻo đường.",
+        body: "Danh mục an toàn chủ động giúp phòng tránh rủi ro, hỗ trợ người lái tự tin hơn trong mọi tình huống giao thông.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/custin/custin-antoan1.jpg",
+          caption:
+            "Hỗ trợ phòng tránh va chạm phía trước (FCA) với người đi bộ/xe đạp",
+        },
+        {
+          img: "/images/cardetail/antoan/custin/custin-antoan2.jpg",
+          caption: "Hỗ trợ giữ làn đường",
+        },
+        {
+          img: "/images/cardetail/antoan/custin/custin-antoan3.jpg",
+          caption: "Hỗ trợ phòng tránh va chạm điểm mù",
+        },
+        {
+          img: "/images/cardetail/antoan/custin/custin-antoan4.jpg",
+          caption: "Hỗ trợ phòng tránh va chạm khi lùi xe",
+        },
+        {
+          img: "/images/cardetail/antoan/custin/custin-antoan5.jpg",
+          caption: "Hỗ trợ phòng tránh va chạm phía trước",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai Custin 2025 – Tiện nghi đẳng cấp gia đình.",
+        body: "Trang bị phong phú: điều hòa tự động, sạc không dây, âm thanh cao cấp, cốp điện rảnh tay… nâng trải nghiệm của mọi hành khách.",
+      },
+      lead: {
+        title: null,
+        image: null,
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi1.jpg",
+          caption: "Cốp điện & đá cốp rảnh tay",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi2.jpg",
+          caption: "Cụm phím Media tích hợp trên vô lăng",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi3.jpg",
+          caption: "Phanh tay điện tử cùng Auto Hold",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi4.jpg",
+          caption: "Cần số điện tử dạng nút bấm",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi5.jpg",
+          caption: "Cửa sổ trời đôi",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi6.jpg",
+          caption: "Rèm che nắng hàng ghế 2",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi7.jpg",
+          caption: "Sạc không dây cho hàng ghế 2",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi8.jpg",
+          caption: "Đèn viền nội thất",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi9.jpg",
+          caption: "Màn hình thông tin Full Digital",
+        },
+        {
+          img: "/images/cardetail/tiennghi/custin/custin-tiennghi10.jpg",
+          caption: "Màn hình giải trí kích thước 10.4 inch",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Custin.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/custin/custin-thongso.jpg",
+          caption: null,
+        },
+        
       ],
     },
   },
