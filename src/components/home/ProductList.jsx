@@ -69,10 +69,17 @@ export default function ProductList() {
       category: "Sedan",
     },
     {
-      name: "i10",
+      name: "i10 - Sedan",
       img: "images/product/i10.png",
       price: "360 triệu",
-      slug: "i10",
+      slug: "i10sedan",
+      category: "Sedan",
+    },
+    {
+      name: "i10 - Hatchback",
+      img: "images/product/i10-hatchback.png",
+      price: "360 triệu",
+      slug: "i10hatchback",
       category: "Sedan",
     },
   ];

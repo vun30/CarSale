@@ -2469,7 +2469,7 @@ export const products = {
       ],
     },
   },
-  i10hatback: {
+  i10hatchback: {
     name: "i10 Hatchback",
     price: "Giá từ 360 triệu VNĐ",
     cover: "/images/slides/i10-hero.jpg",

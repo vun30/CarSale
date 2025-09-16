@@ -73,7 +73,7 @@ export default function Products() {
     {
       name: "i10 - Hatchback",
       category: "Sedan",
-      slug: "i10hatback",
+      slug: "i10hatchback",
       image: "/images/product/i10-hatchback.png",
     },
   ];
