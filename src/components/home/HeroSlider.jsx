@@ -1,8 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 
-export default function HeroSlider() {
-  const slides = [
+
+  const SLIDES = [
     {
       id: 1,
       image: "images/slides/KV-Accent-&-Stargazer--slide-website (1).png",
@@ -17,30 +17,27 @@ export default function HeroSlider() {
     { id: 6, image: "images/slides/slide-website-mới.jpg" },
     { id: 7, image: "images/slides/accent-hero.jpg" },
   ];
-
+  export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? slides.length - 1 : current - 1);
-  };
+  const prevSlide = useCallback(() => {
+    setCurrent((index) => (index === 0 ? SLIDES.length - 1 : index - 1));
+  }, []);
 
-  const nextSlide = () => {
-    setCurrent(current === slides.length - 1 ? 0 : current + 1);
-  };
+  const nextSlide = useCallback(() => {
+    setCurrent((index) => (index === SLIDES.length - 1 ? 0 : index + 1));
+  }, []);
 
   // Auto play
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000); // 3 giây đổi slide
-
-    return () => clearInterval(interval); // clear khi component unmount
-  }, [current]);
+    const interval = setInterval(nextSlide, 3000);
+    return () => clearInterval(interval);
+  }, [nextSlide]);
 
   return (
     <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] overflow-hidden">
       {/* Slide images */}
-      {slides.map((slide, index) => (
+      {SLIDES.map((slide, index) => (
         <div
           key={slide.id}
           className={`absolute inset-0 transition-opacity duration-700 ${
@@ -80,7 +77,7 @@ export default function HeroSlider() {
 
       {/* Dots */}
       <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-        {slides.map((_, idx) => (
+        {SLIDES.map((_, idx) => (
           <div
             key={idx}
             onClick={() => setCurrent(idx)}

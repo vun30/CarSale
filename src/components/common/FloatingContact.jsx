@@ -12,14 +12,20 @@ export default function FloatingContact() {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     try {
       setMini(localStorage.getItem("fc-mini") === "1");
-    } catch {}
+    } catch (error) {
+      console.warn("Không thể đọc trạng thái thu gọn", error);
+    }
   }, []);
   useEffect(() => {
+    if (typeof window === "undefined") return;
     try {
       localStorage.setItem("fc-mini", mini ? "1" : "0");
-    } catch {}
+    } catch (error) {
+      console.warn("Không thể lưu trạng thái thu gọn", error);
+    }
   }, [mini]);
 
   const copyToClipboard = async () => {
@@ -27,7 +33,9 @@ export default function FloatingContact() {
       await navigator.clipboard?.writeText(phone);
       setCopied(true);
       setTimeout(() => setCopied(false), 1200);
-    } catch {}
+    } catch (error) {
+      console.warn("Không thể lưu trạng thái thu gọn", error);
+    }
   };
 
   // Kích thước nhỏ mặc định; khi mini=true thì chuyển sang icon-only

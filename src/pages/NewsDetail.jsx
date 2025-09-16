@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 // import { ArrowLeft } from "lucide-react"; // optional
+
 import newsData from "../data/newsData";
 
 // --- Helpers ---
@@ -12,7 +13,8 @@ function formatDateISO(iso) {
       month: "2-digit",
       year: "numeric",
     });
-  } catch (_) {
+  } catch (error) {
+    console.warn("Không thể định dạng ngày", error);
     return null;
   }
 }
@@ -250,11 +252,17 @@ export default function NewsDetail() {
     setIdx(i);
     setOpen(true);
   };
-  const next = () => setIdx((i) => (i + 1) % Math.max(images.length, 1));
-  const prev = () =>
-    setIdx(
-      (i) => (i - 1 + Math.max(images.length, 1)) % Math.max(images.length, 1)
-    );
+  const next = useCallback(
+    () => setIdx((i) => (i + 1) % Math.max(images.length, 1)),
+    [images.length]
+  );
+  const prev = useCallback(
+    () =>
+      setIdx(
+        (i) => (i - 1 + Math.max(images.length, 1)) % Math.max(images.length, 1)
+      ),
+    [images.length]
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -265,7 +273,19 @@ export default function NewsDetail() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open, images.length]);
+  }, [open, next, prev]);
+
+  const related = useMemo(() => {
+    if (!news) return [];
+    if (Array.isArray(news.related) && news.related.length > 0) {
+      const map = new Map(newsData.map((n) => [n.slug, n]));
+      return news.related
+        .map((relatedSlug) => map.get(relatedSlug))
+        .filter(Boolean)
+        .map((n) => ({ ...n, cover: getCover(n) }));
+    }
+    return others.slice(0, 3);
+  }, [news, others]);
 
   if (!news) {
     return (
@@ -311,16 +331,7 @@ export default function NewsDetail() {
       : null;
 
   // related posts: use explicit `news.related` if available, else take others top 3
-  const related = useMemo(() => {
-    if (Array.isArray(news.related) && news.related.length > 0) {
-      const map = new Map(newsData.map((n) => [n.slug, n]));
-      return news.related
-        .map((slug) => map.get(slug))
-        .filter(Boolean)
-        .map((n) => ({ ...n, cover: getCover(n) }));
-    }
-    return others.slice(0, 3);
-  }, [news, others]);
+  
 
   return (
     <section className="pb-16">

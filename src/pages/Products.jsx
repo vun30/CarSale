@@ -1,5 +1,6 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import Breadcrumb from "../components/layout/Breadcrumb";
+import { productList } from "../data/productList";
 
 export default function Products() {
   const categories = ["Tất cả", "Sedan", "SUV", "MPV", "Electric"];
@@ -9,86 +10,13 @@ export default function Products() {
   // Nếu không có category → mặc định "Tất cả"
   const active = category ? category : "Tất cả";
 
-  const products = [
-    {
-      name: "Tucson",
-      category: "SUV",
-      slug: "tucson",
-      image: "/images/product/tucson.png",
-    },
-    {
-      name: "SantaFe",
-      category: "SUV",
-      slug: "santafe",
-      image: "/images/product/santafe.png",
-    },
-    {
-      name: "IONIQ 5",
-      category: "Electric",
-      slug: "ioniq5",
-      image: "/images/product/ioniq5.png",
-    },
-    {
-      name: "Accent",
-      category: "Sedan",
-      slug: "accent",
-      image: "/images/product/accent.png",
-    },
-    {
-      name: "Stargazer X",
-      category: "MPV",
-      slug: "stargazer",
-      image: "/images/product/stargazer.png",
-    },
-    {
-      name: "Palisade",
-      category: "SUV",
-      slug: "palisade",
-      image: "/images/product/palisade.png",
-    },
-    {
-      name: "Custin",
-      category: "MPV",
-      slug: "custin",
-      image: "/images/product/custin.png",
-    },
-    {
-      name: "Creta",
-      category: "SUV",
-      slug: "creta",
-      image: "/images/product/creta.png",
-    },
-    {
-      name: "Venue",
-      category: "SUV",
-      slug: "venue",
-      image: "/images/product/venue.png",
-    },
-    {
-      name: "Elentra",
-      category: "Sedan",
-      slug: "elentra",
-      image: "/images/product/elentra.png",
-    },
-    {
-      name: "i10 - Sedan",
-      category: "Sedan",
-      slug: "i10sedan",
-      image: "/images/product/i10.png",
-    },
-    {
-      name: "i10 - Hatchback",
-      category: "Sedan",
-      slug: "i10hatchback",
-      image: "/images/product/i10-hatchback.png",
-    },
-  ];
+  
 
   // Lọc theo category (nếu có)
   const filtered =
     active === "Tất cả"
-      ? products
-      : products.filter(
+      ? productList
+      : productList.filter(
           (p) => p.category.toLowerCase() === active.toLowerCase()
         );
 
