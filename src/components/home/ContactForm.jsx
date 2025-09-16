@@ -21,6 +21,12 @@ export default function ContactForm() {
             <option>Santa Fe</option>
             <option>Creta</option>
             <option>Accent</option>
+            <option>Elantra</option>
+            <option>Venue</option>
+            <option>Ioniq5</option>
+            <option>Stargazer X</option>
+            <option>Custin</option>
+            <option>Palisade</option>
           </select>
 
           {/* Họ tên */}

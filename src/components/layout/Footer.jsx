@@ -83,7 +83,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="text-center text-gray-400">
-          Copyright © 2025 hyundaitphcm.com.vn
+          Copyright © 2025 hyundaigialaiofficial.com.vn
         </div>
         <div className="text-center text-gray-400">
           Hyundai Gia Lai - Gia Lai
