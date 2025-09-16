@@ -3,12 +3,18 @@ import { useState, useEffect } from "react";
 
 export default function HeroSlider() {
   const slides = [
-    { id: 1, image: "images/slides/palisade-hero.jpg" },
-    { id: 2, image: "images/slides/santafe-hero.jpg" },
-    { id: 3, image: "images/slides/tucson-hero.jpg" },
-    { id: 4, image: "images/slides/creta-hero.jpg" },
-    { id: 5, image: "images/slides/i10-hero.jpg" },
-    { id: 6, image: "images/slides/venue-hero.jpg" },
+    {
+      id: 1,
+      image: "images/slides/KV-Accent-&-Stargazer--slide-website (1).png",
+    },
+    {
+      id: 2,
+      image: "images/slides/KV-Palisade-&-Santa-Fe-slide-website (1).png",
+    },
+    { id: 3, image: "images/slides/KV-Tucson-&-Creta-slide-website.png" },
+    { id: 4, image: "images/slides/slide-website-mới (1) (1).jpg" },
+    { id: 5, image: "images/slides/slide-website-mới (1).jpg" },
+    { id: 6, image: "images/slides/slide-website-mới.jpg" },
     { id: 7, image: "images/slides/accent-hero.jpg" },
   ];
 

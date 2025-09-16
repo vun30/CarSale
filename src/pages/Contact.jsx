@@ -12,7 +12,8 @@ export default function Contact() {
       <section
         className="relative h-[420px] md:h-[520px] overflow-hidden"
         style={{
-          backgroundImage: "url('/images/slides/santafe-hero.jpg')",
+          backgroundImage:
+            "url('/pic/131064365_167173115100176_7217870890377009066_n.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

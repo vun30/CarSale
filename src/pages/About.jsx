@@ -73,7 +73,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-[16/10] rounded-2xl overflow-hidden shadow-sm ring-1 ring-gray-200">
                 <img
-                  src="/images/slides/accent-hero.jpg"
+                  src="/pic/hyundai-gia-lai-2625320j32787.webp"
                   alt="Không gian trưng bày Hyundai Gia Lai"
                   className="w-full h-full object-cover"
                 />
@@ -164,7 +164,7 @@ export default function About() {
 
             <figure className="m-0">
               <img
-                src="/images/slides/creta-hero.jpg"
+                src="/images/news/gia_lai_2407.webp"
                 alt="Các dòng xe Hyundai tại showroom"
                 className="w-full rounded-2xl shadow-sm ring-1 ring-gray-200"
               />
@@ -178,7 +178,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-10 items-start mt-12">
             <figure className="order-2 md:order-1 m-0">
               <img
-                src="/images/slides/tucson-hero.jpg"
+                src="/images/news/dai-ly-xe-hyundai-gia-lai-showroomxe-com-vn.jpg"
                 alt="Khu vực xưởng dịch vụ Hyundai"
                 className="w-full rounded-2xl shadow-sm ring-1 ring-gray-200"
               />
@@ -220,7 +220,7 @@ export default function About() {
           {/* GALLERY SINGLE */}
           <figure className="mt-12">
             <img
-              src="/images/slides/palisade-hero.jpg"
+              src="/pic/hd1.jpg"
               alt="Khu trưng bày xe cao cấp"
               className="w-full max-w-5xl mx-auto rounded-2xl shadow-sm ring-1 ring-gray-200"
             />

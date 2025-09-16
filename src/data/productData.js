@@ -3,6 +3,16 @@ export const products = {
   tucson: {
     name: "Tucson",
     price: "Giá từ 825 triệu VNĐ",
+    variants: [
+      {
+        name: "Tucson 2.0 AT CKD (Tiêu chuẩn - Xăng)",
+        price: "769.000.000 VNĐ",
+      },
+      { name: "Tucson 2.0 AT CKD (Đặc biệt - Xăng)", price: "859.000.000 VNĐ" },
+      { name: "Tucson 2.0 AT CKD (Đặc biệt - Dầu)", price: "989.000.000 VNĐ" },
+      { name: "Tucson 1.6 AT CKD (Xăng tăng áp)", price: "979.000.000 VNĐ" },
+      { name: "Tucson 1.6 AT CKD (N-line)", price: "989.000.000 VNĐ" },
+    ],
     cover: "/images/slides/tucson-hero.jpg",
 
     // ===== NỔI BẬT (Highlights) =====
@@ -312,6 +322,22 @@ export const products = {
   santafe: {
     name: "Santa Fe",
     price: "Giá từ 1.099 tỷ VNĐ",
+    variants: [
+      { name: "SantaFe 2.5 GDI Exclusive", price: "1.069.000.000 VNĐ" },
+      { name: "SantaFe 2.5 GDI Prestige", price: "1.265.000.000 VNĐ" },
+      {
+        name: "SantaFe 2.5 GDI Calligraphy (7 chỗ)",
+        price: "1.315.000.000 VNĐ",
+      },
+      {
+        name: "SantaFe 2.5 GDI Calligraphy (6 chỗ)",
+        price: "1.315.000.000 VNĐ",
+      },
+      {
+        name: "SantaFe 2.5T-GDI Calligraphy (6 chỗ)",
+        price: "1.365.000.000 VNĐ",
+      },
+    ],
     cover: "/images/slides/santafe-hero.jpg",
 
     // ===== NỔI BẬT =====
@@ -582,6 +608,10 @@ export const products = {
   ioniq5: {
     name: "IONIQ 5",
     price: "Giá từ 1.3 tỷ VNĐ",
+    variants: [
+      { name: "IONIQ 5 Exclusive", price: "1.300.000.000 VNĐ" },
+      { name: "IONIQ 5 Prestige", price: "1.450.000.000 VNĐ" },
+    ],
     cover: "/images/cardetail/highlights/ioniq/ioniq-highlight1.jpg",
 
     // ===== NỔI BẬT =====
@@ -823,6 +853,12 @@ export const products = {
   accent: {
     name: "ACCENT",
     price: "Giá từ 439 triệu VNĐ",
+    variants: [
+      { name: "Accent 1.5 MT", price: "439.000.000 VNĐ" },
+      { name: "Accent 1.5 AT (Tiêu chuẩn)", price: "489.000.000 VNĐ" },
+      { name: "Accent 1.5 AT (Đặc biệt)", price: "529.000.000 VNĐ" },
+      { name: "Accent 1.5 AT (Cao cấp)", price: "569.000.000 VNĐ" },
+    ],
     cover: "/images/slides/accent-hero.jpg",
 
     // ===== NỔI BẬT =====
@@ -1063,6 +1099,12 @@ export const products = {
   stargazer: {
     name: "Stargazer",
     price: "Giá từ 489 triệu VNĐ",
+    variants: [
+      { name: "Stargazer 1.5L (Tiêu chuẩn)", price: "489.000.000 VNĐ" },
+      { name: "Stargazer 1.5L (Đặc biệt)", price: "559.000.000 VNĐ" },
+      { name: "Stargazer 1.5L (Cao cấp)", price: "599.000.000 VNĐ" },
+      { name: "Stargazer 1.5L (Cao cấp 6 chỗ)", price: "685.000.000 VNĐ" },
+    ],
     cover: "/images/slides/star-hero.jpg",
 
     // ===== NỔI BẬT =====
@@ -1317,6 +1359,12 @@ export const products = {
   palisade: {
     name: "Palisade",
     price: "Giá từ 489 triệu VNĐ",
+    variants: [
+      { name: "Palisade 2.2D Exclusive (7 chỗ)", price: "1.469.000.000 VNĐ" },
+      { name: "Palisade 2.2D Exclusive (6 chỗ)", price: "1.479.000.000 VNĐ" },
+      { name: "Palisade 2.2D Prestige (7 chỗ)", price: "1.559.000.000 VNĐ" },
+      { name: "Palisade 2.2D Prestige (6 chỗ)", price: "1.589.000.000 VNĐ" },
+    ],
     cover: "/images/slides/palisade-hero.jpg",
 
     // ===== NỔI BẬT =====
@@ -1552,6 +1600,12 @@ export const products = {
   creta: {
     name: "Creta",
     price: "Giá từ 599 triệu VNĐ",
+    variants: [
+      { name: "Creta 1.5 (Tiêu chuẩn)", price: "599.000.000 VNĐ" },
+      { name: "Creta 1.5 (Đặc biệt)", price: "659.000.000 VNĐ" },
+      { name: "Creta 1.5 (Cao cấp)", price: "705.000.000 VNĐ" },
+      { name: "Creta 1.5 NLine", price: "715.000.000 VNĐ" },
+    ],
     cover: "/images/slides/creta-hero.jpg",
 
     // ===== NỔI BẬT =====
@@ -2033,8 +2087,14 @@ export const products = {
     },
   },
   elentra: {
-    name: "Elentra",
+    name: "Elantra",
     price: "Giá từ 599 triệu VNĐ",
+    variants: [
+      { name: "Elantra 1.6 AT (Tiêu chuẩn)", price: "579.000.000 VNĐ" },
+      { name: "Elantra 1.6 AT (Đặc biệt)", price: "639.000.000 VNĐ" },
+      { name: "Elantra 2.0 AT", price: "699.000.000 VNĐ" },
+      { name: "Elantra 1.6 Turbo NLine", price: "769.000.000 VNĐ" },
+    ],
     cover: "/images/slides/elentra-hero.jpg",
 
     // ===== NỔI BẬT =====
@@ -2268,6 +2328,13 @@ export const products = {
   i10sedan: {
     name: "i10 Sedan",
     price: "Giá từ 380 triệu VNĐ",
+    variants: [
+      {
+        name: "Grand i10 - Sedan 1.2 AT (Tiêu chuẩn)",
+        price: "425.000.000 VNĐ",
+      },
+      { name: "Grand i10 - Sedan 1.2 AT (Đặc biệt)", price: "455.000.000 VNĐ" },
+    ],
     cover: "/images/slides/i10sedan.jpg",
 
     // ===== NỔI BẬT =====
@@ -2472,6 +2539,10 @@ export const products = {
   i10hatchback: {
     name: "i10 Hatchback",
     price: "Giá từ 360 triệu VNĐ",
+    variants: [
+      { name: "Grand i10 1.2 AT (Tiêu chuẩn)", price: "405.000.000 VNĐ" },
+      { name: "Grand i10 1.2 AT 5Drs (Đặc biệt)", price: "435.000.000 VNĐ" },
+    ],
     cover: "/images/slides/i10-hero.jpg",
 
     // ===== NỔI BẬT =====
@@ -2680,7 +2751,13 @@ export const products = {
   },
   custin: {
     name: "Custin",
-    price: "Giá từ 1,2 tỷ VNĐ",
+    price: "Giá từ 890 tỷ VNĐ",
+    variants: [
+      { name: "Custin 1.5 Turbo (Tiêu chuẩn)", price: "820.000.000 VNĐ" },
+      { name: "Custin 1.5 Turbo (Đặc biệt)", price: "915.000.000 VNĐ" },
+      { name: "Custin 1.5 Turbo (Cao cấp)", price: "950.000.000 VNĐ" },
+      { name: "Custin 2.0 Turbo (Cao cấp)", price: "999.000.000 VNĐ" },
+    ],
     cover: "/images/slides/custin.jpg",
 
     // ===== NỔI BẬT =====
@@ -2888,7 +2965,6 @@ export const products = {
           image: "/images/cardetail/thongso/custin/custin-thongso.jpg",
           caption: null,
         },
-        
       ],
     },
   },

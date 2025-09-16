@@ -6,9 +6,9 @@ import { useRef } from "react";
 
 export default function LocationSection() {
   const images = [
-    { id: 1, image: "src/assets/palisade-icon.png" },
-    { id: 2, image: "src/assets/hyundai-award2.jpg" },
-    { id: 3, image: "src/assets/hyundai-award3.jpg" },
+    { id: 1, image: "pic/toan1.jpg" },
+    { id: 2, image: "pic/toan2.jpg" },
+    { id: 3, image: "pic/toan3.jpg" },
   ];
 
   const swiperRef = useRef(null);

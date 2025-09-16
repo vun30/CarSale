@@ -1,6 +1,6 @@
 // src/pages/ProductDetail.jsx
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Breadcrumb from "../components/layout/Breadcrumb";
 import { products } from "../data/productData";
 
@@ -271,7 +271,9 @@ export default function ProductDetail() {
   const { slug } = useParams();
   const product = products[slug];
   const [activeTab, setActiveTab] = useState("Nổi bật");
-   const [zoomSrc, setZoomSrc] = useState(null);
+  const [zoomSrc, setZoomSrc] = useState(null);
+  const [showVariants, setShowVariants] = useState(false);
+  const variantDropdownRef = useRef(null);
 
    const handleImageClick = (e) => {
      const img = e.target.closest("img");
@@ -282,13 +284,33 @@ export default function ProductDetail() {
      window.dispatchEvent(new Event("open-contact-modal"));
    };
 
-   useEffect(() => {
-     const onKey = (e) => {
-       if (e.key === "Escape") setZoomSrc(null);
-     };
-     if (zoomSrc) document.addEventListener("keydown", onKey);
-     return () => document.removeEventListener("keydown", onKey);
-   }, [zoomSrc]);
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "Escape") setZoomSrc(null);
+    };
+    if (zoomSrc) document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [zoomSrc]);
+
+  useEffect(() => {
+    if (!showVariants) return;
+
+    const handleClickOutside = (event) => {
+      if (
+        variantDropdownRef.current &&
+        !variantDropdownRef.current.contains(event.target)
+      ) {
+        setShowVariants(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [showVariants]);
+
+  useEffect(() => {
+    setShowVariants(false);
+  }, [slug]);
   // Auto scroll top khi đổi tab
   // useEffect(() => {
   //   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -354,11 +376,78 @@ export default function ProductDetail() {
 
         {/* Tên + Tabs */}
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left flex flex-col items-center md:items-start">
             <h1 className="text-3xl font-bold">{product.name}</h1>
-            <p className="text-xl text-blue-900 font-semibold">
+            <p className="mt-2 text-xl text-blue-900 font-semibold">
               {product.price}
             </p>
+            {product.variants?.length > 0 && (
+              <div className="relative mt-3" ref={variantDropdownRef}>
+                <button
+                  type="button"
+                  onClick={() => setShowVariants((prev) => !prev)}
+                  className="inline-flex items-center gap-2 rounded-full border border-blue-900 px-4 py-2 text-sm font-semibold text-blue-900 transition-colors hover:bg-blue-50"
+                >
+                  {showVariants ? "Ẩn phiên bản & giá" : "Xem phiên bản & giá"}
+                  <span
+                    className={`text-base transition-transform ${
+                      showVariants ? "rotate-180" : ""
+                    }`}
+                    aria-hidden="true"
+                  >
+                    ▾
+                  </span>
+                </button>
+                {showVariants && (
+                  <div
+                    className="absolute left-1/2 top-full z-[80] mt-3
+               w-[min(30vw,500px)] -translate-x-1/2
+               rounded-2xl border border-gray-200 bg-white shadow-2xl
+               md:left-0 md:-translate-x-0
+               overflow-hidden" /* quan trọng: cắt viền + hết khoảng trắng */
+                  >
+                    {/* Scroll viewport: tự co, chỉ cuộn khi cao > 70vh */}
+                    <div className="max-h-[70vh] overflow-y-auto">
+                      {/* Header sticky đặt TRONG viewport cuộn */}
+                      <div
+                        className="px-5 pt-4 pb-3 sticky top-0 z-10
+                      bg-white/85 backdrop-blur rounded-t-2xl"
+                      >
+                        <p className="text-sm text-gray-500">
+                          Bảng giá chi tiết theo từng phiên bản:
+                        </p>
+                      </div>
+
+                      {/* Bảng: bỏ min-h + giảm padding đáy để không dư */}
+                      <div className="px-5 pb-3">
+                        <table className="w-full text-sm sm:text-base">
+                          <thead className="text-gray-600 border-b">
+                            <tr>
+                              <th className="py-2 text-left font-medium">
+                                Phiên bản
+                              </th>
+                              <th className="py-2 text-right font-medium">
+                                Giá
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {product.variants.map((variant) => (
+                              <tr key={variant.name} className="odd:bg-gray-50">
+                                <td className="py-3 pr-3">{variant.name}</td>
+                                <td className="py-3 pl-3 text-right font-semibold text-red-600">
+                                  {variant.price}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="w-full md:w-auto border-b md:border-b-0 border-gray-200 flex items-center overflow-x-auto">

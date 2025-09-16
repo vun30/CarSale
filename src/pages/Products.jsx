@@ -59,6 +59,12 @@ export default function Products() {
       image: "/images/product/creta.png",
     },
     {
+      name: "Venue",
+      category: "SUV",
+      slug: "venue",
+      image: "/images/product/venue.png",
+    },
+    {
       name: "Elentra",
       category: "Sedan",
       slug: "elentra",

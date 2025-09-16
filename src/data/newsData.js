@@ -582,7 +582,7 @@ export const newsData = [
     readingTime: 10,
     date: "2025-09-02T08:00:00+07:00",
     updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/creta-hero.jpg",
+    cover: "/images/news/gia_lai_2407.webp",
     images: [
       {
         src: "/images/slides/creta-hero.jpg",
@@ -673,7 +673,8 @@ export const newsData = [
     readingTime: 11,
     date: "2025-09-06T09:20:00+07:00",
     updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/tucson-hero.jpg",
+    cover:
+      "/images/news/phan-khuc-xe-suv-co-c-nen-mua-honda-cr-v-hyundai-tucson-hay-mazda-cx-5-89016.jpg",
     images: [{ src: "/images/slides/tucson-hero.jpg", alt: "Tucson 2025" }],
     blocks: [
       {
@@ -738,7 +739,7 @@ export const newsData = [
     readingTime: 11,
     date: "2025-08-28T10:00:00+07:00",
     updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/accent-hero.jpg",
+    cover: "/images/news/dai-ly-xe-hyundai-gia-lai-showroomxe-com-vn.jpg",
     images: [{ src: "/images/slides/accent-hero.jpg", alt: "Tư vấn vay 2025" }],
     blocks: [
       {
@@ -794,69 +795,6 @@ export const newsData = [
   },
 
   // ======== 10. ĐĂNG KÝ XE (MỞ RỘNG) ========
-  {
-    id: "register-vehicle-2025",
-    slug: "kinh-nghiem-dang-ky-xe-2025-giay-to-chi-phi",
-    title: "Kinh nghiệm đăng ký xe 2025: giấy tờ & các khoản phí cần lưu ý",
-    excerpt:
-      "Checklist giấy tờ, các bước đăng ký xe mới và ước tính những khoản phí bắt buộc khi lăn bánh.",
-    category: "Tư vấn",
-    tags: ["Đăng ký xe", "Phí trước bạ", "Thủ tục", "Bảo hiểm", "Biển số"],
-    author: { name: "Hyundai Gia Lai", role: "CSKH" },
-    readingTime: 10,
-    date: "2025-08-20T09:00:00+07:00",
-    updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/creta-hero.jpg",
-    images: [
-      { src: "/images/slides/creta-hero.jpg", alt: "Hướng dẫn đăng ký xe" },
-    ],
-    blocks: [
-      {
-        type: "list",
-        style: "unordered",
-        items: [
-          "Hóa đơn mua bán, phiếu kiểm tra chất lượng xuất xưởng.",
-          "Giấy tờ cá nhân (CCCD/hộ khẩu).",
-          "Chứng từ nộp lệ phí trước bạ, phí đăng ký biển số.",
-        ],
-      },
-      {
-        type: "table",
-        headers: ["Khoản phí", "Mức thu (tham khảo)"],
-        rows: [
-          ["Lệ phí trước bạ", "10–12% tùy địa phương"],
-          ["Phí đăng ký biển số", "200 nghìn – 20 triệu"],
-          ["BH TNDS bắt buộc", "≈ 480–1.000 nghìn/năm"],
-        ],
-        note: "Mức thu có thể điều chỉnh theo quy định từng địa phương và thời điểm.",
-      },
-
-      // === Chuyển content sang heading + paragraph ===
-      { type: "heading", level: 2, text: "Quy trình rút gọn" },
-      {
-        type: "paragraph",
-        text: "1) Ký hợp đồng mua bán – 2) Nộp trước bạ – 3) Đăng ký biển số – 4) Đăng kiểm – 5) Nhận cavet (đăng ký xe). Đại lý có thể hỗ trợ trọn gói giúp bạn tiết kiệm thời gian xếp hàng.",
-      },
-      { type: "heading", level: 2, text: "Mẹo tránh sót giấy tờ" },
-      {
-        type: "paragraph",
-        text: "Photo sẵn 3–5 bản CMND/CCCD & hộ khẩu/tạm trú; lưu bản scan trong điện thoại. Kiểm tra kỹ thông tin khung, máy trên hoá đơn và phiếu xuất xưởng khớp với thực tế xe.",
-      },
-
-      { type: "cta", label: "Hỗ trợ thủ tục nhanh chóng", href: "/lien-he" },
-    ],
-    content: "",
-    related: [
-      "bang-gia-hyundai-09-2025-uu-dai-tong-hop",
-      "gia-xe-hyundai-stargazer-lan-banh-kem-khuyen-mai-thang-7",
-    ],
-    seo: {
-      metaTitle: "Kinh nghiệm đăng ký xe 2025 | Giấy tờ & chi phí",
-      metaDescription:
-        "Quy trình rút gọn, bảng phí tham khảo và mẹo chuẩn bị hồ sơ đăng ký xe mới.",
-      canonical: "/tin-tuc/kinh-nghiem-dang-ky-xe-2025-giay-to-chi-phi",
-    },
-  },
 
   // ======== 11. BẢO DƯỠNG 10.000 KM (MỞ RỘNG) ========
   {
@@ -871,7 +809,7 @@ export const newsData = [
     readingTime: 9,
     date: "2025-08-05T08:30:00+07:00",
     updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/tucson-hero.jpg",
+    cover: "/images/news/Untitled.png",
     images: [
       { src: "/images/slides/tucson-hero.jpg", alt: "Bảo dưỡng 10.000 km" },
     ],
@@ -934,7 +872,7 @@ export const newsData = [
     readingTime: 9,
     date: "2025-08-09T09:30:00+07:00",
     updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/santafe-hero.jpg",
+    cover: "/images/news/547259567_1097751565884639_5335458906683362984_n.jpg",
     images: [
       {
         src: "/images/slides/santafe-hero.jpg",
@@ -981,176 +919,7 @@ export const newsData = [
     },
   },
 
-  // ======== 13. LÁI THỬ ACCENT (MỞ RỘNG) ========
-  {
-    id: "accent-drive-urban-2025",
-    slug: "trai-nghiem-lai-thu-accent-2025-trong-do-thi",
-    title:
-      "Trải nghiệm lái thử Accent 2025 trong đô thị: tiết kiệm & linh hoạt",
-    excerpt:
-      "Đánh giá nhanh khả năng xoay trở, tầm nhìn và độ êm của Accent 2025 khi di chuyển nội đô.",
-    category: "Trải nghiệm",
-    tags: ["Accent", "Đô thị", "Lái thử", "Tiết kiệm", "Thực tế"],
-    author: { name: "Hyundai Gia Lai", role: "Test Driver" },
-    readingTime: 9,
-    date: "2025-08-30T15:30:00+07:00",
-    updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/accent-hero.jpg",
-    images: [
-      { src: "/images/slides/accent-hero.jpg", alt: "Accent 2025 nội đô" },
-    ],
-    blocks: [
-      {
-        type: "list",
-        style: "unordered",
-        items: [
-          "Tiết kiệm xăng tốt ở dải 30–50 km/h.",
-          "Điều hòa làm lạnh nhanh, giữ cabin ổn định.",
-          "Camera sau rõ, hỗ trợ đỗ hẹp.",
-        ],
-      },
-
-      // === Chuyển content sang heading + paragraph ===
-      { type: "heading", level: 2, text: "Hành trình thử tiêu chuẩn" },
-      {
-        type: "paragraph",
-        text: "Lộ trình gồm 8 km nội đô giờ cao điểm, 5 km đường ven sông thoáng và 2 km dốc hầm gửi xe. Accent vượt bài nhẹ nhàng, chân ga tuyến tính, hộp số sang số êm. Khi leo dốc hầm, xe không hụt hơi, duy trì tốc độ ổn định.",
-      },
-      { type: "heading", level: 2, text: "Tầm nhìn & công thái học" },
-      {
-        type: "paragraph",
-        text: "Cột A gọn, gương hậu bố trí hợp lý, hạn chế điểm mù. Ghế ngồi nâng hạ vừa tầm; hành khách sau có khoảng để chân đủ thoải mái cho hành trình 30–60 phút trong phố.",
-      },
-
-      { type: "cta", label: "Đặt lịch lái thử Accent", href: "/lien-he" },
-    ],
-    content: "",
-    related: ["gia-xe-accent-2025-uu-dai-thang-7"],
-    seo: {
-      metaTitle: "Lái thử Accent 2025 đô thị | Tiết kiệm & linh hoạt",
-      metaDescription:
-        "Lộ trình thử tiêu chuẩn, đánh giá chân ga – hộp số – tầm nhìn và điểm cộng cho đi phố hằng ngày.",
-      canonical: "/tin-tuc/trai-nghiem-lai-thu-accent-2025-trong-do-thi",
-    },
-  },
-
-  // ======== 14. BẢO HIỂM THÂN VỎ (MỞ RỘNG) ========
-  {
-    id: "faq-insurance-2025",
-    slug: "hoi-dap-bao-hiem-than-vo-oto-2025-nen-mua-khong",
-    title: "Hỏi – đáp bảo hiểm thân vỏ ô tô 2025: có nên mua không?",
-    excerpt:
-      "Giải đáp thắc mắc thường gặp về phạm vi bảo hiểm, mức khấu trừ và khi nào nên mua bảo hiểm thân vỏ.",
-    category: "Tư vấn",
-    tags: ["Bảo hiểm", "Thân vỏ", "Phạm vi chi trả", "Khấu trừ", "Tư vấn"],
-    author: { name: "Hyundai Gia Lai", role: "CSKH" },
-    readingTime: 9,
-    date: "2025-09-04T11:45:00+07:00",
-    updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/creta-hero.jpg",
-    images: [
-      { src: "/images/slides/creta-hero.jpg", alt: "Bảo hiểm thân vỏ ô tô" },
-    ],
-    blocks: [
-      { type: "heading", level: 2, text: "Câu hỏi thường gặp" },
-      {
-        type: "list",
-        style: "unordered",
-        items: [
-          "Bảo hiểm thân vỏ chi trả khi va quệt, thiên tai (tùy gói).",
-          "Mức khấu trừ: 500 nghìn – 2 triệu/lần (tham khảo).",
-          "Không chi trả hao mòn tự nhiên/phụ kiện ngoài hợp đồng.",
-        ],
-      },
-      {
-        type: "table",
-        headers: ["Tình huống", "Khả năng chi trả"],
-        rows: [
-          ["Xước cánh cửa khi đỗ xe", "Có (trừ khấu trừ)"],
-          ["Ngập nước nhẹ", "Có (tùy điều kiện hợp đồng)"],
-          ["Thay đồ chơi ngoài", "Không"],
-        ],
-      },
-
-      // === Chuyển content sang heading + paragraph ===
-      { type: "heading", level: 2, text: "Khi nào nên mua?" },
-      {
-        type: "paragraph",
-        text: "Xe đỗ ngoài trời thường xuyên, chạy phố đông hay khu vực mưa bão theo mùa nên cân nhắc mua ngay từ năm đầu. Nếu xe mới và giá trị cao, bảo hiểm thân vỏ giúp bạn giảm rủi ro đáng kể về chi phí sơn/phục hồi.",
-      },
-
-      { type: "cta", label: "Tư vấn gói bảo hiểm phù hợp", href: "/lien-he" },
-    ],
-    content: "",
-    related: ["kinh-nghiem-dang-ky-xe-2025-giay-to-chi-phi"],
-    seo: {
-      metaTitle: "Bảo hiểm thân vỏ ô tô 2025 | Có nên mua?",
-      metaDescription:
-        "FAQ phạm vi chi trả, mức khấu trừ; tình huống điển hình và khi nào nên mua để tối ưu rủi ro.",
-      canonical: "/tin-tuc/hoi-dap-bao-hiem-than-vo-oto-2025-nen-mua-khong",
-    },
-  },
-
-  // ======== 15. CHĂM SÓC XE MÙA MƯA (MỞ RỘNG) ========
-  {
-    id: "rain-care-2025",
-    slug: "cham-soc-xe-mua-mua-2025-chong-am-moc-va-kinh-mo",
-    title: "Chăm sóc xe mùa mưa 2025: chống ẩm mốc & xử lý kính mờ",
-    excerpt:
-      "Mẹo sử dụng điều hòa, chống bám hơi kính và xử lý mùi ẩm mốc trong khoang lái khi trời mưa.",
-    category: "Kinh nghiệm",
-    tags: ["Mùa mưa", "Kính mờ", "Khử mùi", "Điều hòa", "Bảo dưỡng nhẹ"],
-    author: { name: "Hyundai Gia Lai", role: "Cố vấn kỹ thuật" },
-    readingTime: 9,
-    date: "2025-07-29T08:10:00+07:00",
-    updatedAt: "2025-09-12T09:10:00+07:00",
-    cover: "/images/slides/santafe-hero.jpg",
-    images: [
-      { src: "/images/slides/santafe-hero.jpg", alt: "Chăm sóc xe mùa mưa" },
-    ],
-    blocks: [
-      {
-        type: "list",
-        style: "unordered",
-        items: [
-          "Bật sấy kính, hướng gió lên kính trước khi mờ nhiều.",
-          "Giữ lọc gió điều hòa sạch, thay đúng kỳ.",
-          "Vệ sinh thảm sàn, phơi khô để tránh ẩm mốc.",
-        ],
-      },
-      {
-        type: "table",
-        headers: ["Vật tư", "Chu kỳ (khuyến nghị)"],
-        rows: [
-          ["Lọc gió điều hòa", "10.000–15.000 km"],
-          ["Nước rửa kính", "Bổ sung khi cần"],
-          ["Gạt mưa", "12 tháng/lần hoặc khi bị sọc"],
-        ],
-      },
-
-      // === Chuyển content sang heading + paragraph ===
-      { type: "heading", level: 2, text: "Xử lý kính mờ nhanh" },
-      {
-        type: "paragraph",
-        text: "Nguyên nhân chính là chênh lệch nhiệt độ & độ ẩm trong/ngoài xe. Bật sấy kính, tăng gió hướng lên kính, mở lấy gió ngoài một lúc để cân bằng – kính sẽ trong trở lại nhanh chóng.",
-      },
-      { type: "heading", level: 2, text: "Khử mùi ẩm mốc" },
-      {
-        type: "paragraph",
-        text: "Vệ sinh thảm sàn & khoang để đồ định kỳ, mở hé cửa khi đỗ nơi an toàn để thoát ẩm. Nếu mùi vẫn còn, kiểm tra ron cửa & sàn khoang hành lý để phát hiện sớm điểm rò nước.",
-      },
-
-      { type: "cta", label: "Đặt lịch vệ sinh nội thất", href: "/lien-he" },
-    ],
-    content: "",
-    related: ["bao-duong-10000km-hyundai-2025-muc-kiem-tra-chi-phi"],
-    seo: {
-      metaTitle: "Chăm sóc xe mùa mưa 2025 | Kính mờ & ẩm mốc",
-      metaDescription:
-        "Quy trình xử lý kính mờ nhanh, mẹo khử mùi ẩm trong cabin và lịch thay vật tư cơ bản mùa mưa.",
-      canonical: "/tin-tuc/cham-soc-xe-mua-mua-2025-chong-am-moc-va-kinh-mo",
-    },
-  },
+  
 ];
 
 export default newsData;

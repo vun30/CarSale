@@ -55,6 +55,13 @@ export default function ProductList() {
       category: "MPV",
     },
     {
+      name: "Venue",
+      img: "images/product/venue.png",
+      price: "499 triệu",
+      slug: "venue",
+      category: "SUV",
+    },
+    {
       name: "Creta",
       img: "images/product/creta.png",
       price: "650 triệu",

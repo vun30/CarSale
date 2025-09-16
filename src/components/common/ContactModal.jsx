@@ -171,7 +171,7 @@ export default function ContactModal() {
                         phone: formatVNPhone(e.target.value),
                       }))
                     }
-                    className={`w-full rounded-lg border px-3 py-2.5 placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300/30 ${
+                    className={`w-full bg-white rounded-lg border px-3 py-2.5 placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300/30 ${
                       errors.phone ? "border-red-400" : "border-gray-300"
                     }`}
                   />
@@ -192,7 +192,7 @@ export default function ContactModal() {
                     onChange={(e) =>
                       setForm((f) => ({ ...f, name: e.target.value }))
                     }
-                    className={`w-full rounded-lg border px-3 py-2.5 placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300/30 ${
+                    className={`w-full bg-white rounded-lg border px-3 py-2.5 placeholder:text-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300/30 ${
                       errors.name ? "border-red-400" : "border-gray-300"
                     }`}
                   />
