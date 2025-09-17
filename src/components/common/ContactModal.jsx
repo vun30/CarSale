@@ -53,7 +53,7 @@ export default function ContactModal() {
   const [errors, setErrors] = useState({});
 
   const models = useMemo(
-    () => ["Grand i10", "Tucson", "Santa Fe", "Creta", "Accent"],
+    () => ["Grand i10", "Tucson", "Santa Fe", "Creta", "Accent"," Elantra", "Stargazer X", "Palisade", "Staria", "Venue", "Custin", "Ioniq 5"],
     []
   );
 
