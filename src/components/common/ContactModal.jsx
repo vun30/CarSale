@@ -4,6 +4,7 @@ export default function ContactModal() {
   const [open, setOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [apiError, setApiError] = useState("");
   const firstFieldRef = useRef(null);
   const dialogRef = useRef(null);
 
@@ -77,11 +78,55 @@ export default function ContactModal() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setSuccess(false);
+    setApiError("");
     if (!validate()) return;
     setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 900)); // giả lập API
-    setSubmitting(false);
-    setSuccess(true);
+    const payload = {
+      phone: form.phone.replace(/\s+/g, ""),
+      name: form.name.trim(),
+      model: form.model,
+    };
+
+    try {
+      const response = await fetch(
+        "https://api.hyundaigialaiofficial.com.vn/api/customers",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      if (!response.ok) {
+        let message = "Gửi yêu cầu thất bại. Vui lòng thử lại.";
+        try {
+          const data = await response.clone().json();
+          if (data?.message) message = data.message;
+        } catch {
+          try {
+            const text = await response.text();
+            if (text) message = text;
+          } catch {
+            // ignore parsing errors
+          }
+        }
+        throw new Error(message);
+      }
+
+      setSuccess(true);
+      setForm({ phone: "", name: "", model: "" });
+    } catch (err) {
+      setApiError(
+        err instanceof Error && err.message
+          ? err.message
+          : "Gửi yêu cầu thất bại. Vui lòng thử lại."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (!open) return null;
@@ -146,7 +191,11 @@ export default function ContactModal() {
                   Nhập thông tin, tư vấn viên sẽ liên hệ trong 5–10 phút.
                 </p>
               </div>
-
+              {apiError && (
+                <div className="mb-3 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-red-700">
+                  {apiError}
+                </div>
+              )}
               {success && (
                 <div className="mb-3 rounded-lg border border-green-200 bg-green-50 px-3 py-2 text-green-700">
                   Cảm ơn bạn! Yêu cầu đã được gửi. Chúng tôi sẽ liên hệ sớm.
