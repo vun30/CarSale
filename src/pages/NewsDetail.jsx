@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 // import { ArrowLeft } from "lucide-react"; // optional
-
+import usePageTitle from "../hooks/usePageTitle";
 import newsData from "../data/newsData";
 
 // --- Helpers ---
@@ -214,7 +214,11 @@ export default function NewsDetail() {
 
   // current news
   const news = useMemo(() => newsData.find((n) => n.slug === slug), [slug]);
+  const pageTitle = news
+    ? `${news.title} | Tin tức Hyundai Gia Lai`
+    : "Tin tức Hyundai Gia Lai";
 
+  usePageTitle(pageTitle);
   // others (sorted newest first if ISO dates exist)
   const others = useMemo(() => {
     const list = newsData.filter((n) => n.slug !== slug);
@@ -331,7 +335,6 @@ export default function NewsDetail() {
       : null;
 
   // related posts: use explicit `news.related` if available, else take others top 3
-  
 
   return (
     <section className="pb-16">

@@ -11,8 +11,10 @@ import {
   Star,
 } from "lucide-react";
 import LocationSection from "../components/home/LocationSection";
+import usePageTitle from "../hooks/usePageTitle";
 
 export default function About() {
+  usePageTitle("Giới thiệu Hyundai Gia Lai - Đại lý ủy quyền Hyundai");
   return (
     <main className="bg-white">
       {/* HERO */}

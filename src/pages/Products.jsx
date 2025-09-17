@@ -1,6 +1,7 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import Breadcrumb from "../components/layout/Breadcrumb";
 import { productList } from "../data/productList";
+import usePageTitle from "../hooks/usePageTitle";
 
 export default function Products() {
   const categories = ["Tất cả", "Sedan", "SUV", "MPV", "Electric"];
@@ -10,7 +11,23 @@ export default function Products() {
   // Nếu không có category → mặc định "Tất cả"
   const active = category ? category : "Tất cả";
 
-  
+  const selectedLabel =
+    categories.find((cat) => cat.toLowerCase() === active.toLowerCase()) ||
+    "Tất cả";
+
+  const categoryKeywordMap = {
+    Sedan: "Sedan",
+    SUV: "SUV",
+    MPV: "MPV",
+    Electric: "Xe Điện",
+  };
+
+  const keywordSegment =
+    selectedLabel === "Tất cả"
+      ? "Bảng giá xe Hyundai"
+      : `Xe Hyundai ${categoryKeywordMap[selectedLabel] || selectedLabel}`;
+
+  usePageTitle(`${keywordSegment} | Hyundai Gia Lai`);
 
   // Lọc theo category (nếu có)
   const filtered =
