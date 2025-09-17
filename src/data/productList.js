@@ -56,6 +56,13 @@ export const productList = [
     keywords: ["hyundai creta", "creta suv"],
   },
   {
+    name: "Venue",
+    category: "SUV",
+    slug: "venue",
+    image: "/images/product/venue.png",
+    keywords: ["hyundai venue", "venue suv"],
+  },
+  {
     name: "Elentra",
     category: "Sedan",
     slug: "elentra",

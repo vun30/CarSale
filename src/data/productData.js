@@ -2872,6 +2872,11 @@ export const products = {
         title: "Hyundai Custin 2025 – SmartSense an tâm mọi nẻo đường.",
         body: "Danh mục an toàn chủ động giúp phòng tránh rủi ro, hỗ trợ người lái tự tin hơn trong mọi tình huống giao thông.",
       },
+      lead: {
+        title: "Khoang lái tiện nghi cao cấp",
+        image: "/images/cardetail/tiennghi/tucson/tucson-tiennghi1.jpg", // ảnh lớn bạn gửi
+        caption: null,
+      },
       grid4: [
         {
           img: "/images/cardetail/antoan/custin/custin-antoan1.jpg",
@@ -2963,6 +2968,222 @@ export const products = {
       lead: [
         {
           image: "/images/cardetail/thongso/custin/custin-thongso.jpg",
+          caption: null,
+        },
+      ],
+    },
+  },
+  venue: {
+    name: "Venue",
+    price: "Giá từ 499.000.000 VNĐ",
+    variants: [
+      { name: "Venue 1.6 AT Đặc biệt", price: "539.000.000 VNĐ" },
+    ],
+    cover: "/images/slides/venue.png",
+
+    // ===== NỔI BẬT =====
+    highlight: {
+      hero: "/images/cardetail/highlights/venue/venue-highlight1.jpg",
+      // title: "Hyundai Venue",
+      // subtitle: "SUV đô thị cỡ nhỏ.",
+      videoId: null,
+      intro: {
+        eyebrow: "Hyundai",
+        title: "HYUNDAI VENUE – SỐNG PHONG CÁCH",
+        body: "Hyundai Venue là sự kết hợp công nghệ tiên tiến, khả năng vận hành vượt trội và phong cách thời đại mới. cầm lái Hyundai Venue, bạn sẽ kết nối với mọi thứ và thu hút sự chú ý ở bất cứ nơi đâu bạn đến. Hyundai Venue là sự bổ sung hoàn hảo để làm được tất cả những điều đó và hơn thế nữa.",
+        link: {
+          text: "Liên hệ để biết thêm chi tiết",
+          href: "https://zalo.me/0981543342",
+        },
+      },
+      cards: [],
+    },
+
+    // ===== NGOẠI THẤT =====
+    exterior: {
+      header: {
+        eyebrow: "Ngoại thất",
+        title: "Hyundai Venue 2025 – Phong cách thu hút sự chú ý",
+        body: "Hyundai Venue sở hữu thiết kế ấn tượng với điểm nhấn phía trước là lưới tản nhiệt kích thước lớn tạo hình thác nước Cascading Grill theo phong cách Parametric Dynamic mang dấu ấn của mẫu xe đàn anh Palisade. Cụm đèn chiếu sáng dạng Projector LED được thiết kế tách cụm mới, đặc trưng bởi đường nét sắc sảo và tinh tế. Đèn định vị ban ngày DRL (Daytime Running Light) của xe được thiết kế bao quanh cụm đèn pha tạo nên nét độc đáo cho xe. Cản trước được sơn màu bạc, tạo nên vẻ hiện đại năng động.",
+      },
+      lead: {
+        image: "/images/cardetail/ngoaithat/venue/venue-ngoaithat1.jpg",
+        caption: "Ngoại thất Hyundai Venue 2025.",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/ngoaithat/venue/venue-ngoaithat3.jpg",
+          caption: "Lưới tản nhiệt tham số đặc trưng",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/venue/venue-ngoaithat4.jpg",
+          caption: "Đèn LED định vị ban ngày",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/venue/venue-ngoaithat5.jpg",
+          caption: "Vành hợp kim 16 inch",
+        },
+        {
+          img: "/images/cardetail/ngoaithat/venue/venue-ngoaithat6.jpg",
+          caption: "Đèn hậu LED cá tính",
+        },
+        
+      ],
+      midBlock: {
+        title: "Kích thước nhỏ gọn, linh hoạt",
+        body: "Chiếc xe sở hữu kích cỡ nhỏ gọn với kích thước chiều Dài x Rộng x Cao lần lượt 3.995 x 1.770 x 1.645 (mm). Khoảng sáng gầm xe đạt 195mm cùng chiều dài cơ sở 2.500 mm. Xe được trang bị bộ lazang 16 inch trên cả 2 phiên bản với thông số lốp 215/60R16. Venue cũng được trang bị thanh giá nóc, giúp tăng thêm vẻ mạnh mẽ đồng thời dễ dàng phát huy công năng khi cần chở đồ có kích thước lớn mà khoang hành lí không chứa đủ.",
+        image: "/images/cardetail/ngoaithat/venue/venue-ngoaithat2.jpg",
+        
+      },
+    },
+
+    // ===== NỘI THẤT =====
+    interior: {
+      header: {
+        eyebrow: "Nội thất",
+        title: "Hyundai Venue 2025 – Tiện nghi, thông minh.",
+        body: "Khoang cabin thiết kế gọn gàng nhưng thoải mái, hệ thống giải trí hiện đại, ghế ngồi thoải mái và nhiều tiện ích cho người lái cũng như hành khách.",
+      },
+      lead: {
+        title: "Nội thất Hyundai Venue 2025",
+        image: "/images/cardetail/noithat/venue/venue-noithat1.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/noithat/venue/venue-noithat2.jpg",
+          caption: "Hyundai Venue đươc trang bị nút bấm khởi động Start/Stop Engine cùng chìa khóa thông minh tích hợp khởi động từ xa",
+        },
+        {
+          img: "/images/cardetail/noithat/venue/venue-noithat3.jpg",
+          caption: "Đồng hồ thông tin của Venue được thiết kế dạng LED Digital giúp hiển thị các thông số một cách trực quan, đồng thời có thể thay đổi giao diện theo chế độ lái. Xe được trang bị điều khiển hành trình, giới hạn tốc độ MSLA, cảm biến áp suất lốp TPMS, đèn chiếu sáng tự động… đem đến một không gian tiện nghi bậc nhất trong phân khúc.",
+        },
+        {
+          img: "/images/cardetail/noithat/venue/venue-noithat4.jpg",
+          caption: "Màn hình giải trí 8 inch",
+        },
+        {
+          img: "/images/cardetail/noithat/venue/venue-noithat5.jpg",
+          caption: "Màn hình thông tin kỹ thuật số",
+        },
+        {
+          img: "/images/cardetail/noithat/venue/venue-noithat6.jpg",
+          caption: "Điều hòa tự động",
+        },
+      ],
+    },
+
+    // ===== VẬN HÀNH =====
+    performance: {
+      header: {
+        eyebrow: "Vận hành",
+        title: "Hyundai Venue 2025 – Một chuyến đi đầy hứng khởi",
+        body: "Mỗi chuyến đi cùng Hyundai Venue không chỉ là việc di chuyển từ nơi này đến nơi khác mà còn là việc tận hưởng chuyến đi đầy hứng khởi. Hyundai Venue mang lại niềm vui khi lái xe. Động cơ của Hyundai Venue là động cơ được tinh chỉnh tinh tế mang đến sự kết hợp hoàn hảo giữa hiệu suất và hiệu quả, giúp chủ xe tận hưởng hành trình thoải mái.",
+      },
+      lead: {
+        title: "Hệ thống an toàn chủ động SmartSense",
+        image: "/images/cardetail/vanhanh/venue/venue-vanhanh1.jpg", // ảnh xe đuôi bạn gửi
+        caption: null,
+      },
+      midBlock: {
+        title: null,
+        body: null,
+        image: null,
+      },
+      tailBlock: {
+        title: "3 chế độ lái: Eco, Normal, Sport",
+        body: null,
+        hero: "/images/cardetail/noithat/venue/venue-noithat2.jpg",
+        thumbs: [
+          "/images/cardetail/vanhanh/venue/venue-vanhanh2.jpg", // biểu đồ/ảnh mô tả bản 2.0 NA
+          "/images/cardetail/vanhanh/venue/venue-vanhanh3.jpg", // biểu đồ/ảnh mô tả bản 1.6T-GDi
+          "/images/cardetail/vanhanh/venue/venue-vanhanh4.jpg", // biểu đồ/ảnh mô tả bản 2.0 Diesel
+        ],
+      },
+    },
+
+    // ===== AN TOÀN =====
+    safety: {
+      header: {
+        eyebrow: "An toàn",
+        title: "Hyundai Venue 2025 – An toàn tuyệt đối với hệ thống khung gầm chứa vật liệu chịu lực cao",
+        body: "Với việc tăng cường độ cứng vững cho khung xe, Hyundai Venue mang đến sự an toàn vượt trội cho khách hàng. Venue được trang bị hệ thống khung xe với vật liệu chịu lực cao, được bổ sung thêm thành phần thép cường lực AHSS tới 65%, giúp hấp thụ lực tác động trong tình huống va chạm, đảm bảo an toàn cho toàn bộ hành khách ngồi trong xe. Hệ thống khung gầm của Venue được tăng cường khả năng xử lý N.V.H (Noise – Vibration – Harshness) ấn tượng khi giảm độ ồn, rung bằng các giải pháp thêm các ngăn tiêu âm trên cánh cửa, tăng độ cứng ở các cụm panel và sàn xe. Hệ thống lái cũng được cải tiến, giúp gia tăng độ chính xác cũng như khả năng phản hồi tốt hơn, đem đến cảm giác thú vị mỗi khi cầm lái.",
+      },
+      lead: {
+        title: "Hệ thống an toàn chủ động SmartSense",
+        image: "/images/cardetail/antoan/venue/venue-antoan5.jpg", // ảnh xe đuôi bạn gửi
+        caption: "Hyundai Venue được trang bị đầy đủ các tính năng an toàn cao cấp: Hệ thống chống bó cứng phanh ABS, Hệ thống phân bổ lực phanh điện tử EBD, Hệ thống hỗ trợ lực phanh BA, Hệ thống cân bằng điện tử ESC, Hệ thống khởi hành ngang dốc HAC,Hệ thống kiểm soát thân xe VSM, Hệ thống an toàn 6 túi khí, Hệ thống camera và cảm biến lùi, Hệ thống chống trộm Immobilizer",
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/antoan/venue/venue-antoan1.jpg",
+          caption: "Hệ thống 6 túi khí",
+        },
+        {
+          img: "/images/cardetail/antoan/venue/venue-antoan2.jpg",
+          caption: "Ghế sau ISOFIX",
+        },
+        {
+          img: "/images/cardetail/antoan/venue/venue-antoan3.jpg",
+          caption: "Hệ thống hỗ trợ khởi hành ngang dốc",
+        },
+        {
+          img: "/images/cardetail/antoan/venue/venue-antoan4.jpg",
+          caption: "Hệ thống cân bằng điện tử",
+        },
+      ],
+    },
+
+    // ===== TIỆN NGHI =====
+    comfort: {
+      header: {
+        eyebrow: "Tiện nghi",
+        title: "Hyundai Venue 2025 – Đầy đủ và hiện đại.",
+        body: "Hyundai Venue mang đến các tính năng hiện đại hàng đầu phân khúc như cửa gió cho hàng ghế sau, cửa sổ trời chỉnh điện, đèn chiếu sáng tự động bật tắt, màn hình giải trí 8 inch, màn hình thông tin kỹ thuật số.",
+      },
+      lead: {
+        title: null,
+        image: "/images/cardetail/tiennghi/venue/venue-tiennghi7.jpg",
+        caption: null,
+      },
+      grid4: [
+        {
+          img: "/images/cardetail/tiennghi/venue/venue-tiennghi1.jpg",
+          caption: "Cửa gió điều hòa cho hàng ghế thứ 2",
+        },
+        {
+          img: "/images/cardetail/tiennghi/venue/venue-tiennghi2.jpg",
+          caption: "Smartkey có chức năng khởi động từ xa",
+        },
+        {
+          img: "/images/cardetail/tiennghi/venue/venue-tiennghi3.jpg",
+          caption: "Màn hình giải trí 8 inch",
+        },
+        {
+          img: "/images/cardetail/tiennghi/venue/venue-tiennghi4.jpg",
+          caption: "Hệ thống đèn chiều sáng tự động bật tắt",
+        },
+        {
+          img: "/images/cardetail/tiennghi/venue/venue-tiennghi5.jpg",
+          caption: "Cụm điều khiển Media",
+        },
+        {
+          img: "/images/cardetail/tiennghi/venue/venue-tiennghi6.jpg",
+          caption: "Tựa để tay hàng ghế thứ 2",
+        },
+      ],
+    },
+
+    // ===== THÔNG SỐ =====
+    specBlock: {
+      header: {
+        eyebrow: "Thông số xe",
+        title: "Bảng thông số kỹ thuật Venue.",
+        body: null,
+      },
+      lead: [
+        {
+          image: "/images/cardetail/thongso/venue/venue-thongso1.png",
           caption: null,
         },
       ],
