@@ -48,13 +48,13 @@ export default function Footer() {
           </h3>
           <div className="flex gap-3">
             <a
-              href="mailto:hyundaitphcm.cskh@gmail.com"
+              href="mailto:hyundaigialaiofficial@gmail.com"
               className="p-2 rounded-full border border-white hover:bg-white hover:text-black transition"
             >
               <Mail size={18} />
             </a>
             <a
-              href="tel:0933490013"
+              href="tel:0981543342"
               className="p-2 rounded-full border border-white hover:bg-white hover:text-black transition"
             >
               <Phone size={18} />
