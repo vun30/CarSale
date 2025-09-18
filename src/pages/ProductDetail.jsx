@@ -276,20 +276,20 @@ export default function ProductDetail() {
   const [showVariants, setShowVariants] = useState(false);
   const variantDropdownRef = useRef(null);
 
-   const pageTitle = product
-     ? `Hyundai ${product.name} - Giá & Ưu Đãi Gia Lai`
-     : "Xe Hyundai Chính Hãng | Hyundai Gia Lai";
+  const pageTitle = product
+    ? `Hyundai ${product.name} - Giá & Ưu Đãi Gia Lai`
+    : "Xe Hyundai Chính Hãng | Hyundai Gia Lai";
 
-   usePageTitle(pageTitle);
+  usePageTitle(pageTitle);
 
-   const handleImageClick = (e) => {
-     const img = e.target.closest("img");
-     if (img) setZoomSrc(img.src);
-   };
+  const handleImageClick = (e) => {
+    const img = e.target.closest("img");
+    if (img) setZoomSrc(img.src);
+  };
 
-   const openContactModal = () => {
-     window.dispatchEvent(new Event("open-contact-modal"));
-   };
+  const openContactModal = () => {
+    window.dispatchEvent(new Event("open-contact-modal"));
+  };
 
   useEffect(() => {
     const onKey = (e) => {
@@ -478,7 +478,7 @@ export default function ProductDetail() {
               onClick={openContactModal}
               className="hidden md:inline-flex flex-none px-6 py-3 text-sm font-semibold bg-blue-900 text-white rounded whitespace-nowrap ml-4 md:ml-auto hover:bg-blue-800"
             >
-              Đặt hàng
+              Liên hệ đặt hàng
             </button>
           </div>
         </div>
@@ -495,7 +495,7 @@ export default function ProductDetail() {
         onClick={openContactModal}
         className="md:hidden fixed bottom-0 left-0 w-full px-6 py-4 text-base font-semibold bg-blue-900 text-white hover:bg-blue-800"
       >
-        Đặt hàng
+        Liên hệ đặt hàng
       </button>
       {zoomSrc && (
         <div

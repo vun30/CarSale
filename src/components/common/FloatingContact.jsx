@@ -6,7 +6,7 @@ export default function FloatingContact() {
   const formatted = `${phone.slice(0, 4)} ${phone.slice(4, 7)} ${phone.slice(
     7
   )}`;
-
+  const [contactModalOpen, setContactModalOpen] = useState(false);
   // Chỉ 1 chế độ "Thu gọn" => chuyển toàn bộ sang icon-only (không ẩn hẳn)
   const [mini, setMini] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -27,7 +27,16 @@ export default function FloatingContact() {
       console.warn("Không thể lưu trạng thái thu gọn", error);
     }
   }, [mini]);
-
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const onModalState = (event) => {
+      setContactModalOpen(Boolean(event?.detail?.open));
+    };
+    window.addEventListener("contact-modal-state", onModalState);
+    return () => {
+      window.removeEventListener("contact-modal-state", onModalState);
+    };
+  }, []);
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard?.writeText(phone);
@@ -45,7 +54,13 @@ export default function FloatingContact() {
   return (
     <>
       {/* Nút bật/tắt Thu gọn */}
-      <div className="mb-8 fixed bottom-28 left-3 z-[60] print:hidden">
+      <div
+        className={`mb-8 fixed bottom-28 left-3 z-[60] print:hidden transition-all duration-200 ease-out ${
+          contactModalOpen
+            ? "-translate-x-24 opacity-0 pointer-events-none"
+            : "opacity-100"
+        }`}
+      >
         <button
           type="button"
           onClick={() => setMini((v) => !v)}
@@ -62,7 +77,13 @@ export default function FloatingContact() {
       </div>
 
       {/* Cụm nút bên trái */}
-      <div className="fixed bottom-6 left-3 z-[60] print:hidden flex flex-col items-start gap-2">
+      <div
+        className={`fixed bottom-6 left-3 z-[60] print:hidden flex flex-col items-start gap-2 transition-all duration-200 ease-out ${
+          contactModalOpen
+            ? "-translate-x-24 opacity-0 pointer-events-none"
+            : ""
+        }`}
+      >
         {mini ? (
           // === MINI MODE: chỉ icon tròn ===
           <>
@@ -148,7 +169,11 @@ export default function FloatingContact() {
       </div>
 
       {/* Zalo bên phải: tự nhỏ lại khi mini */}
-      <div className="fixed bottom-6 right-6 z-[60] print:hidden">
+      <div
+        className={`fixed bottom-6 right-6 z-[60] print:hidden transition-all duration-200 ease-out ${
+          contactModalOpen ? "translate-x-24 opacity-0 pointer-events-none" : ""
+        }`}
+      >
         <a
           href={`https://zalo.me/${phone}`}
           target="_blank"

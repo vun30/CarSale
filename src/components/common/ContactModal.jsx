@@ -19,7 +19,12 @@ export default function ContactModal() {
   }, []);
 
   const close = () => setOpen(false);
-
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.dispatchEvent(
+      new CustomEvent("contact-modal-state", { detail: { open } })
+    );
+  }, [open]);
   // focus trap + esc
   useEffect(() => {
     if (!open) return;
@@ -54,7 +59,20 @@ export default function ContactModal() {
   const [errors, setErrors] = useState({});
 
   const models = useMemo(
-    () => ["Grand i10", "Tucson", "Santa Fe", "Creta", "Accent"," Elantra", "Stargazer X", "Palisade", "Staria", "Venue", "Custin", "Ioniq 5"],
+    () => [
+      "Grand i10",
+      "Tucson",
+      "Santa Fe",
+      "Creta",
+      "Accent",
+      " Elantra",
+      "Stargazer X",
+      "Palisade",
+      "Staria",
+      "Venue",
+      "Custin",
+      "Ioniq 5",
+    ],
     []
   );
 
