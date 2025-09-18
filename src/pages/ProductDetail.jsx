@@ -408,16 +408,16 @@ export default function ProductDetail() {
                 {showVariants && (
                   <div
                     className="absolute left-1/2 top-full z-[80] mt-3
-               w-[min(30vw,500px)] -translate-x-1/2
+               w-[min(90vw,420px)] -translate-x-1/2
                rounded-2xl border border-gray-200 bg-white shadow-2xl
-               md:left-0 md:-translate-x-0
+               md:left-0 md:-translate-x-0 md:w-[min(30vw,500px)]
                overflow-hidden" /* quan trọng: cắt viền + hết khoảng trắng */
                   >
                     {/* Scroll viewport: tự co, chỉ cuộn khi cao > 70vh */}
                     <div className="max-h-[70vh] overflow-y-auto">
                       {/* Header sticky đặt TRONG viewport cuộn */}
                       <div
-                        className="px-5 pt-4 pb-3 sticky top-0 z-10
+                        className="px-4 sm:px-5 pt-4 pb-3 sticky top-0 z-10
                       bg-white/85 backdrop-blur rounded-t-2xl"
                       >
                         <p className="text-sm text-gray-500">
@@ -426,7 +426,7 @@ export default function ProductDetail() {
                       </div>
 
                       {/* Bảng: bỏ min-h + giảm padding đáy để không dư */}
-                      <div className="px-5 pb-3">
+                      <div className="px-4 sm:px-5 pb-4">
                         <table className="w-full text-sm sm:text-base">
                           <thead className="text-gray-600 border-b">
                             <tr>
