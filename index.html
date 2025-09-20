@@ -9,20 +9,45 @@
       rel="stylesheet"
     />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17579552708"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17579552708"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'AW-17579552708');
-</script>
+      gtag("config", "AW-17579552708");
+    </script>
+
+    <!-- Event snippet for Lượt xem trang conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-17579552708/jhPBCJTkq50bEMTfyr5B",
+          value: 1.0,
+          currency: "VND",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
     <!-- Meta viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hyundai Gia Lai - Showroom Xe Hyundai Chính Hãng</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/icon192x192.png" sizes="any">
+    <link rel="icon" type="image/png" href="/icon192x192.png" sizes="any" />
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="Hyundai Gia Lai" />
