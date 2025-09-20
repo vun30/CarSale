@@ -136,6 +136,11 @@ export default function ContactModal() {
 
       setSuccess(true);
       setForm({ phone: "", name: "", model: "" });
+      if (window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-17579552708/jhPBCJTkq50bEMTfyr5B",
+        });
+      }
     } catch (err) {
       setApiError(
         err instanceof Error && err.message
