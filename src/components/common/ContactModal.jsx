@@ -220,7 +220,10 @@ export default function ContactModal() {
                 </div>
               )}
               {success && (
-                <div className="mb-3 rounded-lg border border-green-200 bg-green-50 px-3 py-2 text-green-700">
+                <div
+                  id="thank-you-message"
+                  className="mb-3 rounded-lg border border-green-200 bg-green-50 px-3 py-2 text-green-700"
+                >
                   Cảm ơn bạn! Yêu cầu đã được gửi. Chúng tôi sẽ liên hệ sớm.
                 </div>
               )}
