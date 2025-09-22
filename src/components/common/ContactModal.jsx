@@ -8,23 +8,56 @@ export default function ContactModal() {
   const firstFieldRef = useRef(null);
   const dialogRef = useRef(null);
 
+  // Lắng nghe sự kiện mở modal từ nơi khác
   useEffect(() => {
     const handler = () => {
       setOpen(true);
       setSuccess(false);
       setSubmitting(false);
+      // ❌ KHÔNG được tự gọi handler() ở đây (gây đệ quy vô hạn)
     };
     window.addEventListener("open-contact-modal", handler);
     return () => window.removeEventListener("open-contact-modal", handler);
   }, []);
 
   const close = () => setOpen(false);
+
+  // Emit trạng thái modal ra ngoài (nếu có nơi khác muốn biết)
   useEffect(() => {
     if (typeof window === "undefined") return;
     window.dispatchEvent(
       new CustomEvent("contact-modal-state", { detail: { open } })
     );
   }, [open]);
+
+  // Tự bật modal 1 lần / phiên khi người dùng vào web
+  // Nếu đã hiện rồi trong session này thì không bật nữa
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const KEY = "contactModalShownSession";
+    // Cho UI mount xong rồi mở (nhẹ nhàng hơn)
+    const t = setTimeout(() => {
+      if (!sessionStorage.getItem(KEY)) {
+        setOpen(true);
+        setSuccess(false);
+        setSubmitting(false);
+        sessionStorage.setItem(KEY, "1");
+      }
+    }, 300);
+    return () => clearTimeout(t);
+  }, []);
+
+  // Hỗ trợ mở qua param URL ?openContact=1 (tuỳ chọn)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("openContact") === "1") {
+      setOpen(true);
+      setSuccess(false);
+      setSubmitting(false);
+    }
+  }, []);
+
   // focus trap + esc
   useEffect(() => {
     if (!open) return;
