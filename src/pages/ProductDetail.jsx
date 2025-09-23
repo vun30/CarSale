@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import Breadcrumb from "../components/layout/Breadcrumb";
 import { products } from "../data/productData";
-import usePageTitle from "../hooks/usePageTitle";
 
 const TAB_ORDER = [
   "Nổi bật",
@@ -275,12 +274,6 @@ export default function ProductDetail() {
   const [zoomSrc, setZoomSrc] = useState(null);
   const [showVariants, setShowVariants] = useState(false);
   const variantDropdownRef = useRef(null);
-
-  const pageTitle = product
-    ? `Hyundai ${product.name} - Giá & Ưu Đãi Gia Lai`
-    : "Xe Hyundai Chính Hãng | Hyundai Gia Lai";
-
-  usePageTitle(pageTitle);
 
   const handleImageClick = (e) => {
     const img = e.target.closest("img");

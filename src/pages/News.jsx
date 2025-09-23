@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import newsData from "../data/newsData";
-import usePageTitle from "../hooks/usePageTitle";
+
 
 // --- Helpers ---
 function getCover(n) {
@@ -42,7 +42,7 @@ function byNewest(a, b) {
 }
 
 export default function News() {
-  usePageTitle("Tin tức xe Hyundai mới nhất - Hyundai Gia Lai");
+ 
   const list = useMemo(() => {
     return newsData
       .map((n) => ({

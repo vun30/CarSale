@@ -1,16 +1,36 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+  useParams,
+} from "react-router-dom";
 import Header from "./components/layout/Header";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import ProductDetail from "./pages/ProductDetail";
 import Footer from "./components/layout/Footer"; // Assuming you have a Footer component
 import ContactForm from "./components/home/ContactForm";
 import FloatingContact from "./components/common/FloatingContact";
 import ContactModal from "./components/common/ContactModal";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import News from "./pages/News";
-import NewsDetail from "./pages/NewsDetail";
+import routes from "./seo/routes";
+import MetaTags from "./components/seo/MetaTags";
+
+function RouteRenderer({ route }) {
+  const params = useParams();
+  const location = useLocation();
+
+  const meta =
+    typeof route.meta === "function"
+      ? route.meta({ params, location })
+      : route.meta;
+
+  const Component = route.component;
+
+  return (
+    <>
+      <MetaTags meta={meta} />
+      <Component />
+    </>
+  );
+}
 
 export default function App() {
   return (
@@ -18,14 +38,13 @@ export default function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/san-pham" element={<Products />} />
-          <Route path="/san-pham/:category" element={<Products />} />
-          <Route path="/san-pham/:category/:slug" element={<ProductDetail />} />
-          <Route path="/gioi-thieu" element={<About />} />
-          <Route path="/lien-he" element={<Contact />} />
-          <Route path="/tin-tuc" element={<News />} />
-          <Route path="/tin-tuc/:slug" element={<NewsDetail />} />
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<RouteRenderer route={route} />}
+            />
+          ))}
         </Routes>
       </main>
       <ContactModal />
