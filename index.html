@@ -88,7 +88,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         if (!canonicalLink) {
           canonicalLink = document.createElement("link");
           canonicalLink.setAttribute("rel", "canonical");
-          document.head.appendChild(canonicalLink);
+          document.head.appendChild(canonicalLink); 
         }
 
         var path = window.location.pathname || "/";
