@@ -8,7 +8,12 @@ import NewsDetail from "../pages/NewsDetail";
 import { products } from "../data/productData";
 import { productList } from "../data/productList";
 import newsData from "../data/newsData";
-import { BASE_URL, DEFAULT_SEO, ORGANIZATION } from "./constants";
+import {
+  BASE_URL,
+  DEFAULT_SEO,
+  ORGANIZATION,
+  DEFAULT_OG_IMAGE,
+} from "./constants";
 
 const CATEGORY_LABELS = {
   sedan: "Sedan",
@@ -22,6 +27,9 @@ function ensureAbsoluteUrl(path) {
   if (/^https?:\/\//i.test(path)) return path;
   const normalized = path.startsWith("/") ? path : `/${path}`;
   return `${BASE_URL}${normalized}`;
+}
+function resolveOgImage(path) {
+  return ensureAbsoluteUrl(path) || DEFAULT_OG_IMAGE;
 }
 
 function getArticleImage(article) {
@@ -178,11 +186,25 @@ function buildProductListMeta(category) {
     ? `Khám phá giá bán, ưu đãi và thông số các mẫu xe Hyundai dòng ${label} tại Gia Lai.`
     : "Danh sách giá bán, ưu đãi và thông số các dòng xe Hyundai mới nhất tại Hyundai Gia Lai.";
   const path = normalized ? `/san-pham/${normalized}` : "/san-pham";
-
+  const title = `${headline} | Hyundai Gia Lai`;
+  const canonical = ensureAbsoluteUrl(path);
   return {
-    title: `${headline} | Hyundai Gia Lai`,
+    title,
     description,
-    canonical: ensureAbsoluteUrl(path),
+    canonical,
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+      image: DEFAULT_OG_IMAGE,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      image: DEFAULT_OG_IMAGE,
+    },
     jsonld: createCollectionJsonLd(headline, description, path),
   };
 }
@@ -202,25 +224,52 @@ function buildProductDetailMeta({ category, slug }) {
   const description = `Cập nhật giá bán, ưu đãi và thông số kỹ thuật Hyundai ${name} tại Hyundai Gia Lai.`;
   const canonical = ensureAbsoluteUrl(canonicalPath);
   const image = product?.highlight?.hero || product?.cover || listItem?.image;
-
+  const ogImage = resolveOgImage(image);
   if (!product && !listItem) {
+    const fallbackTitle = "Sản phẩm Hyundai | Hyundai Gia Lai";
     return {
-      title: "Sản phẩm Hyundai | Hyundai Gia Lai",
+      title: fallbackTitle,
       description,
       canonical,
+      openGraph: {
+        title: fallbackTitle,
+        description,
+        url: canonical,
+        type: "website",
+        image: ogImage,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: fallbackTitle,
+        description,
+        image: ogImage,
+      },
     };
   }
-
+  const title = `Hyundai ${name} - Giá xe & khuyến mãi | Hyundai Gia Lai`;
   return {
-    title: `Hyundai ${name} - Giá xe & khuyến mãi | Hyundai Gia Lai`,
+    title,
     description,
     canonical,
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "product",
+      image: ogImage,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      image: ogImage,
+    },
     jsonld: createProductJsonLd({
       product,
       canonical,
       name,
       description,
-      image,
+      image: ogImage,
     }),
   };
 }
@@ -228,13 +277,28 @@ function buildProductDetailMeta({ category, slug }) {
 function buildNewsArticleMeta(slug) {
   const article = newsData.find((item) => item.slug === slug);
   const fallbackCanonical = ensureAbsoluteUrl(`/tin-tuc/${slug}`);
-
+  const defaultTitle = "Tin tức Hyundai Gia Lai";
+  const defaultDescription =
+    "Cập nhật tin tức và khuyến mãi xe Hyundai mới nhất tại Gia Lai.";
+  const defaultImage = DEFAULT_OG_IMAGE;
   if (!article) {
     return {
-      title: "Tin tức Hyundai Gia Lai",
-      description:
-        "Cập nhật tin tức và khuyến mãi xe Hyundai mới nhất tại Gia Lai.",
+      title: defaultTitle,
+      description: defaultDescription,
       canonical: fallbackCanonical,
+      openGraph: {
+        title: defaultTitle,
+        description: defaultDescription,
+        url: fallbackCanonical,
+        type: "article",
+        image: defaultImage,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: defaultTitle,
+        description: defaultDescription,
+        image: defaultImage,
+      },
     };
   }
 
@@ -245,11 +309,24 @@ function buildNewsArticleMeta(slug) {
     article.seo?.metaDescription ||
     article.excerpt ||
     `Tin tức và khuyến mãi Hyundai: ${article.title}.`;
-
+  const image = resolveOgImage(article.seo?.image || getArticleImage(article));
   return {
     title,
     description,
     canonical,
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "article",
+      image,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      image,
+    },
     jsonld: createArticleJsonLd(article, canonical, description),
   };
 }
@@ -259,9 +336,9 @@ const routes = [
     path: "/",
     component: Home,
     meta: {
-      title: DEFAULT_SEO.title,
-      description: DEFAULT_SEO.description,
-      canonical: DEFAULT_SEO.canonical,
+      ...DEFAULT_SEO,
+      openGraph: { ...DEFAULT_SEO.openGraph },
+      twitter: { ...DEFAULT_SEO.twitter },
       jsonld: {
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -286,50 +363,90 @@ const routes = [
   {
     path: "/gioi-thieu",
     component: About,
-    meta: {
-      title: "Giới thiệu Hyundai Gia Lai - Đại lý ủy quyền Hyundai",
-      description:
-        "Thông tin về showroom Hyundai Gia Lai, dịch vụ hậu mãi và đội ngũ tư vấn được đào tạo chính hãng.",
-      canonical: ensureAbsoluteUrl("/gioi-thieu"),
-      jsonld: {
-        "@context": "https://schema.org",
-        "@type": "AboutPage",
-        name: "Giới thiệu Hyundai Gia Lai",
-        url: ensureAbsoluteUrl("/gioi-thieu"),
-        publisher: {
-          "@type": "Organization",
-          name: ORGANIZATION.name,
-          logo: {
-            "@type": "ImageObject",
-            url: ORGANIZATION.logo,
+    meta: (() => {
+      const title = "Giới thiệu Hyundai Gia Lai - Đại lý ủy quyền Hyundai";
+      const description =
+        "Thông tin về showroom Hyundai Gia Lai, dịch vụ hậu mãi và đội ngũ tư vấn được đào tạo chính hãng.";
+      const canonical = ensureAbsoluteUrl("/gioi-thieu");
+      const image = DEFAULT_OG_IMAGE;
+
+      return {
+        title,
+        description,
+        canonical,
+        openGraph: {
+          title,
+          description,
+          url: canonical,
+          type: "website",
+          image,
+        },
+        twitter: {
+          card: "summary_large_image",
+          title,
+          description,
+          image,
+        },
+        jsonld: {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          name: "Giới thiệu Hyundai Gia Lai",
+          url: canonical,
+          publisher: {
+            "@type": "Organization",
+            name: ORGANIZATION.name,
+            logo: {
+              "@type": "ImageObject",
+              url: ORGANIZATION.logo,
+            },
           },
         },
-      },
-    },
+      };
+    })(),
   },
   {
     path: "/lien-he",
     component: Contact,
-    meta: {
-      title: "Liên hệ Hyundai Gia Lai - Tư vấn & lái thử xe Hyundai",
-      description:
-        "Hotline 0981 543 342. Đặt lịch lái thử, nhận báo giá và hỗ trợ trả góp trực tiếp tại Hyundai Gia Lai.",
-      canonical: ensureAbsoluteUrl("/lien-he"),
-      jsonld: {
-        "@context": "https://schema.org",
-        "@type": "ContactPage",
-        name: "Liên hệ Hyundai Gia Lai",
-        url: ensureAbsoluteUrl("/lien-he"),
-        publisher: {
-          "@type": "Organization",
-          name: ORGANIZATION.name,
-          logo: {
-            "@type": "ImageObject",
-            url: ORGANIZATION.logo,
+    meta: (() => {
+      const title = "Liên hệ Hyundai Gia Lai - Tư vấn & lái thử xe Hyundai";
+      const description =
+        "Hotline 0981 543 342. Đặt lịch lái thử, nhận báo giá và hỗ trợ trả góp trực tiếp tại Hyundai Gia Lai.";
+      const canonical = ensureAbsoluteUrl("/lien-he");
+      const image = DEFAULT_OG_IMAGE;
+
+      return {
+        title,
+        description,
+        canonical,
+        openGraph: {
+          title,
+          description,
+          url: canonical,
+          type: "website",
+          image,
+        },
+        twitter: {
+          card: "summary_large_image",
+          title,
+          description,
+          image,
+        },
+        jsonld: {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          name: "Liên hệ Hyundai Gia Lai",
+          url: canonical,
+          publisher: {
+            "@type": "Organization",
+            name: ORGANIZATION.name,
+            logo: {
+              "@type": "ImageObject",
+              url: ORGANIZATION.logo,
+            },
           },
         },
-      },
-    },
+      };
+    })(),
   },
   {
     path: "/san-pham",
@@ -349,17 +466,37 @@ const routes = [
   {
     path: "/tin-tuc",
     component: News,
-    meta: {
-      title: "Tin tức xe Hyundai mới nhất - Hyundai Gia Lai",
-      description:
-        "Cập nhật khuyến mãi, giá xe và kinh nghiệm sử dụng xe Hyundai mới nhất từ Hyundai Gia Lai.",
-      canonical: ensureAbsoluteUrl("/tin-tuc"),
-      jsonld: createCollectionJsonLd(
-        "Tin tức Hyundai Gia Lai",
-        "Bài viết cập nhật giá xe, khuyến mãi và tư vấn sử dụng xe Hyundai.",
-        "/tin-tuc"
-      ),
-    },
+    meta: (() => {
+      const title = "Tin tức xe Hyundai mới nhất - Hyundai Gia Lai";
+      const description =
+        "Cập nhật khuyến mãi, giá xe và kinh nghiệm sử dụng xe Hyundai mới nhất từ Hyundai Gia Lai.";
+      const canonical = ensureAbsoluteUrl("/tin-tuc");
+      const image = DEFAULT_OG_IMAGE;
+
+      return {
+        title,
+        description,
+        canonical,
+        openGraph: {
+          title,
+          description,
+          url: canonical,
+          type: "website",
+          image,
+        },
+        twitter: {
+          card: "summary_large_image",
+          title,
+          description,
+          image,
+        },
+        jsonld: createCollectionJsonLd(
+          "Tin tức Hyundai Gia Lai",
+          "Bài viết cập nhật giá xe, khuyến mãi và tư vấn sử dụng xe Hyundai.",
+          "/tin-tuc"
+        ),
+      };
+    })(),
   },
   {
     path: "/tin-tuc/:slug",

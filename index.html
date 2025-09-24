@@ -56,8 +56,54 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       name="description"
       content="Hyundai Gia Lai cung cấp đầy đủ các dòng xe Hyundai mới nhất, bảng giá niêm yết và ưu đãi trả góp, kèm dịch vụ bảo dưỡng chính hãng tại Gia Lai."
     />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.hyundaigialaiofficial.com.vn/" />
     <!-- Favicon -->
+
+    <script>
+      (function () {
+        if (typeof window === "undefined") return;
+
+        var host = window.location.hostname;
+        if (host === "localhost" || host === "127.0.0.1") {
+          return;
+        }
+
+        var preferredHost = "www.hyundaigialaiofficial.com.vn";
+        var protocol = "https:";
+
+        if (host !== preferredHost) {
+          var targetUrl =
+            protocol +
+            "//" +
+            preferredHost +
+            window.location.pathname +
+            window.location.search +
+            window.location.hash;
+          window.location.replace(targetUrl);
+          return;
+        }
+
+        var canonicalLink = document.querySelector('link[rel="canonical"]');
+        if (!canonicalLink) {
+          canonicalLink = document.createElement("link");
+          canonicalLink.setAttribute("rel", "canonical");
+          document.head.appendChild(canonicalLink);
+        }
+
+        var path = window.location.pathname || "/";
+        var normalizedPath = path === "/"
+          ? "/"
+          : path.replace(/\/+$/, "");
+        var canonicalUrl = protocol + "//" + preferredHost + normalizedPath;
+        canonicalLink.setAttribute("href", canonicalUrl);
+
+        var ogUrlTag = document.querySelector('meta[property="og:url"]');
+        if (ogUrlTag) {
+          ogUrlTag.setAttribute("content", canonicalUrl);
+        }
+      })();
+    </script>
     <link rel="icon" type="image/png" href="/icon192x192.png" sizes="any" />
 
     <!-- Open Graph -->
