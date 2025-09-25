@@ -1,4 +1,4 @@
-export const BASE_URL = "https://www.hyundaigialaiofficial.com.vn";
+export const BASE_URL = "https://hyundaigialaiofficial.com.vn";
 
 export const ORGANIZATION = {
   name: "Hyundai Gia Lai",
