@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hyundaigialaiofficial.com.vn/sitemap.xml
+Sitemap: https://hyundaigialaiofficial.com.vn/sitemap.xml
