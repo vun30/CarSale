@@ -1,3 +1,20 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "redirects": [
+    {
+      "source": "http://hyundaigialaiofficial.com.vn/:path*",
+      "destination": "https://hyundaigialaiofficial.com.vn/:path*",
+      "permanent": true
+    },
+    {
+      "source": "https://www.hyundaigialaiofficial.com.vn/:path*",
+      "destination": "https://hyundaigialaiofficial.com.vn/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
